@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Apply and remove Promo Code</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>075c6085-7ce7-4e6d-b882-fd046a68cde9</testCaseGuid>
+</TestCaseEntity>

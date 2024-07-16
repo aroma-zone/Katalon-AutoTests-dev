@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>top_item_remove_button</name>
+   <tag></tag>
+   <elementGuidId>89c61ea1-00a7-44d8-8829-7e076e5dbc1f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div[class*='cart'] .product:first-of-type > span > svg</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[contains(@class,'cart')]//*[@class='product']/span)[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/aside/div[3]/div[2]/div/div[2]/div/span</value>
+      <webElementGuid>27f5cca2-7a7e-4a29-a04c-9760f65b0aa7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div[2]/div/span</value>
+      <webElementGuid>42df8c61-bdcc-48fa-86a7-5ecc1ac3199b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

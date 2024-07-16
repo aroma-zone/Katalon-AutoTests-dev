@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CSR and SSR, go to ALP, refresh page, compare content and navigate on other page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>374dd123-7682-4945-9fd6-49b3df633093</testCaseGuid>
+</TestCaseEntity>

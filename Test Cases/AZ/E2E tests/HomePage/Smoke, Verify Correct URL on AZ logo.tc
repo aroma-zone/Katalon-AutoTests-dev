@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Smoke, Verify Correct URL on AZ logo</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1b778ec2-3600-4312-8d5d-4ea999f4650e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>data-testid='cart-icon'</description>
+   <name>cart-icon</name>
+   <tag></tag>
+   <elementGuidId>6e870f6d-2f44-46d6-ba65-0ec0530d6f09</elementGuidId>
+   <imagePath>Screenshots/cart-icon.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.cart-icon</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/cart-icon.png</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+</WebElementEntity>

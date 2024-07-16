@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Delivery Address create additional, change default, update, delete</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2fc2c159-3511-44fb-8ce9-d781403d7b72</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c4557cc5-b1fd-4879-9e62-9481ed3a6a7b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4196df98-764f-4cab-bd24-44b9dd03e886</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[('firstName') : 'FirstName Delivery New', ('lastName') : 'LastName Delivery New', ('streetName') : 'Jardin des Tuileries', ('additionalAddressInfo') : 'Additional info Delivery New', ('postalCode') : '75001', ('city') : 'Paris', ('phone') : '0111223344', ('company') : 'Test company Delivery New']</defaultValue>
+      <description></description>
+      <id>c4557cc5-b1fd-4879-9e62-9481ed3a6a7b</id>
+      <masked>false</masked>
+      <name>newAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>[('firstName') : 'FirstName Delivery Updated', ('lastName') : 'LastName Delivery Updated', ('streetName') : 'Parc de la Tête d\'Or', ('additionalAddressInfo') : 'Additional info Delivery Updated', ('postalCode') : '69006', ('city') : 'Lyon', ('phone') : '0155443322', ('company') : 'Test company Delivery Updated']</defaultValue>
+      <description></description>
+      <id>4196df98-764f-4cab-bd24-44b9dd03e886</id>
+      <masked>false</masked>
+      <name>updatedAddress</name>
+   </variable>
+</TestCaseEntity>

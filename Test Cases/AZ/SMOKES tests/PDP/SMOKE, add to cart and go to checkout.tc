@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMOKE, add to cart and go to checkout</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fdd997db-4705-4cb6-9fe1-efd2151579b5</testCaseGuid>
+</TestCaseEntity>

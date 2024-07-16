@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_accept</name>
+   <tag></tag>
+   <elementGuidId>8552d3c8-b0f5-4974-9c36-f33b62c68ba9</elementGuidId>
+   <imagePath></imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#axeptio_btn_acceptAll</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='axeptio_btn_acceptAll']</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'axeptio_btn_acceptAll' and @ref_element = 'Object Repository/AZ/Components/Cookies popup/div_needsclick (shadow root)' and @ref_element_is_shadow_root = 'true']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>axeptio_btn_acceptAll</value>
+      <webElementGuid>7cfb56a0-8623-40d3-9777-01107112a416</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/AZ/Components/Cookies popup/div_needsclick (shadow root)</value>
+      <webElementGuid>3bd508e1-741c-404a-ae88-654850e75e19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element_is_shadow_root</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>0ea09336-4847-4104-ac5f-1e70987df97b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

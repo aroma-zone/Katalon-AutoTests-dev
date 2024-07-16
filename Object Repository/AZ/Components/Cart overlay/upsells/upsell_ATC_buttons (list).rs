@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>upsell_ATC_buttons (list)</name>
+   <tag></tag>
+   <elementGuidId>64addfed-d728-40d2-9e5f-6b5314277f8c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[contains(@class, 'up-sell-products')]//button[contains(@class, 'add')])[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.up-sell-info__add-button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/div[2]/div/aside/div[3]/div[2]/div/div[2]/div/div/div[2]/div/button/span/div/i</value>
+      <webElementGuid>cc637ba1-4fbc-460e-9e34-e27adf440ac8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/button/span/div/i</value>
+      <webElementGuid>549281e3-8579-4a27-9f22-a78543a00671</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

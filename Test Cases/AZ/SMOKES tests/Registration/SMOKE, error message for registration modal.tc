@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMOKE, error message for registration modal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cb2ec65e-c866-481e-aa0f-600e1e70f8fe</testCaseGuid>
+</TestCaseEntity>

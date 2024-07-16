@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Edge Case, Pay by 3DS Credit Card selecting delivery before payment module is loaded</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bee1a4fa-ff47-44a2-8780-f912d5153ce8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c21cba50-626f-45b3-b1e9-52948d8bd7b1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[('has3DS') : true, ('cardNumber') : '4871 0499 9999 9910', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST QUALITY', ('password') : 'password']</defaultValue>
+      <description></description>
+      <id>c21cba50-626f-45b3-b1e9-52948d8bd7b1</id>
+      <masked>false</masked>
+      <name>card</name>
+   </variable>
+</TestCaseEntity>

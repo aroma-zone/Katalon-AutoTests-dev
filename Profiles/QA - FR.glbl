@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>QA - FR</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://aroma-zone:62efff1c5785f749@qa.aroma-host.net/'</initValue>
+      <name>HomePage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://aroma-zone:62efff1c5785f749@qa.aroma-host.net/products/hydrolats'</initValue>
+      <name>PLP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('email') : 'wahob39038@logodez.com', ('password') : 'TestPassword721']</initValue>
+      <name>user1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>for MyAccountPage tests</description>
+      <initValue>[('email') : 'test.auto.2@email.com', ('password') : 'TestPassword721']</initValue>
+      <name>user2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>for Bancontact (billing on BE)</description>
+      <initValue>[('email') : 'test.auto.belgium@email.com', ('password') : 'TestPassword721']</initValue>
+      <name>user3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://auth.europe-west1.gcp.commercetools.com'</initValue>
+      <name>CT_AUTH_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://api.europe-west1.gcp.commercetools.com'</initValue>
+      <name>CT_API_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'aromazone-qa'</initValue>
+      <name>CT_PROJECT_KEY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Generated from CT_SERVER_CLIENT_ID and CT_SERVER_CLIENT_SECRET</description>
+      <initValue>'d2pqSWJMclU1eUEtMFl2TndkdWtxS2I2OjhCU3JwOUh5Q1ZPWFVTZXFCUTVhaGlld2c1OWdRWFoy'</initValue>
+      <name>CT_SERVER_CLIENT_AUTH_TOKEN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('code') : '10-PERC-OFF', ('percentage') : 10]</initValue>
+      <name>promoCode</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>data-testid='login-button'</description>
+   <name>button_login</name>
+   <tag></tag>
+   <elementGuidId>8b83129e-4c8f-47dc-8082-c0d2472c676d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type=&quot;submit&quot;])[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(text() = 'Se connecter') or (text() = 'Accedi')]</value>
+      <webElementGuid>c39f4957-5837-439b-8ddc-4c6842b1152f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='layout']/section/div[2]/div/div/div/span/form/button/div/div</value>
+      <webElementGuid>d1c409c0-e6e4-4a85-8d83-ef2cdc2e981c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Se connecter' or . = 'Se connecter')]</value>
+      <webElementGuid>d42d1ad2-d826-4b8b-bb8a-89e95071e7c4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

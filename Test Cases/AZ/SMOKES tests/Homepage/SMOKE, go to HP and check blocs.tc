@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMOKE, go to HP and check blocs</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>33b5d238-08f0-4213-92c3-89aa22169624</testCaseGuid>
+</TestCaseEntity>

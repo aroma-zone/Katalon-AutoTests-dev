@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Accept cookies and log-in&#xd;
+In MyProfilePage, check user email</description>
+   <name>_User login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f4d5a996-9714-4f47-b08f-9c5e8e9d2bb6</testCaseGuid>
+</TestCaseEntity>

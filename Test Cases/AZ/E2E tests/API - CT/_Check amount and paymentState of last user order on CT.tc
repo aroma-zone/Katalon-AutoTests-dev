@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Check amount and paymentState of last user order on CT</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d701ea3e-711e-4cf3-8077-fdab1ef39657</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Smoke, header our latest news, check link and content page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>791d015c-006e-4e89-90b4-7eb5bc7d85b5</testCaseGuid>
+</TestCaseEntity>

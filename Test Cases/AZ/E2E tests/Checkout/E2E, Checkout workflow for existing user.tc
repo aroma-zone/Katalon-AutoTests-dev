@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Checkout workflow for existing user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0a181e6b-6b9d-42b8-a2fb-007a4fe8eca6</testCaseGuid>
+</TestCaseEntity>

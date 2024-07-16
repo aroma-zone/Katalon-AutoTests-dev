@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLP_Tracking_add_to_cart</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b54fc406-2ad4-4d73-8426-b45aea6fc0b7</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Enter credit card details</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9d789395-033c-4bfb-87b9-8a7957cf4b0f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>162b44ea-61e8-40f0-8376-670f5b251a18</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[('has3DS') : false, ('cardNumber') : '2222400070000005', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : '']</defaultValue>
+      <description></description>
+      <id>162b44ea-61e8-40f0-8376-670f5b251a18</id>
+      <masked>false</masked>
+      <name>card</name>
+   </variable>
+</TestCaseEntity>

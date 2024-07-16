@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Pay by Credit Card - new and saved (multiple cards)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9d57971d-de7b-4993-8b35-3b25aa64e920</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0b052bfd-5f4d-49aa-94fa-e4af3b4d0dcd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4997db26-b216-44fc-8667-998c018dd110</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d3cf311a-452b-46d6-a648-d141fec7668c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a260a7b5-f6cd-4ea0-a104-c53baf595ab9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[('has3DS') : false, ('cardNumber') : '4111111145551142', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : '']</defaultValue>
+      <description></description>
+      <id>0b052bfd-5f4d-49aa-94fa-e4af3b4d0dcd</id>
+      <masked>false</masked>
+      <name>card1</name>
+   </variable>
+   <variable>
+      <defaultValue>[('has3DS') : false, ('cardNumber') : '2222400070000005', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : '']</defaultValue>
+      <description></description>
+      <id>4997db26-b216-44fc-8667-998c018dd110</id>
+      <masked>false</masked>
+      <name>card2</name>
+   </variable>
+   <variable>
+      <defaultValue>[('has3DS') : true, ('cardNumber') : '4035501428146300', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : 'password']</defaultValue>
+      <description></description>
+      <id>d3cf311a-452b-46d6-a648-d141fec7668c</id>
+      <masked>false</masked>
+      <name>card3</name>
+   </variable>
+   <variable>
+      <defaultValue>[('has3DS') : true, ('cardNumber') : '5454545454545454', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : 'password']</defaultValue>
+      <description></description>
+      <id>a260a7b5-f6cd-4ea0-a104-c53baf595ab9</id>
+      <masked>false</masked>
+      <name>card4</name>
+   </variable>
+</TestCaseEntity>

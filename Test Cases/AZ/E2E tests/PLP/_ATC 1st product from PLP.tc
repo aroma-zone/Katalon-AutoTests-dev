@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add to cart 1st item from PLP and return its price</description>
+   <name>_ATC 1st product from PLP</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e6246c07-fd43-4c8a-abf5-60706967058f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Get last user order details from CT</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7fdf2532-68e4-46ea-a2e7-c080686ec3da</testCaseGuid>
+</TestCaseEntity>

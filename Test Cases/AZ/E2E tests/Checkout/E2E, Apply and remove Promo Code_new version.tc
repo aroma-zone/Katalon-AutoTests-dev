@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Apply and remove Promo Code_new version</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0898f83f-78cc-4d9a-819b-1e0ae6b3e2ba</testCaseGuid>
+</TestCaseEntity>

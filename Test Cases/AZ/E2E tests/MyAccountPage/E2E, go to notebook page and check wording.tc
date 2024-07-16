@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, go to notebook page and check wording</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>94342cda-18f6-4023-bdcb-3b2462678e37</testCaseGuid>
+</TestCaseEntity>

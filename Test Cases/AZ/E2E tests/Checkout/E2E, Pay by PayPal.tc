@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Pay by PayPal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1089fb72-0e26-445c-9214-ed4e2213aabc</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33c89f46-8f15-4e0c-bb91-bce0686a33cf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>43ba5e4f-8d57-4826-949f-0f8a0f6a73c0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'az-test-paypal@personal.example.com'</defaultValue>
+      <description></description>
+      <id>33c89f46-8f15-4e0c-bb91-bce0686a33cf</id>
+      <masked>false</masked>
+      <name>paypalAccount_email</name>
+   </variable>
+   <variable>
+      <defaultValue>'?J@9!tB{'</defaultValue>
+      <description></description>
+      <id>43ba5e4f-8d57-4826-949f-0f8a0f6a73c0</id>
+      <masked>false</masked>
+      <name>paypalAccount_password</name>
+   </variable>
+</TestCaseEntity>

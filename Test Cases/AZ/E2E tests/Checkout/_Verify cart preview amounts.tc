@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Verify cart preview amounts</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7866c9b5-5d80-43f1-be80-1a8c1389723c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>690bdc52-0041-475c-adcc-9f5e75761c3a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>690bdc52-0041-475c-adcc-9f5e75761c3a</id>
+      <masked>false</masked>
+      <name>promoCodePercentage</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>DEV - FR</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://aroma-zone:62efff1c5785f749@dev.aroma-host.net/'</initValue>
+      <name>HomePage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://aroma-zone:62efff1c5785f749@dev.aroma-host.net/products/hydrolats'</initValue>
+      <name>PLP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('email') : 'wahob39038@logodez.com', ('password') : 'TestPassword721']</initValue>
+      <name>user1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('password') : 'TestPassword721', ('email') : 'test.auto.2@email.com']</initValue>
+      <name>user2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('email') : 'test.auto.belgium@email.com', ('password') : 'TestPassword721']</initValue>
+      <name>user3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://auth.europe-west1.gcp.commercetools.com'</initValue>
+      <name>CT_AUTH_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://api.europe-west1.gcp.commercetools.com'</initValue>
+      <name>CT_API_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'aromazone-staging'</initValue>
+      <name>CT_PROJECT_KEY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'QlhMaWJDTjd4TTN4SFh5NVZzQ1gzNnQ4Ok44RUptb0VOZkNtTVk3aVF1azVQcEV2NTU3VGRjdGFp'</initValue>
+      <name>CT_SERVER_CLIENT_AUTH_TOKEN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('percentage') : 10, ('code') : '10-PERC-OFF']</initValue>
+      <name>promoCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('password') : 'TestPassword721']</initValue>
+      <name>user_random1</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

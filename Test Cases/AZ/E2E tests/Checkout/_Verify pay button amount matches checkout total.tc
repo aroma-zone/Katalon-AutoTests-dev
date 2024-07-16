@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>_Verify pay button amount matches checkout total</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bb6a6ae7-4b90-4fd0-b22f-3adfd9514db2</testCaseGuid>
+</TestCaseEntity>

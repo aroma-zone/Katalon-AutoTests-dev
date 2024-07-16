@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RDP_Tracking_add_to_cart</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>efc595f8-9d7b-40b6-aea8-5ce17a4203a3</testCaseGuid>
+</TestCaseEntity>

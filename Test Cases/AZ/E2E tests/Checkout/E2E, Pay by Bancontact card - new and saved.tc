@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Pay by Bancontact card - new and saved</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c11ef4a4-a04f-481a-936f-0e36be1bbcf7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>577f66d0-fd8b-4967-b93a-fd1dd3a8745a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[('has3DS') : true, ('cardNumber') : '4871049999999910', ('expirationDate') : '03/30', ('securityCode') : '', ('holderName') : '', ('password') : 'password']</defaultValue>
+      <description></description>
+      <id>577f66d0-fd8b-4967-b93a-fd1dd3a8745a</id>
+      <masked>false</masked>
+      <name>card</name>
+   </variable>
+</TestCaseEntity>
