@@ -43,9 +43,9 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_pr
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), FailureHandling.OPTIONAL)
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 

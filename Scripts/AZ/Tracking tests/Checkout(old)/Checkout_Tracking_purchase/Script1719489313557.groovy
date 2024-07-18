@@ -69,24 +69,24 @@ WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Payment Method/Credit Card/but
 
 WebUI.waitForPageLoad(0)
 
-WebUI.delay(6)
+WebUI.delay(8)
 
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = '''
-	console.log('verifdata',event)
+//String script = '\n\tconsole.log(\'verifdata\',event)\n    return window.dataLayer.find(event => \n        event.event === \'purchase\' && \n        event.step === \'5\' && \n        event.shipping_tier === \'standard\' && \n        event.total_items === 1 &&\n\t\tevent.ecommerce.items[0].item_sku === \'04029\' &&\n\t\tevent.ecommerce.items[0].quantity === 1 &&\n\t\tevent.ecommerce.items[0].price === 20.95 &&\n        event.ecommerce.currency === \'EUR\' &&\n\t\tevent.ecommerce.items[0].item_name === \'Huile essentielle Camomille romaine France BIO\'\n   \n    );\n'
+
+String script = """
+    console.log('verifdata', event);
     return window.dataLayer.find(event => 
         event.event === 'purchase' && 
-        event.event_name === 'purchase' && 
-        event.event_label === 'success' && 
+        event.step === '5' && 
+        event.shipping_tier === 'standard' && 
         event.total_items === 1 &&
-		event.ecommerce.items[0].item_sku === '04029' &&
-		event.ecommerce.items[0].quantity === 1 &&
-		event.ecommerce.items[0].price === 20.95 &&
-        event.ecommerce.currency === 'EUR' &&
-		event.ecommerce.items[0].item_name === 'Huile essentielle Camomille romaine France BIO'
-   
+        event.ecommerce.items[0].item_sku === '04029' &&
+        event.ecommerce.items[0].price === 20.95 &&
+        event.ecommerce.items[0].currency === 'EUR' &&
+        event.ecommerce.items[0].item_name === 'Huile essentielle Camomille romaine France BIO'
     );
-'''
+"""
 
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 

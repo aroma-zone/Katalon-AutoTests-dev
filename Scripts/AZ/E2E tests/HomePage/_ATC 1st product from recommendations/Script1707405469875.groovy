@@ -24,14 +24,12 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //user = GlobalVariable.user1
-
 //WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
-
 cartBadgeInitialNumber = WebUI.callTestCase(findTestCase('AZ/E2E tests/Cart/_Get cart icon badge number'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToPosition(100, 100)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/Recommendations/Button_currentPromotions'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'))
 
 productPrice = CustomKeywords.'az.Parser.amountStringToBigDecimal'(WebUI.getText(findTestObject('Object Repository/AZ/Pages/HomePage/Recommendations/1st_product_price')))
 
