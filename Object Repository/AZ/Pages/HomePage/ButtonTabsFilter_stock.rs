@@ -6,11 +6,11 @@
    <elementGuidId>a4f259ef-43bb-4030-9dfd-1bf4a339dac9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@data-v-27f2ac5b='' and contains(normalize-space(text()), 'Retour en stock')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@data-v-01b11c9e='' and contains(normalize-space(text()), 'Retour en stock')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,11 +6,11 @@
    <elementGuidId>d87c6d29-a4e0-4bb4-a405-d0a9f550a3eb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@data-v-27f2ac5b='' and contains(normalize-space(text()), 'Promotions')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@data-v-01b11c9e='' and contains(normalize-space(text()), 'Promotions')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
