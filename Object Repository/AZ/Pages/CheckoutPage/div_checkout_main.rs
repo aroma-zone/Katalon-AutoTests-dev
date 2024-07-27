@@ -9,10 +9,15 @@
          <key>BASIC</key>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;checkout__main&quot;]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.checkout__main</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

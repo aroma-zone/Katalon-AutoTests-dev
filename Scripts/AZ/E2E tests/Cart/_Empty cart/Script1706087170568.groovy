@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 WebUI.comment('Precondition : Page with cart icon (header)')
 
@@ -41,6 +43,17 @@ while (WebUI.verifyElementPresent(findTestObject('Object Repository/AZ/Component
 WebUI.takeScreenshot()
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Cart overlay/div_empty-cart'), 2)
+
+WebUI.comment('ajout cookie ancien checkout')
+
+// Récupérer le driver du navigateur
+def driver = DriverFactory.getWebDriver()
+
+// Créer un nouvel objet Cookie avec la nouvelle valeur
+Cookie newCookie = new Cookie("new-checkout", "false")
+
+// Ajouter le nouveau cookie au navigateur (cela remplacera l'ancien si il existait)
+driver.manage().addCookie(newCookie)
 
 WebUI.click(findTestObject('AZ/Components/Cart overlay/button_close'))
 

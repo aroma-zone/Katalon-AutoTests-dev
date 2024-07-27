@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -23,6 +25,17 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 user = GlobalVariable.user3
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.comment('ajout cookie ancien checkout')
+
+// Récupérer le driver du navigateur
+def driver = DriverFactory.getWebDriver()
+
+// Créer un nouvel objet Cookie avec la nouvelle valeur
+Cookie newCookie = new Cookie("new-checkout", "false")
+
+// Ajouter le nouveau cookie au navigateur (cela remplacera l'ancien si il existait)
+driver.manage().addCookie(newCookie)
 
 'We select same country as default delivery address, so the address will be directly set on CheckoutPage'
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Locale Settings/_Change delivery country'), [('countryName') : 'Belgique'], FailureHandling.STOP_ON_FAILURE)

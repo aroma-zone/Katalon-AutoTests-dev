@@ -16,12 +16,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
 user = GlobalVariable.user1
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.comment('ajout cookie ancien checkout')
+
+// Récupérer le driver du navigateur
+def driver = DriverFactory.getWebDriver()
+
+// Créer un nouvel objet Cookie avec la nouvelle valeur
+Cookie newCookie = new Cookie("new-checkout", "false")
+
+// Ajouter le nouveau cookie au navigateur (cela remplacera l'ancien si il existait)
+driver.manage().addCookie(newCookie)
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Go to checkout page'), [:], FailureHandling.STOP_ON_FAILURE)
 

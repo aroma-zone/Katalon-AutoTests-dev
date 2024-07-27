@@ -6,17 +6,17 @@
    <elementGuidId>c2bfa92b-06e5-4dec-b7e0-d36d0a3de044</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@class, 'payment-method__name')][contains(text(), '••••')]//ancestor::li//button//span[contains(text(), '€')]</value>
+         <value>//button[@class=&quot;adyen-checkout__button adyen-checkout__button--pay&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
