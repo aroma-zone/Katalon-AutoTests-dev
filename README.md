@@ -9,7 +9,7 @@ get the https url, we'll need it later:
 ![2024-07-16 17_30_40-aroma-zone_Katalon-AutoTests-dev_ projet katalon réserver aux devs](https://github.com/user-attachments/assets/388d5cff-7cda-47a7-92a9-3deb3c132061)
 
 - If you haven't already done so, you will need to create a Katlon account:
-https://login.katalon.com/realms/katalon/login-actions/registration?client_id=katalon-admin&tab_id=Wx_vISTdzQs
+[https://login.katalon.com/realms/katalon/login-actions/registration?client_id=katalon-admin&tab_id=Wx_vISTdzQs](https://login.katalon.com/realms/katalon/login-actions/registration?client_id=katalon-marketing&tab_id=NB1G8SMreaY)
 
 ## Configuration steps
 
