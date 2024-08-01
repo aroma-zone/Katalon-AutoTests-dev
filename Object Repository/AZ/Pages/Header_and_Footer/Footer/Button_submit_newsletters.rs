@@ -6,12 +6,11 @@
    <elementGuidId>68c16cd3-414b-4608-acdb-eae15a3c9252</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@class=&quot;needsclick go1515943218 kl-private-reset-css-Xuajs1&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class=&quot;needsclick go3894874857 kl-private-reset-css-Xuajs1&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

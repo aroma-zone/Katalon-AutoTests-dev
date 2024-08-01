@@ -4,5 +4,6 @@
    <name>PLP_Tracking_filters</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d8522e73-c5b0-4f00-8d86-e68d91639f20</testCaseGuid>
 </TestCaseEntity>

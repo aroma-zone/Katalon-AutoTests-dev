@@ -16,6 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -27,15 +30,28 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Parameters/Button_
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Parameters/Italian_Choice'))
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Parameters/Button_validate'))
+// Localisez le bouton
+TestObject button = new TestObject().addProperty("css", ConditionType.EQUALS, "button.sf-button--full-width.color-secondary.confirm-button.sf-button")
+
+// Exécutez le script JavaScript pour empêcher la redirection
+WebUI.executeJavaScript('''
+  document.querySelector("button.sf-button--full-width.color-secondary.confirm-button.sf-button").addEventListener("click", function(event) {
+    event.preventDefault();
+  });
+''', null)
+
+// Cliquez sur le bouton
+WebUI.click(button)
+
+//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Parameters/Button_validate'))
 
 WebUI.delay(1)
 
-WebUI.back()
+//WebUI.back()
 
-WebUI.waitForPageLoad(0)
+//WebUI.waitForPageLoad(0)
 
-WebUI.delay(3)
+//WebUI.delay(3)
 
 String script = '\n    return window.dataLayer.find(event => \n        event.event === \'generic_event\' && \n        event.event_name === \'change_language\'\n    );\n'
 

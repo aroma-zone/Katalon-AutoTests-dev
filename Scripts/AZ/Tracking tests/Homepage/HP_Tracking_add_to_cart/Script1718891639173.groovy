@@ -86,7 +86,7 @@ assert event3.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "
 
 println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
 
-WebUI.navigateToUrl('https://aroma-zone:avant-premiere@stage.aroma-host.net/info/fiche-technique/eau-micellaire-concombre-frais-bio-acide-hyaluronique')
+WebUI.navigateToUrl('https://aroma-zone:avant-premiere@stage.aroma-host.net/info/fiche-technique/creme-mains-acide-hyaluronique-pain-d-epices')
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/PDP/LinkTitleProductPresentation'), 0)
 

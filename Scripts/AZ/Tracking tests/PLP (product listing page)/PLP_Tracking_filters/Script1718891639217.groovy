@@ -45,7 +45,8 @@ WebUI.delay(4)
 // Exécuter du JavaScript pour récupérer la couche de données
 String script = """
     return window.dataLayer.find(event => 
-        event.event === 'filter'
+        event.event === 'generic_event' &&
+		event.event_label === 'filter'
     );
 """
 

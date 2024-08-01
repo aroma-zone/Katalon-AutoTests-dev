@@ -4,5 +4,6 @@
    <name>HP_Tracking_add_to_cart</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>bdec43d8-3298-4f2b-894e-3dfb8567ce53</testCaseGuid>
 </TestCaseEntity>
