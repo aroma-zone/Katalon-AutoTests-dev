@@ -30,4 +30,4 @@ https://login.katalon.com/realms/katalon/login-actions/registration?execution=4f
 Congratulations, the project is ready and you can now go through the various tests and launch them.
 
 ### Please note: the checkout tests require a paid version, so I'll have to rewrite them with basic functionality before they can be run for you. 
-### Comments: Synchronisation between the mother directory and this one is done once a day at midnight, it can be started manually, ask me.
+### Comments: Synchronisation between the main directory and this one is done once a day at midnight, it can be started manually, ask me.
