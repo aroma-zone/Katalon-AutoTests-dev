@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Notebook-icon</name>
+   <name>IconMyFavourites</name>
    <tag></tag>
-   <elementGuidId>260c0059-90d1-4c93-8f57-22f4c35c981e</elementGuidId>
+   <elementGuidId>24b76c18-becd-4089-9fc0-a1bbbd697112</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//header//button[@type='button'])[4]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;icon-container&quot;])[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

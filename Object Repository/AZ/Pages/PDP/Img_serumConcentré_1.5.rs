@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Filters_Wrappers_1</name>
+   <name>Img_serumConcentré_1.5</name>
    <tag></tag>
-   <elementGuidId>f1409e97-7a83-41e8-9b43-5d60d8da69e0</elementGuidId>
+   <elementGuidId>05afdc67-8220-4c47-8642-fde86131ab8c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//details[@class=&quot;accordion-item&quot;])[2]</value>
+         <value>//img[@src=&quot;https://res.cloudinary.com/stg-aroma-zone/d_default_placeholder.png/c_fill,q_auto,f_auto,w_626,h_723/b_none/v1/ctcdn/e5f608cf-85e6-4db5-8d00-81b1960857bb/Banner_Serum-Collage-Xphdf4po.jpg&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class=&quot;needsclick go1515943218 kl-private-reset-css-Xuajs1&quot;]</value>
+         <value>//button[@class=&quot;needsclick go300628013 kl-private-reset-css-Xuajs1&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

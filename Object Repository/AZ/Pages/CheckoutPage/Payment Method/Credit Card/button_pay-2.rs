@@ -6,14 +6,14 @@
    <elementGuidId>b0ffb2b6-bb5e-4946-bd9c-0bf9b4beea94</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(//span[@class='adyen-checkout__button__content'])</value>
+         <value>(//button[@class=&quot;adyen-checkout__button adyen-checkout__button--pay&quot;])[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-      </entry>
-      <entry>
-         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

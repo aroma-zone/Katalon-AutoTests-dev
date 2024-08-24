@@ -77,6 +77,8 @@ WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Footer/input_email_news
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/Button_submit_newsletters'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Merci pour votre inscription !', false)
 
 WebUI.verifyTextPresent('Vous recevrez prochainement un email de confirmation de la création de votre compte. ', false)

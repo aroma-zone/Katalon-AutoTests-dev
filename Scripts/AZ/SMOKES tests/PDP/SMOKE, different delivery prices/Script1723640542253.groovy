@@ -19,16 +19,27 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'using different user account for address update to reduce impact in case of test break'
-user = GlobalVariable.user2
+user = GlobalVariable.user1
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+WebUI.navigateToUrl('https://stage.aroma-host.net/info/fiche-technique/serum-concentre-collagene-vegan-1-5')
 
-WebUI.click(findTestObject('AZ/Pages/MyAccountPage/a_myLoyaltyprogram'))
+WebUI.delay(1)
 
-WebUI.verifyTextPresent('Fidélité & codes avantages', false)
+WebUI.verifyTextPresent('Plus que 35,00 € pour bénéficier de la livraison gratuite !', false)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/MyAccountPage/MyProfile/button_top_of_page'), 0)
+WebUI.click(findTestObject('AZ/Pages/PDP/ButtonIncrease'))
+
+WebUI.click(findTestObject('AZ/Pages/PDP/ButtonIncrease'))
+
+WebUI.click(findTestObject('AZ/Pages/PDP/ButtonAddToCart'))
+
+WebUI.verifyTextPresent('Plus que 5,15 € pour bénéficier de la livraison gratuite !', false)
+
+WebUI.click(findTestObject('AZ/Pages/PDP/ButtonIncrease'))
+
+WebUI.click(findTestObject('AZ/Pages/PDP/ButtonAddToCart'))
+
+WebUI.verifyTextPresent('Vous avez atteint la livraison gratuite !', false)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

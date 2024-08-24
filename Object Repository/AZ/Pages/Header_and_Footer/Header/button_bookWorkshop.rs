@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='sf-header__button sf-button']</value>
+         <value>//button[@class='header__button sf-button']</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Notebook-icon</name>
+   <name>ButtonProductCard_add4</name>
    <tag></tag>
-   <elementGuidId>260c0059-90d1-4c93-8f57-22f4c35c981e</elementGuidId>
+   <elementGuidId>1fc6356b-b7c9-4eb2-9827-780058f07c2d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//header//button[@type='button'])[4]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;sf-product-card__add-button color-secondary sf-button&quot;])[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

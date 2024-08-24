@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='sf-header__tooltip__title']</value>
+         <value>//div[@class='header__tooltip__title']</value>
       </entry>
       <entry>
          <key>BASIC</key>

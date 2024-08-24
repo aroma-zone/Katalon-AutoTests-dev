@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Notebook-icon</name>
+   <name>ButtonRating_product</name>
    <tag></tag>
-   <elementGuidId>260c0059-90d1-4c93-8f57-22f4c35c981e</elementGuidId>
+   <elementGuidId>cb4d19bf-1c68-4c94-957a-f9885177f9fc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//header//button[@type='button'])[4]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@itemprop=&quot;aggregateRating&quot;]&#xd;
+ </value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Notebook-icon</name>
+   <name>ButtonIncrease</name>
    <tag></tag>
-   <elementGuidId>260c0059-90d1-4c93-8f57-22f4c35c981e</elementGuidId>
+   <elementGuidId>f146f220-d975-4413-8454-77108a97cb3a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//header//button[@type='button'])[4]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@data-testid=&quot;increase&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

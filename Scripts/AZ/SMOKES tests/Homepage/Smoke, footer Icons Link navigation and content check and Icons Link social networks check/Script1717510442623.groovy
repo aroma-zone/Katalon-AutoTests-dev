@@ -20,17 +20,17 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/button_backToTop'), 0)
+WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/ButtonItemReviewed_1'), 0)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/reinsurance__item/a_faq'))
 
 WebUI.delay(2)
 
-WebUI.refresh(FailureHandling.STOP_ON_FAILURE)
-
 WebUI.delay(2)
 
 WebUI.switchToFrame(findTestObject('AZ/Pages/Header_and_Footer/Footer/SwitchToIframe'), 0)
+
+WebUI.delay(1)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Footer/reinsurance__item/FAQ_verifyText_1'), 0)
 

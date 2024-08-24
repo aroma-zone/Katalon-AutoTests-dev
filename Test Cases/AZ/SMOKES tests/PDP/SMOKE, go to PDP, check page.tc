@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CP_Tracking_add_to_cart</name>
+   <name>SMOKE, go to PDP, check page</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>aade9b3e-5ad4-4bdf-900a-c0b594cd2b97</testCaseGuid>
+   <testCaseGuid>30743765-2a02-4c25-b6b0-2dc515a05289</testCaseGuid>
 </TestCaseEntity>

@@ -12,19 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>9718a05a-b98c-470f-ab75-5b3dddf76f39</testSuiteGuid>
    <testCaseLink>
-      <guid>11c7d8a6-7fad-4bd0-8feb-289b76701799</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/E2E tests/HomePage/Smoke, Check that click on every left column button of the hero slider changes main image of the slider</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>373342c1-9bff-4f40-91ab-e8a83fecba29</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>879206cf-62a6-42bb-b359-ff4ec57e64d1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -32,31 +19,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>35815554-1856-458a-9d68-f34ff9a9b9f9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/E2E tests/HomePage/Smoke, footer Icons Link navigation and content check and Icons Link social networks check</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>472b7fee-c94e-42a1-ba1b-c5d977b921f0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/E2E tests/HomePage/Smoke, header our latest news, check link and content page</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>d24a1e16-90f0-4aa3-9d5f-d7de7cf84f1f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/AZ/E2E tests/HomePage/E2E, Search Bar do a research and click</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f0bce4ca-f435-49aa-ad40-ccdd9cf732f8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/E2E tests/HomePage/Smoke, Verify Correct URL on AZ logo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

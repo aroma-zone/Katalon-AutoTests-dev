@@ -73,6 +73,8 @@ WebUI.delay(1)
 
 WebUI.verifyTextPresent('Ce carnet est vide, Vous n’avez pas encore ajouté de recettes', false)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/ButtonModifyNotebook'))
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/ButtonDeleteNotebook'))
