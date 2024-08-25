@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='group-event-list-15331772']</value>
+         <value>//li[@id='group-event-list-17299758']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
