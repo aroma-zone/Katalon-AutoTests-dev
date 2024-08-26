@@ -34,7 +34,7 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_ProductDiffusion
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/PLP (product listing page)/ButtonProductCard_add1'))
+WebUI.click(findTestObject('AZ/TrackingsPages/PLP (product listing page)/ButtonProductCard_add5'))
 
 WebUI.delay(2)
 

@@ -48,7 +48,7 @@ println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add2'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add3'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonUpsellModule_Add'))
 
