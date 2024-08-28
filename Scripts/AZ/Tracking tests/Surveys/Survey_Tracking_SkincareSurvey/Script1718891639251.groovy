@@ -99,6 +99,8 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonSpotsCau
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonNext8'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonPreferenceTexture_cream'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonSmell_no'))

@@ -27,10 +27,6 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_hairSurvey'))
 
 WebUI.delay(1)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'), 0)
-
-WebUI.delay(1)
-
 WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/HairRoutine/SwitchToIframe'), 0)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonStart'))

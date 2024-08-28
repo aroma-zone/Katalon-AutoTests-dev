@@ -48,6 +48,35 @@ WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.cho
 
 WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.DELETE))
 
+WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'trilex-test@gmail.com')
+
+WebUI.click(findTestObject('AZ/Components/Login modal/button_login'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(3)
+
+WebUI.refresh()
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
+
+WebUI.verifyTextPresent('Nouveau client ?', false)
+
+WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\'ensemble de nos services.', false)
+
+WebUI.click(findTestObject('AZ/Components/Login modal/button_resetPassword'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent('Entrez votre adresse e-mail ci-dessous et vous recevrez un e-mail avec un lien pour réinitialiser votre mot de passe.', 
+    false)
+
+WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandre.bluteau1@gmail.com')
+
+WebUI.delay(3)
+
+WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.LEFT_CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.DELETE))
+
 WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandre.bluteau@aroma-zone.com')
 
 WebUI.click(findTestObject('AZ/Components/Login modal/button_login'), FailureHandling.STOP_ON_FAILURE)
