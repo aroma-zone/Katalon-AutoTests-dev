@@ -59,11 +59,11 @@ WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/FirstNotebook'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/ButtonWishlistRecipe_1'))
+WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/ButtonWishlistRecipe_3'))
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/ButtonWishlistRecipe_2'))
 
-WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/ButtonWishlistRecipe_3'))
+WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/ButtonWishlistRecipe_1'))
 
 WebUI.delay(1)
 
