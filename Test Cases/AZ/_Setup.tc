@@ -4,5 +4,6 @@
    <name>_Setup</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5d0c7c5e-aa62-4eac-b0fb-cc4ade124d40</testCaseGuid>
 </TestCaseEntity>

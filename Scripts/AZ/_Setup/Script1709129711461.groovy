@@ -21,9 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.HomePage)
 
+WebUI.delay(2)
+
 'Close Cookies popup'
-if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Cookies popup/button_accept'), 5, FailureHandling.OPTIONAL)) {
-    WebUI.click(findTestObject('AZ/Components/Cookies popup/button_accept'), FailureHandling.STOP_ON_FAILURE)
+if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), 5, FailureHandling.OPTIONAL)) {
+    WebUI.click(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), FailureHandling.STOP_ON_FAILURE)
 }
 
 'Scroll to bottom so Newsletter popup is shown'

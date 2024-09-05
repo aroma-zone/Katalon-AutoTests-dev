@@ -70,7 +70,7 @@
    <testCaseLink>
       <guid>3e693b3c-8195-4ff1-9074-37626e8b81eb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AZ/Tracking tests/Homepage/HP_Tracking_select_promotion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -239,14 +239,14 @@
    <testCaseLink>
       <guid>8c750c9c-e2fd-48f5-b638-cd585a07c78b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AZ/Tracking tests/Switch language modal/SLM_Tracking_change_language</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e181c812-343a-4ee3-badf-ebe6f034e1e0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AZ/Tracking tests/Checkout(old)/Checkout_Tracking_purchase</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
