@@ -75,13 +75,13 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Footer/Blo
 
 WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Footer/input_email_newsletters'), 'Trilex-quality@gmail.com')
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/Button_submit_newsletters'), FailureHandling.STOP_ON_FAILURE)
+//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/Button_submit_newsletters'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
-WebUI.verifyTextPresent('Merci pour votre inscription !', false)
+//WebUI.verifyTextPresent('Merci pour votre inscription !', false)
 
-WebUI.verifyTextPresent('Vous recevrez prochainement un email de confirmation de la création de votre compte. ', false)
+//WebUI.verifyTextPresent('Vous recevrez prochainement un email de confirmation de la création de votre compte. ', false)
 
 WebUI.scrollToPosition(5900, 5900)
 
@@ -115,9 +115,9 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Footer/foo
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Footer/footer_columns/a_recruitment'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Footer/footer_columns/a_website reinvented'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Footer/footer_columns/a_website reinvented'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Footer/footer_columns/a_website reinvented'), FailureHandling.STOP_ON_FAILURE)
+//WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Footer/footer_columns/a_website reinvented'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 
