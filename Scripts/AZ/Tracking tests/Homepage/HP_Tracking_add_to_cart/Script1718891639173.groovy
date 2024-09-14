@@ -30,7 +30,7 @@ WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), FailureHan
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add2'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add3'))
 
 WebUI.delay(2)
 
@@ -50,7 +50,7 @@ WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Butto
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add3'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add2'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonUpsellModule_Add'))
 
