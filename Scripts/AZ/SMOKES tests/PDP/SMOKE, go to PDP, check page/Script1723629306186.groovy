@@ -35,7 +35,9 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonRating_product'), 
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/RatingReviews_bloc'), 0)
 
-WebUI.verifyTextPresent('Plus que 35,00 € pour bénéficier de la livraison gratuite !', false)
+WebUI.scrollToPosition(100, 100)
+
+WebUI.verifyTextPresent('Plus que 35,00 € pour la livraison gratuite !', false)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/IconeShare'), 0)
 

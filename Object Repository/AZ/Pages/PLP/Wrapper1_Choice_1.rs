@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//label[@class=&quot;sf-checkbox__container&quot;])[1]</value>
+         <value>(//label[@class=&quot;sf-checkbox__container&quot;])[34]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

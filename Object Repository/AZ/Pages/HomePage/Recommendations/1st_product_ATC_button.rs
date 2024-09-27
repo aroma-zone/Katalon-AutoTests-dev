@@ -7,17 +7,16 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class, 'recommendation')]//button[contains(@class, 'add-button')])[1]</value>
+         <value>(//div[contains(@class, 'recommendation')]//button[contains(@class, 'add-button')])[18]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
