@@ -26,7 +26,7 @@ WebUI.delay(1)
 WebUI.scrollToPosition(0, 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_1'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_2'))
 
 WebUI.delay(2)
 
@@ -37,38 +37,22 @@ WebUI.waitForPageLoad(10)
 WebUI.delay(3)
 
 // Supprimer l'attribut href ou onclick du bouton pour empêcher la redirection
-String removeLinkScript = """
-    var button = document.evaluate("(//span[@class='sf-product-card__title'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-    if (button) {
-        button.removeAttribute('href'); // Si c'est un lien
-        
-    }
-"""
+String removeLinkScript = '\n    var button = document.evaluate("(//span[@class=\'sf-product-card__title\'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n    if (button) {\n        button.removeAttribute(\'href\'); // Si c\'est un lien\n        \n    }\n'
+
 //button.removeAttribute('onclick'); // Si l'action est dans onclick
 WebUI.executeJavaScript(removeLinkScript, null)
 
 // Cliquez sur le bouton via JavaScript
-String clickButtonScript = """
-    var button = document.evaluate("(//span[@class='sf-product-card__title'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-    if (button) {
-        button.click();
-    }
-"""
+String clickButtonScript = '\n    var button = document.evaluate("(//span[@class=\'sf-product-card__title\'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n    if (button) {\n        button.click();\n    }\n'
+
 WebUI.executeJavaScript(clickButtonScript, null)
 
 // Ajoutez un délai pour voir l'effet
 WebUI.delay(1)
 
-
 //WebUI.delay(0.5)
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = """
-    return window.dataLayer.find(event => 
-        event.event === 'select_item' && 
-        event.event_name === 'select_item' && 
-        event.event_action === 'click' 
-    );
-"""
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'select_item\' && \n        event.event_name === \'select_item\' && \n        event.event_action === \'click\' \n    );\n'
 
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 
@@ -76,6 +60,7 @@ Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 assert event != null : 'L\'événement de tracking "select_item" avec "select_item" n\'a pas été trouvé dans la couche de données.'
 
 assert event.event_name == 'select_item' : 'L\'événement trouvé n\'est pas "select_item".'
+
 println('L\'événement de tracking \'select_item\' avec \'select_item\' a été trouvé avec succès dans la couche de données.')
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)

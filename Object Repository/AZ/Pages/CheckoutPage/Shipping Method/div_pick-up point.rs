@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>ButtonSecondProductCard</name>
+   <description>data-testid='radio-standard-delivery'</description>
+   <name>div_pick-up point</name>
    <tag></tag>
-   <elementGuidId>baa1797b-9118-4c02-86f0-d5d3fc0e1907</elementGuidId>
+   <elementGuidId>679473b8-ac16-4c7f-9672-05da17c70f1c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@data-testid=&quot;product-card&quot;])[14]</value>
+         <value>(//div[@class=&quot;radio-card shipping-provider-input&quot;])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

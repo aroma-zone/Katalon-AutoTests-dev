@@ -4,5 +4,6 @@
    <name>PDP_Tracking_view_item</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>04299c46-5ee4-4bad-bee2-f3005d22a377</testCaseGuid>
 </TestCaseEntity>

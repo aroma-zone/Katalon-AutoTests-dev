@@ -4,5 +4,6 @@
    <name>PLP_Tracking_select_item</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>629ab01a-9185-4d5a-8e0f-456655ca07d8</testCaseGuid>
 </TestCaseEntity>

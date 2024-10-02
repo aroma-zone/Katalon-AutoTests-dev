@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ButtonSecondProductCard</name>
+   <name>input_phone</name>
    <tag></tag>
-   <elementGuidId>baa1797b-9118-4c02-86f0-d5d3fc0e1907</elementGuidId>
+   <elementGuidId>51b1d284-fcc5-4f79-8718-5dc22c55d3a5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@data-testid=&quot;product-card&quot;])[14]</value>
+         <value>//input[@id=&quot;phone&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

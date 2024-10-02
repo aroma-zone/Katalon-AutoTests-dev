@@ -7,12 +7,13 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.sf-checkbox__checkmark</value>
+         <value>//label[@for='tos']/preceding::input[@type='checkbox'][1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

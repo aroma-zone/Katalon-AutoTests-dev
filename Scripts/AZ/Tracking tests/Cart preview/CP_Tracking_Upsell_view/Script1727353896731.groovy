@@ -19,29 +19,24 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-user = GlobalVariable.user1
+WebUI.delay(1)
 
-WebUI.navigateToUrl('https://stage.aroma-host.net/info/fiche-technique/serum-concentre-collagene-vegan-1-5')
+// Effectuer une action qui doit déclencher un événement de tracking
+WebUI.click(findTestObject('AZ/Components/Header/cart-icon'))
 
 WebUI.delay(1)
 
-WebUI.verifyTextPresent('Sérum concentré Collagène vegan 1,5%', false)
+// Exécuter du JavaScript pour récupérer la couche de données
+String script = '\n    let event = window.dataLayer.find(event => \n        event.event === \'upsell_view\' &&\n        event.event_category === \'upsell\' &&\n        event.event_action === \'view\'\n    );\n    return event;\n'
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/Img_serumConcentré_1.5'), 0)
+Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/UpsellProduct_bloc'), 0)
+// Vérifier que l'événement de tracking est présent dans la couche de données
+assert event != null : 'L\'événement de tracking "upsell_viewt" avec "upsell" n\'a pas été trouvé dans la couche de données.'
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonRating_product'), 0)
+assert event.event_name == 'upsell_view' : 'L\'événement trouvé n\'est pas "upsell_view".'
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/RatingReviews_bloc'), 0)
-
-WebUI.scrollToPosition(100, 100)
-
-WebUI.verifyTextPresent('Plus que 35,00 € pour bénéficier de la livraison gratuite !', false)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/IconeShare'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/IconMyFavourites'), 0)
+println('L\'événement de tracking \'upsell_view\' avec \'upsell\' a été trouvé avec succès dans la couche de données.')
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

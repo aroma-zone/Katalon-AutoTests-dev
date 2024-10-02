@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PDP_Tracking_add_to_cart</name>
+   <name>_Add shipping address FR</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>ebd6a5ce-5d17-474e-adb3-1ec13aa49de1</testCaseGuid>
+   <testCaseGuid>b6db47a3-056a-4950-9e19-f9706243d598</testCaseGuid>
 </TestCaseEntity>

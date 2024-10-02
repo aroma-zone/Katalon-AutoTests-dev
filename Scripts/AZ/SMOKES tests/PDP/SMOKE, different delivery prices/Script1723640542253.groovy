@@ -27,7 +27,7 @@ WebUI.delay(1)
 
 WebUI.scrollToPosition(100, 100)
 
-WebUI.verifyTextPresent('Plus que 35,00 € pour la livraison gratuite !', false)
+WebUI.verifyTextPresent('Plus que 35,00 € pour bénéficier de la livraison gratuite !', false)
 
 WebUI.click(findTestObject('AZ/Pages/PDP/ButtonIncrease'))
 
@@ -41,7 +41,7 @@ WebUI.scrollToPosition(150, 150)
 
 WebUI.delay(1)
 
-WebUI.verifyTextPresent('Plus que 5,15 € pour la livraison gratuite !', false)
+WebUI.verifyTextPresent('Plus que 5,15 € pour bénéficier de la livraison gratuite !', false)
 
 WebUI.click(findTestObject('AZ/Pages/PDP/ButtonIncrease'))
 

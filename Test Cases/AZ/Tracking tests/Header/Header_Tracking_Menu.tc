@@ -4,5 +4,6 @@
    <name>Header_Tracking_Menu</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8626c4cb-8c0f-4f5a-a962-49eca27f3f72</testCaseGuid>
 </TestCaseEntity>

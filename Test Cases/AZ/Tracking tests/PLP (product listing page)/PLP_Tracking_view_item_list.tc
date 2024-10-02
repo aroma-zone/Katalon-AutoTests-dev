@@ -4,5 +4,6 @@
    <name>PLP_Tracking_view_item_list</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>da39a9ec-f5d7-4a6e-9ad1-2f3cf5f53f4e</testCaseGuid>
 </TestCaseEntity>

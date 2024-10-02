@@ -7,12 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[normalize-space()='Standard']</value>
+         <value>(//div[@class=&quot;radio-card shipping-provider-input&quot;])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PDP_Tracking_add_to_cart</name>
+   <name>THP_Tracking_attraqt_purchase</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>ebd6a5ce-5d17-474e-adb3-1ec13aa49de1</testCaseGuid>
+   <testCaseGuid>3784241b-8dc5-48d0-b329-0bb8f28c695b</testCaseGuid>
 </TestCaseEntity>

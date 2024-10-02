@@ -17,31 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_StreetName'), '40 rue Floralia')
 
-user = GlobalVariable.user1
+WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_PostalCode'), '13009')
 
-WebUI.navigateToUrl('https://stage.aroma-host.net/info/fiche-technique/serum-concentre-collagene-vegan-1-5')
+WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_city'), 'Marseille')
 
-WebUI.delay(1)
+WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_phone'), '0680629319')
 
-WebUI.verifyTextPresent('Sérum concentré Collagène vegan 1,5%', false)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/Img_serumConcentré_1.5'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/UpsellProduct_bloc'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonRating_product'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/RatingReviews_bloc'), 0)
-
-WebUI.scrollToPosition(100, 100)
-
-WebUI.verifyTextPresent('Plus que 35,00 € pour bénéficier de la livraison gratuite !', false)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/IconeShare'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/IconMyFavourites'), 0)
-
-WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/button_submit'), FailureHandling.STOP_ON_FAILURE)
 
