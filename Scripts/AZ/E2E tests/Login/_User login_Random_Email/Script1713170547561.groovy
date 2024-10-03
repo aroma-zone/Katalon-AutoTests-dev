@@ -25,7 +25,7 @@ WebUI.comment('Input: user {Map}')
 
 WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
 
-String nomUtilisateur = 'User-Proximity'
+String nomUtilisateur = 'User-AZ-random'
 
 String domaine = 'quality.com'
 

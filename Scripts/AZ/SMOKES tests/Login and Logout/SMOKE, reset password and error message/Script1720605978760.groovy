@@ -25,6 +25,37 @@ WebUI.verifyTextPresent('Nouveau client ?', false)
 
 WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\'ensemble de nos services.', false)
 
+WebUI.click(findTestObject('AZ/Components/Login modal/button_resetPassword'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyTextPresent('Entrez votre adresse e-mail ci-dessous et vous recevrez un e-mail avec un lien pour réinitialiser votre mot de passe.', 
+    false)
+
+WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandre.bluteau1@gmail.com')
+
+WebUI.delay(3)
+
+WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.LEFT_CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.DELETE))
+
+WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandre.bluteau@aroma-zone.com')
+
+WebUI.click(findTestObject('AZ/Components/Login modal/button_login'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
+
+WebUI.verifyTextPresent('Si un compte identifié par : alexandre.bluteau@aroma-zone.com existe, vous recevrez un email contenant un lien pour réinitialiser votre mot de passe.', 
+    false)
+
+WebUI.verifyTextPresent('Si vous ne recevez pas de mail d’ici 15 minutes, nous vous invitons à créer un nouveau compte client.', 
+    false)
+
+WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
+
+WebUI.verifyTextPresent('Nouveau client ?', false)
+
+WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\'ensemble de nos services.', false)
+
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_login'), 0)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_resetPassword'), 0)
@@ -57,37 +88,6 @@ WebUI.delay(3)
 WebUI.refresh()
 
 WebUI.delay(3)
-
-WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
-
-WebUI.verifyTextPresent('Nouveau client ?', false)
-
-WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\'ensemble de nos services.', false)
-
-WebUI.click(findTestObject('AZ/Components/Login modal/button_resetPassword'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyTextPresent('Entrez votre adresse e-mail ci-dessous et vous recevrez un e-mail avec un lien pour réinitialiser votre mot de passe.', 
-    false)
-
-WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandre.bluteau1@gmail.com')
-
-WebUI.delay(3)
-
-WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.LEFT_CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.DELETE))
-
-WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandre.bluteau@aroma-zone.com')
-
-WebUI.click(findTestObject('AZ/Components/Login modal/button_login'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(1)
-
-WebUI.verifyTextPresent('Si un compte identifié par : alexandre.bluteau@aroma-zone.com existe, vous recevrez un email contenant un lien pour réinitialiser votre mot de passe.', 
-    false)
-
-WebUI.verifyTextPresent('Si vous ne recevez pas de mail d’ici 15 minutes, nous vous invitons à créer un nouveau compte client.', 
-    false)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

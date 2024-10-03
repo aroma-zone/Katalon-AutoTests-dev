@@ -27,7 +27,7 @@ String nomUtilisateur = 'User-Random-AZ'
 
 String domaine = 'quality.com'
 
-String partieAleatoire = RandomStringUtils.randomNumeric(4)
+String partieAleatoire = RandomStringUtils.randomNumeric(5)
 
 String email = (((nomUtilisateur + '+') + partieAleatoire) + '@') + domaine
 
