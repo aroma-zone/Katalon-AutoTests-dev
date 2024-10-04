@@ -49,27 +49,49 @@ WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add paypal method paymen
 
 WebUI.delay(9)
 
-WebUI.executeJavaScript("document.querySelector('.close').click();", null)
+WebUI.switchToWindowIndex(0 // S'assurer que tu es sur la bonne fenêtre
+    )
 
-//WebUI.click(findTestObject('AZ/Pages/OrderSuccessPage/button_close_modal'))
+WebUI.waitForPageLoad(10 // Attendre le chargement complet de la page
+    )
+	
+	// Exécuter du JavaScript pour récupérer la couche de données
+	String script = """
+    return window.dataLayer.find(event => 
+        event.event === 'attraqt_purchase' && 
+		event.quantity === 1 &&
+		event.locale === 'fr'
 
-WebUI.refresh()
-
-WebUI.delay(1)
-
-WebUI.verifyTextPresent('Avec Aroma-Zone, vous faites le choix d\'une entreprise française !', false)
-
-// Exécuter du JavaScript pour récupérer la couche de données
-String script = '\n    return window.dataLayer.find(event => \n        event.event === \'attraqt_purchase\' && \n        event.quantity === \'1\' && \n         event.locale === \'fr\'\n    );\n'
-
+    );
+"""
+	
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 
 // Vérifier que l'événement de tracking est présent dans la couche de données
-assert event != null : 'L\'événement de tracking "attraqt_purchase" avec "quantity" n\'a pas été trouvé dans la couche de données.'
+assert event != null : 'L\'événement de tracking "attraqt_purchase" avec "fr" n\'a pas été trouvé dans la couche de données.'
 
 assert event.event == 'attraqt_purchase' : 'L\'événement trouvé n\'est pas "attraqt_purchase".'
 
-println('L\'événement de tracking \'attraqt_purchase\' avec \'quantity\' a été trouvé avec succès dans la couche de données.')
+println('L\'événement de tracking \'attraqt_purchase\' avec \'fr\' a été trouvé avec succès dans la couche de données.')
+	
+	// Basculer vers l'iframe contenant la modal
+	//WebUI.executeJavaScript("window.frames['ExitSurveyFR_VF'].focus();", null)
+	WebUI.switchToFrame(findTestObject('AZ/Pages/OrderSuccessPage/iframe_modal'), 10)
+
+
+WebUI.refresh()
+
+// Cliquer sur le bouton de fermeture de la modal
+WebUI.executeJavaScript('document.querySelector(\'i.close\').click();', null)
+
+//WebUI.click(findTestObject('Object Repository/AZ/Pages/OrderSuccessPage/button_close_modal'))
+// Revenir à la fenêtre principale
+WebUI.switchToDefaultContent()
+
+//WebUI.executeJavaScript("document.querySelector('.close').click();", null)
+WebUI.delay(1)
+
+WebUI.verifyTextPresent('Avec Aroma-Zone, vous faites le choix d\'une entreprise française !', false)
 
 WebUI.verifyTextPresent('Récapitulatif de la commande', false)
 
