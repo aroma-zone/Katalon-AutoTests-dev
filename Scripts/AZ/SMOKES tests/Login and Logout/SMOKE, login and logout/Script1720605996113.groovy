@@ -29,7 +29,7 @@ WebUI.verifyTextPresent('Modifier le mot de passe', false)
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/Button_Logout'))
 
-WebUI.verifyTextPresent('Retrouvez nos sélections du moment !', false)
+WebUI.verifyTextPresent('Retrouvez nos sélections de la semaine !', false)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'), 0)
 

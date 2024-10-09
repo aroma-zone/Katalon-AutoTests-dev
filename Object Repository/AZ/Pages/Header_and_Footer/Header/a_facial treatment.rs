@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ButtonSecondProductCard</name>
+   <name>a_facial treatment</name>
    <tag></tag>
-   <elementGuidId>baa1797b-9118-4c02-86f0-d5d3fc0e1907</elementGuidId>
+   <elementGuidId>30f3e2df-c508-4149-9567-01147d8fcb85</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@data-testid=&quot;product-card&quot;])[2]</value>
+         <value>(//a[@href=&quot;/products/serums-visage&quot;])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

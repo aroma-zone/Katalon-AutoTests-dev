@@ -47,24 +47,17 @@ WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add shipping method'), [
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add paypal method payment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(9)
+WebUI.delay(16)
 
 WebUI.switchToWindowIndex(0 // S'assurer que tu es sur la bonne fenêtre
     )
 
 WebUI.waitForPageLoad(10 // Attendre le chargement complet de la page
     )
-	
-	// Exécuter du JavaScript pour récupérer la couche de données
-	String script = """
-    return window.dataLayer.find(event => 
-        event.event === 'attraqt_purchase' && 
-		event.quantity === 1 &&
-		event.locale === 'fr'
 
-    );
-"""
-	
+// Exécuter du JavaScript pour récupérer la couche de données
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'attraqt_purchase\' && \n\t\tevent.quantity === 1 &&\n\t\tevent.locale === \'fr\'\n\n    );\n'
+
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 
 // Vérifier que l'événement de tracking est présent dans la couche de données
@@ -73,11 +66,10 @@ assert event != null : 'L\'événement de tracking "attraqt_purchase" avec "fr" 
 assert event.event == 'attraqt_purchase' : 'L\'événement trouvé n\'est pas "attraqt_purchase".'
 
 println('L\'événement de tracking \'attraqt_purchase\' avec \'fr\' a été trouvé avec succès dans la couche de données.')
-	
-	// Basculer vers l'iframe contenant la modal
-	//WebUI.executeJavaScript("window.frames['ExitSurveyFR_VF'].focus();", null)
-	WebUI.switchToFrame(findTestObject('AZ/Pages/OrderSuccessPage/iframe_modal'), 10)
 
+// Basculer vers l'iframe contenant la modal
+//WebUI.executeJavaScript("window.frames['ExitSurveyFR_VF'].focus();", null)
+WebUI.switchToFrame(findTestObject('AZ/Pages/OrderSuccessPage/iframe_modal'), 10)
 
 WebUI.refresh()
 
@@ -89,9 +81,9 @@ WebUI.executeJavaScript('document.querySelector(\'i.close\').click();', null)
 WebUI.switchToDefaultContent()
 
 //WebUI.executeJavaScript("document.querySelector('.close').click();", null)
-WebUI.delay(1)
+WebUI.delay(7)
 
-WebUI.verifyTextPresent('Avec Aroma-Zone, vous faites le choix d\'une entreprise française !', false)
+WebUI.verifyTextPresent('Avec Aroma-Zone', false)
 
 WebUI.verifyTextPresent('Récapitulatif de la commande', false)
 

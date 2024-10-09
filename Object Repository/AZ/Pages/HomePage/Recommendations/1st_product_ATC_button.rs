@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class, 'recommendation')]//button[contains(@class, 'add-button')])[24]</value>
+         <value>(//div[contains(@class, 'recommendation')]//button[contains(@class, 'add-button')])[27]</value>
       </entry>
       <entry>
          <key>BASIC</key>

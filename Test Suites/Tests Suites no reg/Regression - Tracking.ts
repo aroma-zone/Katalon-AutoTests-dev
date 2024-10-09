@@ -26,6 +26,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>800f1e0d-688a-4c4f-b485-e62e6edf172f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/Tracking tests/Cart preview/CP_Tracking_Upsell_view</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>447ea20d-6664-4166-a810-99ae1a611119</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -248,6 +255,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/AZ/Tracking tests/Checkout(old)/Checkout_Tracking_purchase</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2e71513b-02d3-4b7a-9ef5-34377711c084</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/Tracking tests/Thank-you page/THP_Tracking_attraqt_purchase</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

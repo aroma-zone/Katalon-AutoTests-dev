@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//*[self::span or self::ins][contains(@class, 'price') and not(contains(@class, 'display-none'))])[116]</value>
+         <value>(//*[self::span or self::ins][contains(@class, 'price') and not(contains(@class, 'display-none'))])[131]</value>
       </entry>
       <entry>
          <key>BASIC</key>
