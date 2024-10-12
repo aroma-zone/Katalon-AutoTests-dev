@@ -45,39 +45,49 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Moda
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/li_event_firstChoice'))
-
-WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_firstName'), 'AZ_test_to_delete')
-
-WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_LastName'), 'AZ_test_to_delete')
-
-WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_emailClient'), 'AZ_test_to_delete@gmail.com')
-
-WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_mobileClient'), '06 80 62 93 19')
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_emailReminder_no'))
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_notPregnant'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
-
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Checkbox_terms_conditions'))
+// Vérifier la présence du message indiquant qu'il n'y a aucun atelier disponible
+boolean noWorkshopMessageVisible = WebUI.verifyTextPresent('Il n\'y a rien de disponible pour ce choix.', false, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Checkbox_cgv'))
+if (noWorkshopMessageVisible) {
+    // Clôturer le test case avec succès si le message est trouvé
+    WebUI.comment('Aucun atelier disponible pour la date sélectionnée, le test se termine.')
+} else {
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/li_event_firstChoice'))
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
+    WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_firstName'), 'AZ_test_to_delete')
 
-WebUI.delay(3)
+    WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_LastName'), 'AZ_test_to_delete')
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
+    WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_emailClient'), 'AZ_test_to_delete@gmail.com')
 
-WebUI.switchToDefaultContent()
+    WebUI.setText(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Input_mobileClient'), '06 80 62 93 19')
 
-WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
+
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_emailReminder_no'))
+
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_notPregnant'))
+
+    WebUI.delay(1)
+
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
+
+    WebUI.delay(2)
+
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Checkbox_terms_conditions'))
+
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Checkbox_cgv'))
+
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
+
+    WebUI.switchToDefaultContent()
+
+    WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 

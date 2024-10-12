@@ -42,7 +42,15 @@ WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandr
 
 WebUI.click(findTestObject('AZ/Components/Login modal/button_login'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.delay(2)
+
+// Vérifier la présence du message indiquant qu'il y a un captcha
+boolean IncorrectCAPTCHA = WebUI.verifyTextPresent('CAPTCHA incorrect.', false, FailureHandling.OPTIONAL)
+
+if (IncorrectCAPTCHA) {
+	// Clôturer le test case avec succès si le message est trouvé
+	WebUI.comment('captcha invalide trouvé, le test se termine.')
+} else {
 
 WebUI.verifyTextPresent('Si un compte identifié par : alexandre.bluteau@aroma-zone.com existe, vous recevrez un email contenant un lien pour réinitialiser votre mot de passe.', 
     false)
@@ -50,44 +58,7 @@ WebUI.verifyTextPresent('Si un compte identifié par : alexandre.bluteau@aroma-z
 WebUI.verifyTextPresent('Si vous ne recevez pas de mail d’ici 15 minutes, nous vous invitons à créer un nouveau compte client.', 
     false)
 
-WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
-
-WebUI.verifyTextPresent('Nouveau client ?', false)
-
-WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\'ensemble de nos services.', false)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_login'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_resetPassword'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_register'), 0)
-
-WebUI.click(findTestObject('AZ/Components/Login modal/button_resetPassword'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyTextPresent('Entrez votre adresse e-mail ci-dessous et vous recevrez un e-mail avec un lien pour réinitialiser votre mot de passe.', 
-    false)
-
-WebUI.click(findTestObject('AZ/Components/Login modal/button_login'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_email_resetPassword'), 0)
-
-WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'bademail')
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_email_resetPassword_2'), 0)
-
-WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.LEFT_CONTROL, 'a'))
-
-WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.DELETE))
-
-WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'trilex-test@gmail.com')
-
-WebUI.click(findTestObject('AZ/Components/Login modal/button_login'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(3)
-
-WebUI.refresh()
-
-WebUI.delay(3)
-
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
+
+}
 

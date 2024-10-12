@@ -4,19 +4,23 @@
    <name>1st_product_price</name>
    <tag></tag>
    <elementGuidId>999dbea2-7dec-4887-a96f-b6367077c6d2</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//*[self::span or self::ins][contains(@class, 'price') and not(contains(@class, 'display-none'))])[131]</value>
+         <value>(//span[contains(@class, 'price-display__full-price') and not(contains(@class, 'display-none'))])[55]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>IMAGE</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

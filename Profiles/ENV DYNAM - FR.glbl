@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://aroma-zone:62efff1c5785f749@feature-fraz-8442.francecentral.azurecontainer.io/'</initValue>
+      <initValue>'http://aroma-zone:62efff1c5785f749@feat-nitro.francecentral.azurecontainer.io/'</initValue>
       <name>HomePage</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://aroma-zone:62efff1c5785f749@feature-fraz-8442.francecentral.azurecontainer.io/'</initValue>
+      <initValue>'http://aroma-zone:62efff1c5785f749@feat-nitro.francecentral.azurecontainer.io/'</initValue>
       <name>PLP</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

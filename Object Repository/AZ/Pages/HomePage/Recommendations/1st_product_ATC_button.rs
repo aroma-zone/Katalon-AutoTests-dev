@@ -6,14 +6,14 @@
    <elementGuidId>557608fe-05ee-482e-83a6-a84d283cf64f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class, 'recommendation')]//button[contains(@class, 'add-button')])[27]</value>
+         <value>(//div[contains(@class, 'recommendation')]//button[contains(@class, 'add-button')])[28]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
