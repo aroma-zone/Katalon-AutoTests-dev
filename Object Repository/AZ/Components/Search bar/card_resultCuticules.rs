@@ -6,11 +6,15 @@
    <elementGuidId>3fd8148e-307d-4b79-96ff-1296fa9d978d</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>//*[@id=&quot;products&quot;]/div/div</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;products&quot;]/div/div</value>
+         <value>//a[@href=&quot;/info/fiche-technique/serum-concentre-dacide-hyaluronique-aroma-zone&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

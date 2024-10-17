@@ -19,12 +19,23 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 import java.util.Date as Date
+import java.text.SimpleDateFormat
+import java.util.Date
+import com.kms.katalon.core.util.KeywordUtil
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
+// Créer un objet Date pour obtenir la date actuelle
 now = new Date()
 
-email = email.replace('{datetime}', now.format('yyyyMMdd.HHmmss'))
+// Créer un objet SimpleDateFormat avec le format souhaité
+SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd.HHmmss")
+
+// Utiliser la méthode format de SimpleDateFormat pour formater la date
+String formattedDate = sdf.format(now)
+
+// Remplacer {datetime} par la date formatée
+email = email.replace('{datetime}', formattedDate)
 
 KeywordUtil.logInfo(email)
 

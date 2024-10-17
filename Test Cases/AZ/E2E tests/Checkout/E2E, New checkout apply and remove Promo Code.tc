@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, New checkout apply and remove Promo Code</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d846c6c8-5a2e-4bcb-a3ed-f5079432e13e</testCaseGuid>
+</TestCaseEntity>

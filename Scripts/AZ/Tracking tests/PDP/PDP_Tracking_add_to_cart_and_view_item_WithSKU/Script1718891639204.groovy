@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('AZ/Components/Search bar/input_search titem'), 'sérum Acide Hyaluronique')
+WebUI.setText(findTestObject('AZ/Components/Search bar/input_search titem'), 'Sérum concentré d\'Acide hyaluronique 3,5%')
 
 WebUI.delay(2)
 
@@ -35,7 +35,7 @@ WebUI.delay(2)
 
 WebUI.scrollToPosition(5, 5)
 
-WebUI.verifyTextPresent('Vous avez cherché : "sérum Acide Hyaluronique "', false)
+WebUI.verifyTextPresent('Vous avez cherché : "Sérum concentré d\'Acide hyaluronique 3,5% "', false)
 
 WebUI.refresh()
 
@@ -46,7 +46,7 @@ WebUI.click(findTestObject('AZ/Components/Search bar/card_resultCuticules'))
 WebUI.delay(2)
 
 // Vérifiez l'événement dans la couche de données
-String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'view_item\' && \n        event.event_name === \'view_item\' && \n        event.event_category === \'ecommerce\' && \n        event.event_action === \'open\' && \n        event.ecommerce.items[0].item_sku === \'04685\'\n    );\n'
+String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'view_item\' && \n        event.event_name === \'view_item\' && \n        event.event_category === \'ecommerce\' && \n        event.event_action === \'open\' && \n        event.ecommerce.items[0].item_sku === \'04028\'\n    );\n'
 
 Map event4 = ((WebUI.executeJavaScript(script4, null)) as Map)
 
@@ -62,7 +62,7 @@ WebUI.click(findTestObject('AZ/Pages/PDP/ButtonAddToCart'))
 WebUI.delay(2)
 
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = '\n    return window.dataLayer.find(event => \n        event.event === \'add_to_cart\' && \n        event.event_name === \'add_to_cart\' && \n        event.ecommerce.items[0].item_sku === \'04685\' && \n        event.event_action === \'add\'\n    );\n'
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'add_to_cart\' && \n        event.event_name === \'add_to_cart\' && \n        event.ecommerce.items[0].item_sku === \'04028\' && \n        event.event_action === \'add\'\n    );\n'
 
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 

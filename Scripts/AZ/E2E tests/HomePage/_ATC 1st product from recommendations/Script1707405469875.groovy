@@ -17,7 +17,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 // Precondition: Opened Browser
 //WebUI.openBrowser('')
@@ -28,7 +28,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 //WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
 cartBadgeInitialNumber = WebUI.callTestCase(findTestCase('AZ/E2E tests/Cart/_Get cart icon badge number'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToPosition(300, 300)
+WebUI.scrollToPosition(410, 400)
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'))
 
