@@ -89,7 +89,7 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext6'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/Checkbox_validate'))
 
-WebUI.delay(1)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext7'))
 

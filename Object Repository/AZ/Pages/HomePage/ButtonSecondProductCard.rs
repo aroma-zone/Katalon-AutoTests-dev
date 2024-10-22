@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@data-testid=&quot;product-card&quot;])[2]</value>
+         <value>(//div[@data-testid=&quot;product-card&quot;])[9]</value>
       </entry>
       <entry>
          <key>BASIC</key>
