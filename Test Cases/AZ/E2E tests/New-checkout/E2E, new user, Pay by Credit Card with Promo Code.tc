@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, new user, Pay by Credit Card with Promo Code</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>45931242-64bc-4c11-8d98-05b126fede69</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f5412446-3360-4b00-9810-323f0153bbf9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[('has3DS') : false, ('cardNumber') : '4111111145551142', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : '']</defaultValue>
+      <description></description>
+      <id>f5412446-3360-4b00-9810-323f0153bbf9</id>
+      <masked>false</masked>
+      <name>card</name>
+   </variable>
+</TestCaseEntity>

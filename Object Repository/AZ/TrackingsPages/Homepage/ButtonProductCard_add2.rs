@@ -6,11 +6,11 @@
    <elementGuidId>ee218246-e91c-43f6-bf63-ef5a3949ecbd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class=&quot;sf-product-card__add-button color-secondary sf-button&quot;])[9]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;sf-product-card__add-button color-secondary sf-button&quot;])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

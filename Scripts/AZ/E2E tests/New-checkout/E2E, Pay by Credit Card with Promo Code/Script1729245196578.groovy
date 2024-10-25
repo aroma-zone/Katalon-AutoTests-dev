@@ -11,47 +11,37 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.RequestObject as RequestObject
-import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
+import org.openqa.selenium.Cookie as Cookie
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+user = GlobalVariable.user1
 
-WebUI.scrollToPosition(0, 0)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add product to cart'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
-
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_Favoris'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/Components/Cart overlay/button_Checkout'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonfourthProductCard'), FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Apply promo code'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add shipping address FR'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('AZ/Pages/PDP/ButtonAddToCart'))
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add shipping method'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Enter credit card details'), [('card') : [('has3DS') : false, ('cardNumber') : '2222400070000005', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : '']], 
+    FailureHandling.STOP_ON_FAILURE)
 
-// Exécuter du JavaScript pour récupérer la couche de données
-String script = '\n    return window.dataLayer.find(event => \n        event.event === \'add_to_cart\' && \n        event.event_name === \'add_to_cart\' && \n        event.event_action === \'add\' \n    );\n'
-
-Map event = ((WebUI.executeJavaScript(script, null)) as Map)
-
-// Vérifier que l'événement de tracking est présent dans la couche de données
-assert event != null : 'L\'événement de tracking "add_to_cart" avec "add_to_cart" n\'a pas été trouvé dans la couche de données.'
-
-assert event.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "add_to_cart".'
-
-println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
+WebUI.delay(16)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

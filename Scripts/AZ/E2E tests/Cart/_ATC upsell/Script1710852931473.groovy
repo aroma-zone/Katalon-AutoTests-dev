@@ -23,6 +23,8 @@ WebUI.comment('Precondition : Page with cart icon (header)')
 
 WebUI.comment('Input: index (optional, otherwise 1st upsell is added)')
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
 
 WebUI.delay(1)

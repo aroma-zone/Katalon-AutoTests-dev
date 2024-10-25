@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ButtonProductCard_add1</name>
+   <name>Input_PromoCode</name>
    <tag></tag>
-   <elementGuidId>ccf61d74-15a5-408f-bd62-4fa155c918cd</elementGuidId>
+   <elementGuidId>3d009d07-f878-4a4d-8248-946d896b741f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;coupon&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class=&quot;sf-product-card__add-button color-secondary sf-button&quot;])[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

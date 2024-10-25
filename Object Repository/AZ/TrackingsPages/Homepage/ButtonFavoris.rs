@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ButtonProductCard_add1</name>
+   <name>ButtonFavoris</name>
    <tag></tag>
-   <elementGuidId>ccf61d74-15a5-408f-bd62-4fa155c918cd</elementGuidId>
+   <elementGuidId>feacfeb3-bc20-4da0-9162-bf2f414dbfd5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class=&quot;sf-product-card__add-button color-secondary sf-button&quot;])[1]</value>
+         <value>//button[normalize-space(text())='Favoris']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

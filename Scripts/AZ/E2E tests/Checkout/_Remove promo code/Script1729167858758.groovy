@@ -17,32 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.comment('Precondition: HomePage')
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/CheckoutPage/Button_removePromoCode'), 0)
 
-WebUI.comment('Input: user {Map}')
+WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Button_removePromoCode'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_login'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_resetPassword'), 0)
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_register'), 0)
-
-WebUI.setText(findTestObject('Object Repository/AZ/Components/Login modal/input_email'), user.email)
-
-WebUI.setText(findTestObject('Object Repository/AZ/Components/Login modal/input_password'), user.password)
-
-WebUI.click(findTestObject('AZ/Components/Login modal/button_login'))
-
-WebUI.waitForElementPresent(findTestObject('AZ/Pages/MyAccountPage/div_myAccount'), 5)
-
-'On mobile, user email is not displayed at this point (but it\'s already present on HTML).'
-userEmail = WebUI.getAttribute(findTestObject('AZ/Pages/MyAccountPage/MyProfile/input_email_(disabled)'), 'value')
-
-WebUI.verifyMatch(userEmail, user.email, false)
+WebUI.verifyTextNotPresent('10-PERC-OFF', false)
 

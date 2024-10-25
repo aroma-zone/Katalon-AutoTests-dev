@@ -22,6 +22,12 @@ WebUI.comment('Precondition: CheckoutPage with "Credit Card" payment option sele
 
 WebUI.comment('Input: card {Map} (optional, otherwise default card is used)')
 
+WebUI.delay(3)
+
+WebUI.executeJavaScript('document.getElementById(\'tos\').click();', null)
+
+WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Payment Method/radio_creditCard'))
+
 WebUI.verifyElementVisible(findTestObject('AZ/Pages/CheckoutPage/Payment Method/Credit Card/input_cardNumber'))
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/CheckoutPage/Payment Method/Credit Card/input_cardNumber'), 2)
@@ -36,6 +42,20 @@ WebUI.setText(findTestObject('Object Repository/AZ/Pages/CheckoutPage/Payment Me
 
 WebUI.setText(findTestObject('Object Repository/AZ/Pages/CheckoutPage/Payment Method/Credit Card/input_cardHolderName'), 
     card.holderName)
+
+
+// Vérifier si le bouton 2 est présent sur la page (avec un délai de 5 secondes)
+boolean isButton2Present = WebUI.verifyElementPresent(findTestObject('AZ/Pages/CheckoutPage/Payment Method/Credit Card/button_pay-2'), 5, FailureHandling.OPTIONAL)
+
+if (isButton2Present) {
+	// Si le bouton 2 est présent, cliquer dessus
+	WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Payment Method/Credit Card/button_pay-2'))
+} else {
+	// Sinon, cliquer sur le bouton 1
+	WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Payment Method/Credit Card/button_pay'))
+}
+
+//WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Payment Method/Credit Card/button_pay'))
 
 'Entered credit card details, before clicking on Pay button'
 WebUI.takeFullPageScreenshot()

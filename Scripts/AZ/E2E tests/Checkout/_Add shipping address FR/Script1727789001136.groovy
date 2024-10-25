@@ -17,7 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_StreetName'), '40 rue Floralia')
+
+// Vérifier si le champ d'adresse (ex. champ "addressLine1") est pré-rempli
+String addressValue = WebUI.getAttribute(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_StreetName'), 'value')
+
+// Si le champ est pré-rempli (c'est-à-dire que sa valeur n'est pas vide)
+if (addressValue != null && addressValue.trim() != '') {
+	// Continuer en cliquant sur le bouton (ex. bouton "Continuer" ou "Suivant")
+	WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/button_submit'))
+} else {
+	// Appeler le test case qui remplit le formulaire
+	WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_StreetName'), '40 rue Floralia')
 
 WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_PostalCode'), '13009')
 
@@ -26,4 +36,6 @@ WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_city'
 WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/input_phone'), '0680629319')
 
 WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Shipping Address/button_submit'), FailureHandling.STOP_ON_FAILURE)
+}
+
 

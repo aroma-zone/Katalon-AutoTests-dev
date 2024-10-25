@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@data-v-01b11c9e='' and contains(normalize-space(text()), 'Nouveautés')]</value>
+         <value>//button[@data-v-27f2ac5b='' and contains(normalize-space(text()), 'Favoris')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

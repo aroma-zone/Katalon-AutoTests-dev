@@ -6,11 +6,11 @@
    <elementGuidId>4918fd50-96ed-4924-adf6-f047fc7afd70</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@data-testid=&quot;product-card&quot;])[8]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//div[@data-testid=&quot;product-card&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ButtonProductCard_add1</name>
+   <name>Button_applyPromoCode</name>
    <tag></tag>
-   <elementGuidId>ccf61d74-15a5-408f-bd62-4fa155c918cd</elementGuidId>
+   <elementGuidId>25a1cef7-fa8c-4678-967e-4cde3d7e608c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;sf-button color-secondary&quot;])[3]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class=&quot;sf-product-card__add-button color-secondary sf-button&quot;])[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

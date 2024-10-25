@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Header_Tracking_add_to_cart</name>
+   <name>_Add product to cart</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>dd4dbfdb-28f4-479f-ae6f-47115ceeeba7</testCaseGuid>
+   <testCaseGuid>69871936-ea67-4f22-ba61-27b217a679e0</testCaseGuid>
 </TestCaseEntity>

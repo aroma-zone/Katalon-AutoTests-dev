@@ -25,12 +25,12 @@ WebUI.delay(1)
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add2'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add4'))
 
 WebUI.delay(2)
 
@@ -48,7 +48,7 @@ println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
-WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
+WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), 0)
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add1'))
 

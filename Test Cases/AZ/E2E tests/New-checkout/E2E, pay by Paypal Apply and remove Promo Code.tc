@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Header_Tracking_add_to_cart</name>
+   <name>E2E, pay by Paypal Apply and remove Promo Code</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>dd4dbfdb-28f4-479f-ae6f-47115ceeeba7</testCaseGuid>
+   <testCaseGuid>0898f83f-78cc-4d9a-819b-1e0ae6b3e2ba</testCaseGuid>
 </TestCaseEntity>

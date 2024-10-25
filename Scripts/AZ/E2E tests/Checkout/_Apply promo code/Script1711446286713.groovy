@@ -20,8 +20,9 @@ if (WebUI.verifyElementPresent(promoRemoveButton, 1, FailureHandling.OPTIONAL)) 
     WebUI.click(promoRemoveButton)
 }
 
-WebUI.setText(promoInput, promoCode)
+WebUI.setText(findTestObject('AZ/Pages/CheckoutPage/Input_PromoCode'), '10-PERC-OFF')
 
-WebUI.click(promoApplyButton)
+WebUI.click(findTestObject('AZ/Pages/CheckoutPage/Button_applyPromoCode'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(promoRemoveButton, 2)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/CheckoutPage/Button_removePromoCode'), 0)
+

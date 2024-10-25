@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E, Pay by Credit Card without Promo Code</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4dbac4b7-4a05-49dd-9928-7fd879523b03</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8b771c8a-c5c5-4fcf-81bd-b88ea047187e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[('has3DS') : false, ('cardNumber') : '4111111145551142', ('expirationDate') : '03/30', ('securityCode') : '737', ('holderName') : 'TEST NAME', ('password') : '']</defaultValue>
+      <description></description>
+      <id>8b771c8a-c5c5-4fcf-81bd-b88ea047187e</id>
+      <masked>false</masked>
+      <name>card</name>
+   </variable>
+</TestCaseEntity>

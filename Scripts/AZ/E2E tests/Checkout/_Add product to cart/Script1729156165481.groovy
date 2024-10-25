@@ -16,42 +16,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.RequestObject as RequestObject
-import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
-
-WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
-WebUI.scrollToPosition(0, 0)
-
-WebUI.delay(2)
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_Favoris'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonfourthProductCard'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/Pages/HomePage/Recommendations/1st_product_card'))
 
 WebUI.delay(1)
 
 WebUI.click(findTestObject('AZ/Pages/PDP/ButtonAddToCart'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('AZ/Components/Header/cart-icon'))
 
-// Exécuter du JavaScript pour récupérer la couche de données
-String script = '\n    return window.dataLayer.find(event => \n        event.event === \'add_to_cart\' && \n        event.event_name === \'add_to_cart\' && \n        event.event_action === \'add\' \n    );\n'
-
-Map event = ((WebUI.executeJavaScript(script, null)) as Map)
-
-// Vérifier que l'événement de tracking est présent dans la couche de données
-assert event != null : 'L\'événement de tracking "add_to_cart" avec "add_to_cart" n\'a pas été trouvé dans la couche de données.'
-
-assert event.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "add_to_cart".'
-
-println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
-
-WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(1)
 
