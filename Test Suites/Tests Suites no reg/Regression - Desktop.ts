@@ -166,6 +166,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>2bcb1102-399c-4689-9fb8-cacea1b26693</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/E2E tests/Surveys/E2E, Serum survey</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>f33cf27d-9970-4c71-bcd7-c4597e1ff590</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

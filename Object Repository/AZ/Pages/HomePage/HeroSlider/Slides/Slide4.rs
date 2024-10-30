@@ -6,10 +6,6 @@
    <elementGuidId>a3f827f1-08a7-4f56-bd40-86df0b29844a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>//div[@class='swiper-slide thumb__cell'][1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[(text() = '
           3 nouvelles huiles essentielles 
@@ -18,11 +14,16 @@
         ')]</value>
       </entry>
       <entry>
+         <key>CSS</key>
+         <value>//div[@class='swiper-slide thumb__cell'][1]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'swiper-slide-active') and @data-swiper-slide-index='3']</value>
+         <value>(//div[@class=&quot;hero__thumb&quot;])[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>164c3f8f-ca74-480b-b34d-58cf3190d34b</webElementGuid>
+      <webElementGuid>d6ae4d26-c410-45db-993d-9db48904164a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -40,7 +41,7 @@
       <value>
           3 nouvelles huiles essentielles 
         </value>
-      <webElementGuid>77fd77c5-ca38-4129-9a75-8735f6ca7429</webElementGuid>
+      <webElementGuid>d4369067-cf0f-452f-a242-6fa0e5b23e3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;swiper-wrapper-dc4b95fda975e7bd&quot;)/div[@class=&quot;swiper-slide thumb__cell swiper-slide-visible swiper-slide-thumb-active&quot;]/span[1]</value>
-      <webElementGuid>b95d282b-86ea-46ec-8ea9-d46597a0eee1</webElementGuid>
+      <webElementGuid>d813a428-cbf2-4c09-900c-af46233c1e0c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -56,7 +57,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='swiper-wrapper-dc4b95fda975e7bd']/div[3]/span</value>
-      <webElementGuid>b999bafc-a82f-4677-aa13-1b036b07498a</webElementGuid>
+      <webElementGuid>9e6caef6-7826-4037-b178-a8dfbbe4352d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,7 +65,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/span</value>
-      <webElementGuid>7eb696e0-7cfa-4c81-bcfa-96d60be27e29</webElementGuid>
+      <webElementGuid>02f23341-83c8-4486-8d99-0f7e48a780c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,6 +77,6 @@
         ' or . = '
           3 nouvelles huiles essentielles 
         ')]</value>
-      <webElementGuid>f0699317-b3aa-49c2-a089-63a9875f7f3e</webElementGuid>
+      <webElementGuid>74526d31-ff77-4fd2-b8cc-4fe56b7e02f3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

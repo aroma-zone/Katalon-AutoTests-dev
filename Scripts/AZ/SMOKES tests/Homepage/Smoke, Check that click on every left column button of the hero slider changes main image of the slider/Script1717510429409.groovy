@@ -27,21 +27,45 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.navigateToUrl(GlobalVariable.HomePage)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button2'))
+WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/AZ/Pages/HomePage/HeroSlider/Buttons/Button2'))
+WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button3'))
+WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/AZ/Pages/HomePage/HeroSlider/Buttons/Button3'))
+WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/AZ/Pages/HomePage/HeroSlider/Buttons/Button4'))
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/AZ/Pages/HomePage/HeroSlider/Buttons/Button1'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
+
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
+
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
+
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
+
+WebUI.verifyTextPresent('Retrouvez les nouveautés développées ces derniers mois par nos experts innovation !', false)
+
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
+
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
+
+WebUI.delay(2)
+
+WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/Serum Survey/SwitchToIframe'), 0)
+
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonStart'), 0)
+
+WebUI.switchToDefaultContent()
+
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Icone_close'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

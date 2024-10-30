@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
+WebUI.scrollToPosition(400, 400)
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), FailureHandling.STOP_ON_FAILURE)
 

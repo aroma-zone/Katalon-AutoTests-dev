@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.navigateToUrl('https://dev.aroma-host.net/survey/serum')
+WebUI.navigateToUrl('https://stage.aroma-host.net/survey/serum')
 
 WebUI.delay(2)
 
@@ -75,10 +75,6 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext3'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext4'))
-
-WebUI.delay(1)
-
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonAllergy_no'))
 
 WebUI.delay(1)
@@ -87,17 +83,17 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNovice_SayA
 
 WebUI.delay(1)
 
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext4'))
+
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext5'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext6'))
-
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext7'))
 
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Input_Email'), 'alexandre.bluteau@aroma-zone.com')
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext8'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext7'))
 
 WebUI.delay(1)
 
@@ -105,7 +101,7 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Checkbox_validate
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonResult'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext8'))
 
 WebUI.delay(1)
 
@@ -117,7 +113,7 @@ WebUI.verifyTextPresent('Sérum matin', false)
 
 WebUI.verifyTextPresent('Sérum soir', false)
 
-WebUI.verifyTextPresent('Crème visage', false)
+WebUI.verifyTextPresent('Votre routine sérum', false)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

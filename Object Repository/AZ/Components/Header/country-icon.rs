@@ -7,13 +7,17 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>img[alt*='Flag']</value>
+         <value>(//button[@class=&quot;container__lang container__lang--selected sf-button&quot;])[1]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;container__lang container__lang--selected sf-button&quot;])[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

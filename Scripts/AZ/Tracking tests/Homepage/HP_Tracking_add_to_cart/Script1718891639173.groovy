@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
+WebUI.scrollToPosition(400, 400)
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), FailureHandling.STOP_ON_FAILURE)
 
@@ -45,8 +45,6 @@ assert event != null : 'L\'événement de tracking "add_to_cart" avec "add_to_ca
 assert event.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "add_to_cart".'
 
 println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
-
-WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), 0)
 

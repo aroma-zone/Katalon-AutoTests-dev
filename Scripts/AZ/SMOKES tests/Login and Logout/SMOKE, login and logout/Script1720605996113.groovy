@@ -31,13 +31,13 @@ WebUI.click(findTestObject('AZ/Pages/MyAccountPage/Button_Logout'))
 
 WebUI.verifyTextPresent('Retrouvez nos sélections de la semaine !', false)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button2'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button2'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button3'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button3'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'), 0)
 

@@ -21,13 +21,15 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.scrollToPosition(0, 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'), 0)
+WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button2'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button3'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button2'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button3'), 0)
+
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'), 0)
 

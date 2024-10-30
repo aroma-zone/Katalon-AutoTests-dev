@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SwitchToIframe</name>
+   <name>TrackingButtonCarousel</name>
    <tag></tag>
-   <elementGuidId>edea0c42-8ae5-491f-8212-d4d9291b409d</elementGuidId>
+   <elementGuidId>ae9e7bbf-d5f1-4459-827b-2fbe0fbdf49a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//iframe[@title=&quot;Aromazone Sérum FR&quot;]</value>
+         <value>//div[@class=&quot;main-image__wrapper&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

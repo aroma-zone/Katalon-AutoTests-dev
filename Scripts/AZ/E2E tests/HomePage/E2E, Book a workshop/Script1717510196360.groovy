@@ -41,7 +41,7 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Moda
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/li_Beauty duo_firstChoice'))
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_NoPreference'))
+//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_NoPreference'))
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
 
