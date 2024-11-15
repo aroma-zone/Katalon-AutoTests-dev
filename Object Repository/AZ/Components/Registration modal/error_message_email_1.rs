@@ -6,12 +6,11 @@
    <elementGuidId>f4652d4c-8053-40b7-bcbf-d85d37bc9f44</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;sf-input__error-message&quot;])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[text()='Ce champ est obligatoire'])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

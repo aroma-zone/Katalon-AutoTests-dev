@@ -35,7 +35,7 @@ WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/TrackingButtonCarousel'))
 WebUI.delay(2)
 
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = '\n    return window.dataLayer.find(event => \n        event.event === \'carousel\' && \n        event.event_name === \'view_promotion\' && \n        event.ecommerce && \n        event.ecommerce.title === \'Nouveau Slider\'\n    );\n'
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'carousel\' && \n        event.event_name === \'view_promotion\' && \n        event.ecommerce && \n        event.ecommerce.title === \'La boutique de Noël 2024\'\n    );\n'
 
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 

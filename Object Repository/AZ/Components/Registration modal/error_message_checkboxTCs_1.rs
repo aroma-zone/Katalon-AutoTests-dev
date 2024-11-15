@@ -6,12 +6,11 @@
    <elementGuidId>d1ee2588-c89d-41af-866c-8b60906ad943</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[text()='Ce champ est obligatoire'])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[text()='Ce champ est obligatoire'])[3]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

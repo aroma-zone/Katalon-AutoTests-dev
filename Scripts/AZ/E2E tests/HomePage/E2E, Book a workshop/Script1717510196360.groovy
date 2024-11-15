@@ -23,9 +23,9 @@ user = GlobalVariable.user1
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a__bookWorkshop'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_container book a workshop'))
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/button_bookWorkshop'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a__bookWorkshop'))
 
 WebUI.delay(2)
 
@@ -37,12 +37,11 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Moda
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Li_cosmeticsWorkshops_APC'))
-
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/li_Beauty duo_firstChoice'))
 
-//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_NoPreference'))
+WebUI.delay(2)
 
+//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_NoPreference'))
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
 
 WebUI.delay(2)
@@ -87,6 +86,15 @@ if (noWorkshopMessageVisible) {
     WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
 
     WebUI.switchToDefaultContent()
+
+    WebUI.delay(3)
+
+    WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add shipping address FR'), [:], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.delay(4)
+
+    WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add paypal method payment'), [('paypalAccount_email') : 'az-test-paypal@personal.example.com'
+            , ('paypalAccount_password') : '?J@9!tB{'], FailureHandling.STOP_ON_FAILURE)
 }
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)

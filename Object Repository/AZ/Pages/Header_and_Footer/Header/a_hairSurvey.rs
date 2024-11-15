@@ -6,12 +6,11 @@
    <elementGuidId>3d83f687-a081-4386-a2d7-effd48c2aa74</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//aside[@class=&quot;item-marketing-banner item-marketing-banner&quot;])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//aside[@class=&quot;item-marketing-banner&quot;])[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

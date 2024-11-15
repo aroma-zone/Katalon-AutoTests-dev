@@ -36,7 +36,7 @@
       <guid>88f0c5f6-aa06-4ac8-85dc-b1990e6bab25</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/Tracking tests/Homepage/HP_Tracking_view_promotion</testCaseId>
+      <testCaseId>Test Cases/AZ/Tracking tests/Homepage/HP_Tracking_view_promotion(carousel)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

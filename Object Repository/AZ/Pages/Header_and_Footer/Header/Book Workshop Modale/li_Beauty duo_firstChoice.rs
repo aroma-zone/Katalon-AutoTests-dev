@@ -6,11 +6,11 @@
    <elementGuidId>b7af35d9-5549-4baa-a2c8-a6d7d2eee505</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//li[@id='service-list-243624']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//li[@id='service-list-235164']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,15 +6,18 @@
    <elementGuidId>fa8722b2-2fac-49f2-b1e2-6380d4b1d3db</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>CSS</key>
+         <value>(//li[@class=&quot;sf-list__item sf-content-pages__list-item&quot;])[6]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>a[href=&quot;/my-account/notebook&quot;]</value>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//li[@class=&quot;sf-list__item sf-content-pages__list-item&quot;])[6]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

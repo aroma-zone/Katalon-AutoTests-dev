@@ -6,13 +6,11 @@
    <elementGuidId>cb4d19bf-1c68-4c94-957a-f9885177f9fc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;review__header&quot;])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@itemprop=&quot;aggregateRating&quot;]&#xd;
- </value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

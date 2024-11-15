@@ -77,7 +77,7 @@
    <testCaseLink>
       <guid>3e693b3c-8195-4ff1-9074-37626e8b81eb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AZ/Tracking tests/Homepage/HP_Tracking_select_promotion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -92,7 +92,7 @@
       <guid>66bdd32d-4708-4352-82b6-18a659126b5a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/Tracking tests/Homepage/HP_Tracking_view_promotion</testCaseId>
+      <testCaseId>Test Cases/AZ/Tracking tests/Homepage/HP_Tracking_view_promotion(carousel)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

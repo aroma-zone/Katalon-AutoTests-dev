@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_mywishlist</name>
+   <name>ButtonAddToCart</name>
    <tag></tag>
-   <elementGuidId>5b6b1345-1b80-4d2d-b342-3f099ce52569</elementGuidId>
+   <elementGuidId>f3ccae6e-5bc1-4356-8f3a-fa423fd8d765</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a[href=&quot;/my-account/wishlist&quot;]</value>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;sf-add-to-cart__button sf-button&quot;])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>a[href=&quot;/my-account/wishlist&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

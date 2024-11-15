@@ -27,6 +27,8 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('AZ/Pages/HomePage/Recommendations/1st_product_card'))
 
 WebUI.delay(1)

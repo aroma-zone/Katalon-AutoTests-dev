@@ -6,12 +6,11 @@
    <elementGuidId>16a7031d-1dd1-46a9-b01b-8b5d20bd1888</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;sf-input__error-message&quot;])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[text()='Veuillez saisir une adresse email valide sans espace. Par exemple prenom.nom@domaine.com'])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

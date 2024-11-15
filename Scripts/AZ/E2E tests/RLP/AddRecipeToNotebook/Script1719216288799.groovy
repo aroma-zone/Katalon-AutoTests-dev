@@ -53,7 +53,9 @@ WebUI.click(findTestObject('AZ/Pages/RLP/ButtonWishlistRecipe_3'))
 
 WebUI.click(findTestObject('AZ/Pages/RLP/RecipeModalWishlist_NotebookSelector'))
 
-WebUI.click(findTestObject('AZ/Components/Header/Notebook-icon'))
+WebUI.click(findTestObject('AZ/Components/Header/favorites-icon'))
+
+WebUI.click(findTestObject('AZ/Pages/MyAccountPage/a_myNotebooks'))
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyNotebooks/FirstNotebook'))
 

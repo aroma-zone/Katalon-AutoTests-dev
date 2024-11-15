@@ -6,12 +6,11 @@
    <elementGuidId>9b550abd-af89-487a-a535-8bf163c4068c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;sf-input__error-message&quot;])[4]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[text()='Vérifiez que vos mots de passe concordent'])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

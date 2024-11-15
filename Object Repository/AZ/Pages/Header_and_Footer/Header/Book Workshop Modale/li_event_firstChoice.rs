@@ -6,11 +6,11 @@
    <elementGuidId>2d2cfd52-adad-4f73-8ff5-f3b7e80aba7f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//li[@id='group-event-list-18979583']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//li[@id='group-event-list-17299758']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

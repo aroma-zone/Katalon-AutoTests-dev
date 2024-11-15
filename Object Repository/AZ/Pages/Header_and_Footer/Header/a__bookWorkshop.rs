@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='header__tooltip__title']</value>
+         <value>//div[@class=&quot;tooltip desktop-tablet-only&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -24,6 +24,8 @@ user = GlobalVariable.user2
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/a_myNotebooks'))
 
 WebUI.delay(2)

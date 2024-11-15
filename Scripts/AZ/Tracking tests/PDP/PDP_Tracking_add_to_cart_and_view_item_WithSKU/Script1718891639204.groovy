@@ -37,8 +37,6 @@ WebUI.scrollToPosition(5, 5)
 
 WebUI.verifyTextPresent('Vous avez cherché : "Sérum concentré d\'Acide hyaluronique 3,5% "', false)
 
-WebUI.refresh()
-
 WebUI.delay(1)
 
 WebUI.click(findTestObject('AZ/Components/Search bar/card_resultCuticules'))

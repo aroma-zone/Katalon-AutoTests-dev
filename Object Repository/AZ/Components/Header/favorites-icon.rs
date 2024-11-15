@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_mywishlist</name>
+   <name>favorites-icon</name>
    <tag></tag>
-   <elementGuidId>5b6b1345-1b80-4d2d-b342-3f099ce52569</elementGuidId>
+   <elementGuidId>260c0059-90d1-4c93-8f57-22f4c35c981e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a[href=&quot;/my-account/wishlist&quot;]</value>
+         <key>XPATH</key>
+         <value>(//header//button[@type='button'])[4]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>a[href=&quot;/my-account/wishlist&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

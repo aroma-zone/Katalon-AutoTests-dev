@@ -33,9 +33,9 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/a_h
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Header/Notebook-icon'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/Header/favorites-icon'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Components/Header/Notebook-icon'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Components/Header/favorites-icon'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Header/whishlist-icon'), 0)
 

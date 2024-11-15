@@ -38,11 +38,11 @@ WebUI.click(findTestObject('AZ/Pages/RLP/ButtonFirstRecip'))
 
 WebUI.waitForPageLoad(0)
 
-WebUI.click(findTestObject('AZ/Pages/RDP/ButtonAddToCart'))
+WebUI.click(findTestObject('AZ/Pages/PLP/RDP/ButtonAddToCart'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/RDP/ButtonModule_Add'))
+WebUI.click(findTestObject('AZ/Pages/PLP/RDP/ButtonModule_Add'))
 
 WebUI.delay(5)
 
@@ -59,13 +59,13 @@ assert event.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "g
 
 println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
 
-WebUI.click(findTestObject('AZ/Pages/RDP/ButtonModuleEquipmentPlus'))
+WebUI.click(findTestObject('AZ/Pages/PLP/RDP/ButtonModuleEquipmentPlus'))
 
-WebUI.click(findTestObject('AZ/Pages/RDP/ButtonModuleEquipmentPlus'))
+WebUI.click(findTestObject('AZ/Pages/PLP/RDP/ButtonModuleEquipmentPlus'))
 
-WebUI.click(findTestObject('AZ/Pages/RDP/ButtonModuleEquipmentPlus'))
+WebUI.click(findTestObject('AZ/Pages/PLP/RDP/ButtonModuleEquipmentPlus'))
 
-WebUI.click(findTestObject('AZ/Pages/RDP/ButtonModuleEquipmentAdd'))
+WebUI.click(findTestObject('AZ/Pages/PLP/RDP/ButtonModuleEquipmentAdd'))
 
 WebUI.delay(5)
 

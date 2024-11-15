@@ -35,25 +35,29 @@ WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/S
 
 WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
 
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
+
+WebUI.delay(2)
+
+WebUI.verifyTextPresent('Retrouvez les nouveautés développées ces derniers mois par nos experts innovation !', false)
+
+WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
+
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
+
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
+
 WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
-
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
-
-WebUI.verifyTextPresent('Retrouvez les nouveautés développées ces derniers mois par nos experts innovation !', false)
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
-
 WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
+
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
+
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
 
 WebUI.delay(2)
 

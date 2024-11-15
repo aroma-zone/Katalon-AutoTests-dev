@@ -95,7 +95,7 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext7'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonResult'))
 
-WebUI.delay(4)
+WebUI.delay(14)
 
 WebUI.verifyTextPresent('Trilex Hair survey', false)
 

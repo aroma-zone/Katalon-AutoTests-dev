@@ -6,12 +6,11 @@
    <elementGuidId>53662380-3eb8-4ade-ba02-92915cd70022</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;hero__thumb&quot;])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class=&quot;swiper-slide carousel__cell swiper-slide-active&quot;])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
