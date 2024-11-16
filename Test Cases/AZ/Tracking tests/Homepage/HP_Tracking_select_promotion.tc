@@ -4,5 +4,6 @@
    <name>HP_Tracking_select_promotion</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d46ab9fe-7731-4b67-9042-8c4ada56bfa9</testCaseGuid>
 </TestCaseEntity>

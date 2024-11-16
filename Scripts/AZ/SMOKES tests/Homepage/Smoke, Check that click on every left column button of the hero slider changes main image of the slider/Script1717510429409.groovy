@@ -35,25 +35,12 @@ WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/S
 
 WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('Retrouvez les nouveautés développées ces derniers mois par nos experts innovation !', false)
-
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
-
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
-
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
-
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
-
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
+WebUI.verifyTextPresent('Découvrez notre sélection de cadeaux de Noël et offrez à vos proches le bien-être et la beauté avec nos produits uniques et naturels.', 
+    false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
@@ -68,6 +55,20 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Bu
 WebUI.switchToDefaultContent()
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Icone_close'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
+
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
+
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
+
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
+
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
+
+WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
+
+WebUI.verifyTextPresent('Atelier cosmétique', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
