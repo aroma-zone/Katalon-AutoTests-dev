@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.menu-topbar__item:nth-of-type(10) .menu-topbar__item-link</value>
+         <value>.menu-topbar__item:nth-of-type(6) .menu-topbar__item-link</value>
       </entry>
       <entry>
          <key>XPATH</key>

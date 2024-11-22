@@ -26,7 +26,7 @@ WebUI.delay(1)
 WebUI.scrollToPosition(0, 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_5'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_6'))
 
 WebUI.delay(2)
 
@@ -41,13 +41,7 @@ WebUI.waitForPageLoad(10)
 WebUI.delay(2)
 
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = """
-    return window.dataLayer.find(event => 
-        event.event === 'marketing_card' && 
-        event.event_name === 'marketing_card' && 
-        event.event_label === 'marketing_card' 
-    );
-"""
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'marketing_card\' && \n        event.event_name === \'marketing_card\' && \n        event.event_label === \'marketing_card\' \n    );\n'
 
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 

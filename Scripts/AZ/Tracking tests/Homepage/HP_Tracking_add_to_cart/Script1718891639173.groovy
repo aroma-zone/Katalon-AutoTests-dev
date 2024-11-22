@@ -48,7 +48,11 @@ println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), 0)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add3'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add6'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonUpsellModule_Add'))
 

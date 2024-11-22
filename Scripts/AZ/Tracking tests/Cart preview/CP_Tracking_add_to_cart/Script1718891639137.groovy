@@ -48,7 +48,11 @@ println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add3'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add6'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonUpsellModule_Add'))
 
@@ -66,6 +70,14 @@ assert event2.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "
 println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'), FailureHandling.STOP_ON_FAILURE)
 

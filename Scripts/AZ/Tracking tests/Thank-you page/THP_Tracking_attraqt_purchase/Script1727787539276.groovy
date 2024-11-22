@@ -45,6 +45,8 @@ WebUI.delay(1)
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add shipping address FR'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(8)
+
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add shipping method'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Checkout/_Add paypal method payment'), [:], FailureHandling.STOP_ON_FAILURE)

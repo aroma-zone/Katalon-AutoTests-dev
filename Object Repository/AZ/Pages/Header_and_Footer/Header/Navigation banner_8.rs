@@ -6,15 +6,18 @@
    <elementGuidId>37c490f3-b797-413f-ac78-f67c2c762483</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>.menu-topbar__item:nth-of-type(10) .menu-topbar__item-link</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='menu-topbar__item-link nuxt-link-exact-active nuxt-link-active'])[8]</value>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.menu-topbar__item:nth-of-type(10) .menu-topbar__item-link</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

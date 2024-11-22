@@ -4,5 +4,6 @@
    <name>PLP_Tracking_marketing_card</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f389fc78-c981-4a4a-b962-fd87c53b87eb</testCaseGuid>
 </TestCaseEntity>

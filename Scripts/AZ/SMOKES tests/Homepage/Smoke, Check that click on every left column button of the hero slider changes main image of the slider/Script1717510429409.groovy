@@ -39,12 +39,11 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('Découvrez notre sélection de cadeaux de Noël et offrez à vos proches le bien-être et la beauté avec nos produits uniques et naturels.', 
-    false)
+WebUI.verifyTextPresent('Plus que 35,00 € pour bénéficier de la livraison gratuite !', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
 
 WebUI.delay(2)
 
@@ -58,7 +57,7 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Icone_close'), Fa
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
 
