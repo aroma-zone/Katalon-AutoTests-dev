@@ -23,9 +23,9 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.scrollToPosition(400, 400)
+WebUI.scrollToPosition(200, 200)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonCadeau de noel'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
@@ -51,6 +51,8 @@ WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris')
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
+
+WebUI.scrollToPosition(200, 200)
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add6'))
 

@@ -21,9 +21,9 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.scrollToPosition(0, 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/a__bookWorkshop'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/a_FindYourRoutine'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/a__bookWorkshop'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/a_FindYourRoutine'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLinkNews'), 0)
 

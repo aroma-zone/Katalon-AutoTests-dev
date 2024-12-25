@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_7'), 0)
 
-WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_7'))
+WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_8'))
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_skincareSurvey'))
 

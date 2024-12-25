@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='menu-topbar__item-link nuxt-link-exact-active nuxt-link-active'])[1]</value>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

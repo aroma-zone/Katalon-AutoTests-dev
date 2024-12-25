@@ -22,6 +22,8 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/ButtonItemReviewed_1'), 0)
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/reinsurance__item/a_faq'))
 
 WebUI.delay(2)
@@ -59,8 +61,6 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/reinsurance__item/
 //create variable to check text on page
 def content = WebUI.getText(findTestObject('AZ/Pages/Contents Link Pages/feeShippingPage_text'))
 
-WebUI.mouseOver(findTestObject('AZ/Pages/Contents Link Pages/link_topbar_hover'))
-
 //check Frais de port et livraison standard
 WebUI.verifyMatch(content, '.*Service de livraison en France métropolitaine.* .*Le Click & Collect est gratuit, les frais de port vous sont offerts dès 39€ de commande en livraison en France.* .*Livraison standard.* .*Colissimo : Livraison dans un délai indicatif de 48h en jours ouvrés après la prise en charge du colis par le transporteur.* .*Livraison dans votre boîte à lettres. En cas d’absence, vous avez le choix, en vous connectant sur le site de La Poste, entre une nouvelle date de livraison dans les 6 jours ouvrés ou un dépôt de votre colis dès le lendemain 15h dans le bureau de poste de votre choix. Par défaut, votre commande est envoyée dans votre bureau de poste de rattachement et est récupérable sous un délai de 15 jours.* .*Vous pouvez suivre à tout moment l’acheminement de votre colis sur www.laposte.fr et vous recevrez un email vous informant de sa livraison.*', 
     true)
@@ -89,14 +89,10 @@ WebUI.verifyMatch(content, '.*Retrait en boutique Aroma-Zone.*', true)
 //.*En commandant avant 15h, vos produits sont livrés dès le lendemain.*
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/reinsurance__item/a_securePayment'))
 
-WebUI.mouseOver(findTestObject('AZ/Pages/Contents Link Pages/link_topbar_hover'))
-
 //WebUI.verifyMatch(content, '', true)
 WebUI.verifyMatch(content, '.*Paiement sécurisé.*', true)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/reinsurance__item/a_customerService'))
-
-WebUI.mouseOver(findTestObject('AZ/Pages/Contents Link Pages/link_topbar_hover'))
 
 WebUI.delay(1)
 
@@ -108,8 +104,6 @@ WebUI.verifyMatch(content3, '.*Contacter le Service Clients.* .* est à votre di
     true)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Footer/reinsurance__item/a_qualityCommitments'))
-
-WebUI.mouseOver(findTestObject('AZ/Pages/Contents Link Pages/link_topbar_hover'))
 
 WebUI.delay(1)
 

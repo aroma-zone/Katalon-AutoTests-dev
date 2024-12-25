@@ -57,7 +57,7 @@ WebUI.click(findTestObject('AZ/Components/Registration modal/input_email'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_password_1.1'), 0)
 
-WebUI.setText(findTestObject('AZ/Components/Registration modal/input_email'), 'bademail')
+WebUI.setText(findTestObject('AZ/Components/Registration modal/input_email'), 'bademail@')
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_email_2'), 0)
 
@@ -84,6 +84,8 @@ WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/butt
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/checkbox_Newsletters'), 0)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/checkbox_TCs'), 0)
+
+WebUI.setText(findTestObject('AZ/Components/Registration modal/input_email'), 'gmail.com')
 
 WebUI.click(findTestObject('AZ/Components/Registration modal/button_submit'))
 

@@ -6,11 +6,11 @@
    <elementGuidId>cfd9ebea-2abc-4cd6-aa1f-2c797e01f688</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;tooltip desktop-tablet-only&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@class=&quot;color-secondary header__button sf-button&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

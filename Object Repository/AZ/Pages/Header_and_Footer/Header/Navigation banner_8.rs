@@ -6,18 +6,17 @@
    <elementGuidId>37c490f3-b797-413f-ac78-f67c2c762483</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>.menu-topbar__item:nth-of-type(10) .menu-topbar__item-link</value>
+         <key>CSS</key>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>.menu-topbar__item:nth-of-type(10) .menu-topbar__item-link</value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[6]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

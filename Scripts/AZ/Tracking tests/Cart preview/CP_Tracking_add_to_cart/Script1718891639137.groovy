@@ -25,9 +25,9 @@ WebUI.delay(1)
 
 WebUI.scrollToPosition(400, 400)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonCadeau de noel'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), 0)
+WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonCadeau de noel'), 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add1'))
@@ -46,11 +46,15 @@ assert event.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "a
 
 println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
 
-WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
+WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonCadeau de noel'), 0)
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
+
+WebUI.delay(2)
+
+WebUI.scrollToPosition(300, 300)
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add6'))
 
@@ -72,8 +76,6 @@ println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
 WebUI.delay(2)
-
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
 

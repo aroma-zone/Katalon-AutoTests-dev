@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//a[@href=&quot;/content/zoom-sur-nos-producteurs&quot;])[2]</value>
+         <value>(//a[@href=&quot;/content/zoom-sur-nos-producteurs&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

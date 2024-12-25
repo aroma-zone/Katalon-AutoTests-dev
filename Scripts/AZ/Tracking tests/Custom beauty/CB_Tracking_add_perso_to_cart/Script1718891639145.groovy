@@ -23,7 +23,8 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.navigateToUrl('https://stage.aroma-host.net/info/fiche-technique/huile-visage-precieuse-bio-aroma-zone', FailureHandling.STOP_ON_FAILURE)
+WebUI.navigateToUrl('https://stage.aroma-host.net/info/fiche-technique/huile-visage-precieuse-bio-aroma-zone?capacity=50&capacity-unit=ml&capacity-type=standard', 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 

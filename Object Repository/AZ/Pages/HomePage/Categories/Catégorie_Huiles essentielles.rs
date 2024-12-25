@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//a[@href=&quot;/info/guide-des-huiles-essentielles/tous&quot;])[3]</value>
+         <value>(//a[@href=&quot;/info/guide-des-huiles-essentielles/tous&quot;])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,11 @@
    <elementGuidId>77897ef3-4c05-4706-a1e5-2cd5cf60284c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='menu-topbar__item-link nuxt-link-exact-active nuxt-link-active'])[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

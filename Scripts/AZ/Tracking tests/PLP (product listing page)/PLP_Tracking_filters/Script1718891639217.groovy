@@ -30,7 +30,7 @@ WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_ProductsAromathérapie'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_facial treatment'))
 
 WebUI.waitForPageLoad(10)
 

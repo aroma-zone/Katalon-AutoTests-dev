@@ -24,18 +24,14 @@ WebUI.scrollToPosition(0, 0)
 WebUI.delay(2)
 
 //WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'), 0)
-
 //WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button2'), 0)
-
 //WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button3'), 0)
-
 //WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
-
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'), 0)
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Retrouvez nos sélections de la semaine !', false)
+WebUI.verifyTextPresent('Notre sélection pour Noël', false)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), 0)
 
@@ -91,9 +87,9 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/Categories/Catégor
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/Categories/Catégorie_favoris (année)'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/Categories/Catégorie_compléments alimentaires'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/Categories/Catéorie_Soins cheveux'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/Categories/Catégorie_compléments alimentaires'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/Categories/Catéorie_Soins cheveux'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/Categories/Catégorie_Personnalisation'), 0)
 

@@ -7,18 +7,17 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.menu-topbar__item:nth-of-type(6) .menu-topbar__item-link</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[5]</value>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[4]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[4]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

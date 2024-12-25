@@ -6,14 +6,18 @@
    <elementGuidId>d495ae92-f585-4e18-a247-90f898278ca4</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>(//li[@class=&quot;reinsurance__item&quot;])[1]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>a[href=&quot;/info/base-de-connaissance&quot;]</value>
+         <key>XPATH</key>
+         <value>(//li[@class=&quot;reinsurance__item&quot;])[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

@@ -4,5 +4,6 @@
    <name>Header_Tracking_marketing_card</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6d669389-b331-4b16-8753-0aef18345265</testCaseGuid>
 </TestCaseEntity>

@@ -39,11 +39,11 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('Plus que 35,00 € pour bénéficier de la livraison gratuite !', false)
+WebUI.verifyTextPresent('La carte cadeau Aroma-Zone', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
 
 WebUI.delay(2)
 
@@ -57,13 +57,13 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Icone_close'), Fa
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide4'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
 

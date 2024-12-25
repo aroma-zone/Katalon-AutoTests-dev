@@ -27,13 +27,13 @@ WebUI.scrollToPosition(0, 0)
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
+WebUI.scrollToPosition(333, 333)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_Favoris'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonCadeau de noel'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonfourthProductCard'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 

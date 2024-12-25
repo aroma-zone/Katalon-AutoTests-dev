@@ -28,7 +28,7 @@ WebUI.scrollToPosition(0, 0)
 WebUI.delay(2)
 
 // Effectuer une action qui doit déclencher un événement de tracking
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_1'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_8'))
 
 WebUI.delay(1)
 
