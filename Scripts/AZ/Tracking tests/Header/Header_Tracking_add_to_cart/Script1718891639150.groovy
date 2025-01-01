@@ -29,7 +29,7 @@ WebUI.delay(2)
 
 WebUI.scrollToPosition(333, 333)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonCadeau de noel'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 

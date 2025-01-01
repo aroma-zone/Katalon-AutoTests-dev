@@ -39,7 +39,7 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('La carte cadeau Aroma-Zone', false)
+WebUI.verifyTextPresent('Sérum concentré d\'Acide', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
@@ -67,7 +67,7 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
 
-WebUI.verifyTextPresent('Atelier cosmétique', false)
+WebUI.verifyTextPresent('Sérum cheveux', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 

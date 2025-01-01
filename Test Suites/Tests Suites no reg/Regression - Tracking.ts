@@ -89,7 +89,7 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>66bdd32d-4708-4352-82b6-18a659126b5a</guid>
+      <guid>14ba81a7-15b0-4ce1-aa6b-13941d4a767d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/AZ/Tracking tests/Homepage/HP_Tracking_view_promotion(carousel)</testCaseId>

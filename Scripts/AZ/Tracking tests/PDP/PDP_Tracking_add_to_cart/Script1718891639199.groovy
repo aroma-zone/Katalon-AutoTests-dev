@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), 0)
+WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_Favoris'), 0)
 
 WebUI.scrollToPosition(500, 500)
 

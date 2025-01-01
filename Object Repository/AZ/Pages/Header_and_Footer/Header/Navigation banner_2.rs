@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[2]</value>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

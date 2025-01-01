@@ -31,19 +31,19 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/S
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Notre sélection pour Noël', false)
+WebUI.verifyTextPresent('Nos top produits 2024', false)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), FailureHandling.STOP_ON_FAILURE)
+//WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'), 0)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'), FailureHandling.STOP_ON_FAILURE)
+//WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), 0, FailureHandling.OPTIONAL)
+//WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), 0, FailureHandling.OPTIONAL)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), FailureHandling.OPTIONAL)
+//WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_news'), FailureHandling.OPTIONAL)
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button4'), 0)
 
@@ -59,7 +59,7 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonIconAddToCart
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonIconAddToCart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), FailureHandling.STOP_ON_FAILURE)
+//WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'), 0)
 
@@ -73,7 +73,7 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonIconAddToCart
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonIconAddToCart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
+//WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonStock'), 0)
 
 WebUI.verifyTextPresent('Nos catégories du moment', false)
 

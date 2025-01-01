@@ -10,11 +10,11 @@
          <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[4]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[3]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[4]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

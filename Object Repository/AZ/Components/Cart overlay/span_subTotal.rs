@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@data-v-57ce95fa and @data-v-727fd915])[1]</value>
+         <value>(//div[@data-v-57ce95fa and @data-v-86fdbeea])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -30,7 +30,7 @@ cartBadgeInitialNumber = WebUI.callTestCase(findTestCase('AZ/E2E tests/Cart/_Get
 
 WebUI.scrollToPosition(410, 400)
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_promotions'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_Favoris'))
 
 productPrice = CustomKeywords.'az.Parser.amountStringToBigDecimal'(WebUI.getText(findTestObject('Object Repository/AZ/Pages/HomePage/Recommendations/1st_product_price')))
 

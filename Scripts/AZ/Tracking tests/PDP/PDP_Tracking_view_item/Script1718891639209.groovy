@@ -25,7 +25,7 @@ WebUI.delay(1)
 
 WebUI.scrollToPosition(0, 0)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), 0)
+WebUI.scrollToElement(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_Favoris'), 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard_without_cat'))

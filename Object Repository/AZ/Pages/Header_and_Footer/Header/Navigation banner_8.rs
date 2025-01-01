@@ -9,11 +9,11 @@
          <key>CSS</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[5]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[6]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
