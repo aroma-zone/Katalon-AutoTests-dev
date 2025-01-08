@@ -15,7 +15,7 @@
       <guid>b4d8d539-b7e4-48a9-869e-f3bfe9a5ee04</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/E2E tests/New-checkout/E2E, New checkout apply and remove Promo Code - Copy</testCaseId>
+      <testCaseId>Test Cases/AZ/E2E tests/New-checkout/E2E, New checkout apply and remove Promo Code</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

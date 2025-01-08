@@ -29,7 +29,7 @@ WebUI.verifyTextPresent('Modifier le mot de passe', false)
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/Button_Logout'))
 
-WebUI.verifyTextPresent('Nos top produits 2024', false)
+WebUI.verifyTextPresent('Nos sélections', false)
 
 //WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button1'), 0)
 //WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Buttons/Button2'), 0)

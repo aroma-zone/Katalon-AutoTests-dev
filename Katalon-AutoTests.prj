@@ -7,9 +7,9 @@
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>9.7.3</modifiedVersion>
+   <modifiedVersion>9.7.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\Horizon\git\Katalon-AutoTests\Katalon-AutoTests.prj</projectFileLocation>
+   <projectFileLocation>C:\git\Katalon-AutoTests\Katalon-AutoTests.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

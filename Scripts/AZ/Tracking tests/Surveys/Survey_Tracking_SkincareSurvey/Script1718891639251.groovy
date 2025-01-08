@@ -177,17 +177,19 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.delay(2)
+WebUI.delay(6)
 
-String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'skincare_diag\' && \n        event.event_name === \'impression_skincare_recape_end\' && \n        event.event_action === \'skincare_recape_close_page\' \n    );\n'
+String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'skincare_diag\' && \n        event.event_action === \'skincare_recape_close_page\' && \n        event.event_name === \'impression_skincare_recape_end\'\n    );\n'
 
-// event.event === 'recipe' && event.event_label === \'recipe\' && \n        event.event_name === \'generic_event\'\n
+//event.event === \'skincare_diag\' && \n && \n        event.event_action === \'skincare_recape_close_page\' \n
 Map event4 = ((WebUI.executeJavaScript(script4, null)) as Map)
 
-// Vérifier que l'événement de tracking est présent dans la couche de données
+// Vérifier que l'événement de tracking est présent dans la couche de données 
 assert event4 != null : 'L\'événement de tracking "skincare_diag" avec "impression_skincare_recape_end" n\'a pas été trouvé dans la couche de données.'
 
 assert event4.event_name == 'impression_skincare_recape_end' : 'L\'événement trouvé n\'est pas "impression_skincare_recape_end".'
+
+assert event4.event_action == 'skincare_recape_close_page' : 'L\'action de l\'événement n\'est pas "skincare_recape_close_page".'
 
 println('L\'événement de tracking \'skincare_diag\' avec \'impression_skincare_recape_end\' a été trouvé avec succès dans la couche de données.')
 
