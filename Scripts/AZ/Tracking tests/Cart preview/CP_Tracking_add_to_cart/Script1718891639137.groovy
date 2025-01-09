@@ -56,7 +56,7 @@ WebUI.delay(2)
 
 WebUI.scrollToPosition(300, 300)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add6'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add5'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonUpsellModule_Add'))
 

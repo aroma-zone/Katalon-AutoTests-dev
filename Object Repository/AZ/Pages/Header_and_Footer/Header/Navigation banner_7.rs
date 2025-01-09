@@ -6,15 +6,15 @@
    <elementGuidId>be8f8144-6f79-47cc-9e33-ff9ebde45627</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[5]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[4]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
+         <value>(//div[@class=&quot;menu-topbar-v2__item Main&quot;])[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

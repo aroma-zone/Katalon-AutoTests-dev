@@ -54,7 +54,7 @@ WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selectio
 
 WebUI.scrollToPosition(200, 200)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add6'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add5'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonUpsellModule_Add'))
 
