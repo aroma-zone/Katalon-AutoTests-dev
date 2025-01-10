@@ -1,0 +1,141 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+//import static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import org.jsoup.Jsoup as Jsoup
+
+// URL de la page stage
+String stageURL = 'https://aroma-zone:avant-premiere@stage.aroma-host.net/'
+
+String stageURLcanonical = 'https://stage.aroma-host.net/'
+
+// URL de la page prod (à adapter selon vos besoins)
+String prodURL = 'https://www.aroma-host.net/'
+
+// Désactiver JavaScript
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
+WebUI.executeJavaScript('navigator.webdriver=false;', null // Simule la désactivation de JS
+    )
+
+WebUI.navigateToUrl(stageURL)
+
+WebUI.delay(2)
+
+'Close Cookies popup'
+if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), 5, FailureHandling.OPTIONAL)) {
+    WebUI.click(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), FailureHandling.STOP_ON_FAILURE)
+}
+
+'Scroll to bottom so Newsletter popup is shown'
+WebUI.executeJavaScript('window.scrollTo(0, document.body.scrollHeight);', [])
+
+'Close newsletter popup'
+if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Newsletter popup/button_close'), 5, FailureHandling.OPTIONAL)) {
+    WebUI.click(findTestObject('AZ/Components/Newsletter popup/button_close'), FailureHandling.STOP_ON_FAILURE)
+}
+
+// Récupération du contenu de la page
+String pageSourceStage = WebUI.executeJavaScript('return document.documentElement.outerHTML;', null)
+
+org.jsoup.nodes.Document documentStage = Jsoup.parse(pageSourceStage)
+
+// Vérifier Metatitle
+String metaTitleStage = documentStage.select('title').text()
+
+if (metaTitleStage.length() < 12) {
+    KeywordUtil.markFailedAndStop('Metatitle est trop court: ' + metaTitleStage)
+} else {
+    KeywordUtil.logInfo('Metatitle détecté: ' + metaTitleStage)
+}
+
+// Vérifier Metadescription
+String metaDescriptionStage = documentStage.select('meta[name=description]').attr('content')
+
+if (metaDescriptionStage.isEmpty()) {
+    KeywordUtil.markFailedAndStop('Metadescription absente sur Stage')
+} else {
+    KeywordUtil.logInfo('Metadescription détectée: ' + metaDescriptionStage)
+}
+
+// Vérifier Hreflang
+List<String> hreflangs = documentStage.select('link[rel=alternate]').eachAttr('hreflang')
+
+List<String> expectedHreflangs = ['fr', 'x-default', 'it', 'de', 'en', 'es']
+
+if (!(hreflangs.containsAll(expectedHreflangs))) {
+    KeywordUtil.markFailedAndStop('Hreflang manquants : ' + (expectedHreflangs - hreflangs))
+} else {
+    KeywordUtil.logInfo('Tous les hreflangs attendus sont présents.')
+}
+
+// Vérifier Canonical
+String canonicalStage = documentStage.select('link[rel=canonical]').attr('href')
+
+if (!(canonicalStage.equals(stageURLcanonical))) {
+    KeywordUtil.markFailedAndStop((('Canonical incorrect. Attendue: ' + stageURL) + ', Trouvée: ') + canonicalStage)
+} else {
+    KeywordUtil.logInfo('Canonical correcte: ' + canonicalStage)
+}
+
+// Vérifier H1
+String h1Stage = documentStage.select('h1').text()
+
+if (h1Stage.isEmpty()) {
+    KeywordUtil.markFailedAndStop('H1 manquant sur Stage')
+} else {
+    KeywordUtil.logInfo('H1 détecté: ' + h1Stage)
+}
+
+// Vérification du contenu des modules en SSR
+List<String> ssrModules = ['Avis', 'Découvrir', 'Nos sélections', 'Nos sélections', 'Les recettes de cosmétique maison', 'Les conseils de nos experts'
+    , 'Nos engagements', 'Entrez dans l’aventure Aroma-Zone']
+
+// Liste pour stocker les modules manquants
+List<String> missingModules = []
+
+// Parcourir et vérifier chaque module
+ssrModules.each({ def moduleName ->
+        boolean isModuleVisible = !(documentStage.select(":containsOwn($moduleName)").isEmpty())
+
+        if (!(isModuleVisible)) {
+            // Ajouter le module manquant à la liste
+            missingModules.add(moduleName)
+
+            KeywordUtil.logInfo('Module SSR manquant : ' + moduleName // Ajout dans les logs
+                ) // Log des modules détectés
+        } else {
+            KeywordUtil.logInfo('Module SSR détecté : ' + moduleName)
+        }
+    })
+
+// Vérifier s'il y a des modules manquants après la boucle
+if (!(missingModules.isEmpty())) {
+    // Signaler une erreur avec la liste des modules manquants
+    KeywordUtil.markFailed('Les modules SSR suivants sont manquants : ' + missingModules.join(', '))
+} else {
+    KeywordUtil.logInfo('Tous les modules SSR sont présents.')
+}
+
+WebUI.verifyElementPresent(findTestObject('AZ/SEO/Homepage/Reviews_Block'), 2)
+
+WebUI.closeBrowser()
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Reviews_Block</name>
+   <tag></tag>
+   <elementGuidId>438504a0-557f-4841-b0e7-6c92ed427335</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>section.native-carousel.reviews__carousel</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>section.native-carousel.reviews__carousel</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
