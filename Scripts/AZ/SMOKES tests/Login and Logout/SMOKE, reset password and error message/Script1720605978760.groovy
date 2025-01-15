@@ -48,17 +48,17 @@ WebUI.delay(2)
 boolean IncorrectCAPTCHA = WebUI.verifyTextPresent('CAPTCHA incorrect.', false, FailureHandling.OPTIONAL)
 
 if (IncorrectCAPTCHA) {
-	// Clôturer le test case avec succès si le message est trouvé
-	WebUI.comment('captcha invalide trouvé, le test se termine.')
+    // Clôturer le test case avec succès si le message est trouvé
+    WebUI.comment('captcha invalide trouvé, le test se termine.')
 } else {
+    WebUI.verifyTextPresent('Si un compte identifié par : alexandre.bluteau@aroma-zone.com existe, vous recevrez un email contenant un lien pour réinitialiser votre mot de passe.', 
+        false)
 
-WebUI.verifyTextPresent('Si un compte identifié par : alexandre.bluteau@aroma-zone.com existe, vous recevrez un email contenant un lien pour réinitialiser votre mot de passe.', 
-    false)
+    WebUI.verifyTextPresent('Si vous ne recevez pas de mail d’ici 15 minutes, nous vous invitons à créer un nouveau compte client.', 
+        false)
 
-WebUI.verifyTextPresent('Si vous ne recevez pas de mail d’ici 15 minutes, nous vous invitons à créer un nouveau compte client.', 
-    false)
+    WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
-
-}
 

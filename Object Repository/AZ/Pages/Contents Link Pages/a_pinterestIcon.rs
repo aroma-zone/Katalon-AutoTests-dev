@@ -6,12 +6,11 @@
    <elementGuidId>3b6533d8-3223-44f9-8d72-80f7c8ea5ba8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@href=&quot;https://fr.pinterest.com/aroma_zone/pins/&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@href=&quot;https://www.pinterest.fr/aroma_zone/&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

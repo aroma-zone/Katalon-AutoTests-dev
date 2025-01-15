@@ -6,15 +6,16 @@
    <elementGuidId>d1c29abc-02e4-4e55-a41f-2df1f0dd3482</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//div[contains(@class,'thumbnails-image__wrapper') and contains(@class, &quot;thumbnails-image__wrapper&quot;)])[4]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.swiper-slide.thumb__cell.swiper-slide-visible.swiper-slide-thumb-active > span</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>(//div[contains(@class,'swiper-slide') and contains(@class, &quot;thumb__cell&quot;)])[4]</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>1c4df7cb-5e5f-4d7a-a5b3-0f16c561987c</webElementGuid>
+      <webElementGuid>2d2a2120-fda6-4056-af2e-1cb9b87981b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,7 +33,7 @@
       <value>
           Nos solaires BIO et naturels
         </value>
-      <webElementGuid>4e7836f3-7b0e-4532-968a-1c86887e4965</webElementGuid>
+      <webElementGuid>0b3d6b45-d165-44b0-a844-44c48f63956d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -40,7 +41,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;swiper-wrapper-dc4b95fda975e7bd&quot;)/div[@class=&quot;swiper-slide thumb__cell swiper-slide-visible swiper-slide-thumb-active&quot;]/span[1]</value>
-      <webElementGuid>9b66aa8d-2b9e-4449-b041-4807f5c92bc1</webElementGuid>
+      <webElementGuid>e9591aca-ae07-4f15-84b0-fc75a8e0e21f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -48,7 +49,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='swiper-wrapper-dc4b95fda975e7bd']/div[4]/span</value>
-      <webElementGuid>4c7e4c24-1fe3-43a6-a940-9aa3be6e0c40</webElementGuid>
+      <webElementGuid>517756a6-1dd1-402a-b6a2-0aec4b6f7cf9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -56,7 +57,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/span</value>
-      <webElementGuid>2f53658e-cc62-41f9-9b77-c53c3e30819e</webElementGuid>
+      <webElementGuid>d9112527-a7c2-4a2f-afb0-de9bfa94cb69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,6 +69,6 @@
         ' or . = '
           Nos solaires BIO et naturels
         ')]</value>
-      <webElementGuid>5f0b6fbb-4231-407f-8163-5d41236b0085</webElementGuid>
+      <webElementGuid>d725766c-a427-451c-9957-672dc087a203</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

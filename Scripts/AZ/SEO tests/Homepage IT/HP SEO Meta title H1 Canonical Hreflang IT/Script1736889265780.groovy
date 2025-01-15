@@ -20,13 +20,10 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
 
-// URL de la page stage
-String stageURL = 'https://aroma-zone:avant-premiere@stage.aroma-host.net/'
+// Récupérer l'URL canonical depuis le profil
+String stageURLcanonical = GlobalVariable.stageCanonicalHP
 
-String stageURLcanonical = 'https://stage.aroma-host.net/'
-
-// URL de la page prod (à adapter selon vos besoins)
-String prodURL = 'https://www.aroma-host.net/'
+String stageURL = GlobalVariable.HomePage
 
 // Désactiver JavaScript
 WebUI.openBrowser('')
@@ -97,10 +94,13 @@ if (!(canonicalStage.equals(stageURLcanonical))) {
 }
 
 // Vérifier H1
+//warning: ajouter la vérification suivante: il ne faut pas qu'il y ai marqué undefined
 String h1Stage = documentStage.select('h1').text()
 
 if (h1Stage.isEmpty()) {
     KeywordUtil.markFailedAndStop('H1 manquant sur Stage')
+} else if (h1Stage.equalsIgnoreCase('undefined')) {
+    KeywordUtil.markFailedAndStop('H1 contient une valeur incorrecte: "undefined"')
 } else {
     KeywordUtil.logInfo('H1 détecté: ' + h1Stage)
 }
@@ -121,7 +121,8 @@ ssrModules.each({ def moduleName ->
             missingModules.add(moduleName)
 
             KeywordUtil.logInfo('Module SSR manquant : ' + moduleName // Ajout dans les logs
-                ) // Log des modules détectés
+                // Log des modules détectés
+                )
         } else {
             KeywordUtil.logInfo('Module SSR détecté : ' + moduleName)
         }
@@ -137,5 +138,5 @@ if (!(missingModules.isEmpty())) {
 
 WebUI.verifyElementPresent(findTestObject('AZ/SEO/Homepage/Reviews_Block'), 2)
 
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 
