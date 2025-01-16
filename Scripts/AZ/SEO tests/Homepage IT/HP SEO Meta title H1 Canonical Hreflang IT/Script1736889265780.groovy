@@ -21,9 +21,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
 
 // Récupérer l'URL canonical depuis le profil
-String stageURLcanonical = GlobalVariable.stageCanonicalHP
+String stageURLcanonical = GlobalVariable.Canonical_HP_IT
 
-String stageURL = GlobalVariable.HomePage
+String stageURL = GlobalVariable.HomePage_IT
 
 // Désactiver JavaScript
 WebUI.openBrowser('')
@@ -106,14 +106,18 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ['Avis', 'Découvrir', 'Nos sélections', 'Nos sélections', 'Les recettes de cosmétique maison', 'Les conseils de nos experts'
-    , 'Nos engagements', 'Entrez dans l’aventure Aroma-Zone']
+List<String> ssrModules = ['recensioni', 'Scopri', 'Le nostre selezioni', 'Ricette Fai-da-te', 'I consigli dei nostri esperti',
+    'Trova la tua routine']
 
 // Liste pour stocker les modules manquants
 List<String> missingModules = []
 
 // Parcourir et vérifier chaque module
 ssrModules.each({ def moduleName ->
+	
+		// Échapper les apostrophes pour Jsoup
+		String escapedModuleName = moduleName.replace("'", "\\'")
+	
         boolean isModuleVisible = !(documentStage.select(":containsOwn($moduleName)").isEmpty())
 
         if (!(isModuleVisible)) {

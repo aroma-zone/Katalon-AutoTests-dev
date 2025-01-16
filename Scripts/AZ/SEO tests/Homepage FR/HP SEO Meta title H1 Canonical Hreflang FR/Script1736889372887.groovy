@@ -21,12 +21,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
 
 // Récupérer l'URL canonical depuis le profil
-String stageURLcanonical = GlobalVariable.stageCanonicalHP
+String stageURLcanonical = GlobalVariable.Canonical_HP
 
 String stageURL = GlobalVariable.HomePage
-
-// URL de la page prod (à adapter selon vos besoins)
-String prodURL = 'https://www.aroma-host.net/'
 
 // Désactiver JavaScript
 WebUI.openBrowser('')

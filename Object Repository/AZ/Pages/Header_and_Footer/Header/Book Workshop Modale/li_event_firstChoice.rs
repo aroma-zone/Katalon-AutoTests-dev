@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='group-event-list-18979583']</value>
+         <value>//li[@id='group-event-list-20010537']</value>
       </entry>
       <entry>
          <key>BASIC</key>

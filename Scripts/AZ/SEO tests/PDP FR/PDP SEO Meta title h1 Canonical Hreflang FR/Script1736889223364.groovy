@@ -21,9 +21,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
 
 // Récupérer l'URL canonical depuis le profil
-String stageURLcanonical = GlobalVariable.stageCanonicalPDP
+String stageURLcanonical = GlobalVariable.Canonical_PDP
 
-String stageURL = GlobalVariable.SEOPDP
+String stageURL = GlobalVariable.SEO_PDP
 
 // Désactiver JavaScript
 WebUI.openBrowser('')
@@ -106,8 +106,8 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ['Diffuseur en céramique à suspendre', 'Présentation', 'Propriétés', 'Composition', 'Caractéristiques'
-    , 'En savoir +', 'Quelques huiles essentielles pour parfumer vos galets :', 'Avis']
+List<String> ssrModules = ['Diffuseur en céramique à suspendre', 'Présentation', 'Precauzioni', 'Tracciabilità e analisi', 'Caratteristiche'
+    , 'En savoir +', 'Prodotti associati', 'Avis']
 
 // Liste pour stocker les modules manquants
 List<String> missingModules = []

@@ -90,7 +90,7 @@ boolean testFailed = false
 
 // Étape 4 : Vérification des liens
 File file2 = new File("verified_links.txt")
-file2.text = "Vérification des liens - ${new Date()}\n"
+file2.text = "Vérification des liens FR - ${new Date()}\n"
 
 links.each { String link ->
     try {

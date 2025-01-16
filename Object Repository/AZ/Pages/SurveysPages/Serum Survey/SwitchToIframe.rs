@@ -6,11 +6,11 @@
    <elementGuidId>edea0c42-8ae5-491f-8212-d4d9291b409d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//iframe[@title=&quot;Aromazone Sérum FR&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
