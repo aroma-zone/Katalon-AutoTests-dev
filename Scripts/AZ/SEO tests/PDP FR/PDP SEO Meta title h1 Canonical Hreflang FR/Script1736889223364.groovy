@@ -106,8 +106,9 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ['Diffuseur en céramique à suspendre', 'Présentation', 'Precauzioni', 'Tracciabilità e analisi', 'Caratteristiche'
-    , 'En savoir +', 'Prodotti associati', 'Avis']
+List<String> ssrModules = ['Diffuseur en céramique à suspendre', 'Présentation', 'Propriétés', 'Propriétés', 'Caractéristiques', 'En savoir +',
+	 'Quelques huiles essentielles pour parfumer vos galets :','Avis']
+
 
 // Liste pour stocker les modules manquants
 List<String> missingModules = []

@@ -91,7 +91,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://www.aroma-zone.com/it/product/olio-essenziale-achillea-millefoglie-bio'</initValue>
+      <initValue>'https://stage.aroma-host.net/it/product/olio-essenziale-achillea-millefoglie-bio '</initValue>
       <name>Canonical_PDP_IT</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

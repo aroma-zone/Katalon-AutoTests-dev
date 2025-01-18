@@ -38,6 +38,8 @@ import com.kms.katalon.core.util.KeywordUtil
 // Étape 1 : Initialisation
 WebUI.callTestCase(findTestCase('AZ/_Setup IT'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.closeBrowser()
+
 // Configurer les options du navigateur pour désactiver JavaScript
 ChromeOptions options = new ChromeOptions()
 options.addArguments('--disable-javascript')

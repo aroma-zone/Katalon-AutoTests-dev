@@ -1,9 +1,9 @@
-Vérification des liens - Wed Jan 15 10:33:53 CET 2025
-Valide : https://stage.aroma-host.net/products/elixirs-floraux-visage (Code 200)
+Vérification des liens FR - Thu Jan 16 15:51:09 CET 2025
+Valide : https://stage.aroma-host.net/products/selection-de-lhiver (Code 200)
+Valide : https://stage.aroma-host.net/recipe/cure-regard (Code 200)
 Valide : https://stage.aroma-host.net/products/soins-cheveux (Code 200)
-Valide : https://stage.aroma-host.net/info/fiche-technique/serum-contour-des-yeux-5-cafeine-helichryse (Code 200)
 Valide : https://stage.aroma-host.net/info/fiche-technique/mon-duo-serum-creme-solution-anti-age-absolu (Code 200)
-Valide : https://stage.aroma-host.net/survey/routinecheveux (Code 200)
+Valide : https://stage.aroma-host.net/survey/serum (Code 200)
 Valide : https://stage.aroma-host.net/info/fiche-technique/serum-cheveux-anti-chute (Code 200)
 Valide : https://stage.aroma-host.net/info/fiche-technique/collagene-marin (Code 200)
 Valide : https://stage.aroma-host.net/info/fiche-technique/serum-contour-des-yeux-5-cafeine-helichryse (Code 200)

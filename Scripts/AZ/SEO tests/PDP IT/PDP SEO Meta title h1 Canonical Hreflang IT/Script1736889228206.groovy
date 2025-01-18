@@ -106,8 +106,7 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ['Olio essenziale di Achillea millefoglie BIO', 'Precauzioni', 'Tracciabilità e analisi',
-				'Caratteristiche', 'Prodotti associati', 'Avis']
+List<String> ssrModules = ['Olio essenziale di Achillea millefoglie BIO', 'Precauzioni', 'Tracciabilità e analisi','Caratteristiche', 'Prodotti associati']
 
 
 // Liste pour stocker les modules manquants

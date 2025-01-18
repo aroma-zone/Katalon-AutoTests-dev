@@ -1,9 +1,9 @@
-Vérification des liens IT - Wed Jan 15 10:36:10 CET 2025
-Valide : https://stage.aroma-host.net/it/products/estratti-floreali-viso (Code 200)
+Vérification des liens IT - Thu Jan 16 15:52:44 CET 2025
+Valide : https://stage.aroma-host.net/it/products/selezione-invernale (Code 200)
+Valide : https://stage.aroma-host.net/it/recipe/routine-sguardo-sublime (Code 200)
 Valide : https://stage.aroma-host.net/it/products/cura-capelli (Code 200)
-Valide : https://stage.aroma-host.net/it/product/siero-occhi-concentrato-al-5-di-caffeina-ed-elicriso (Code 200)
 Valide : https://stage.aroma-host.net/it/product/mio-duo-siero-crema-soluzione-anti-eta-definitiva (Code 200)
-Valide : https://stage.aroma-host.net/it/survey/routinecapelli (Code 200)
+Valide : https://stage.aroma-host.net/it/survey/serum (Code 200)
 Valide : https://stage.aroma-host.net/it/product/siero-capelli-anti-caduta (Code 200)
 Valide : https://stage.aroma-host.net/it/product/collagene-marino (Code 200)
 Valide : https://stage.aroma-host.net/it/product/siero-occhi-concentrato-al-5-di-caffeina-ed-elicriso (Code 200)
