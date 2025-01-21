@@ -42,7 +42,7 @@ WebUI.closeBrowser()
 
 // Configurer les options du navigateur pour désactiver JavaScript
 ChromeOptions options = new ChromeOptions()
-options.addArguments('--disable-javascript')
+//options.addArguments('--disable-javascript')
 options.addArguments("--start-maximized") // Optionnel : maximise la fenêtre
 options.addArguments("--disable-blink-features=AutomationControlled") // Optionnel : pour éviter certains blocages
 
@@ -79,7 +79,7 @@ if (mainContent == null) {
 
 // Étape 3 : Extraction des liens avec Jsoup
 Document documentStage = Jsoup.parse(pageSourceStage)
-List<String> links = documentStage.select("div[data-v-21a979be][data-v-2e142c31] a[href]").eachAttr("href")
+List<String> links = documentStage.select("div[data-v-4dd48443][data-v-befb34b2] a[href]").eachAttr("href")
 
 KeywordUtil.logInfo("Nombre de liens extraits : ${links.size()}")
 if (links.isEmpty()) {

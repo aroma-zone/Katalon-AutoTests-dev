@@ -76,12 +76,19 @@ if (metaDescriptionStage.isEmpty()) {
 // Vérifier Hreflang
 List<String> hreflangs = documentStage.select('link[rel=alternate]').eachAttr('hreflang')
 
+// Hreflangs qui doivent être présents
 List<String> expectedHreflangs = ['fr', 'x-default', 'it']
+// Hreflangs qui ne doivent pas être présents
+List<String> forbiddenHreflangs = ['de', 'en', 'es',]
 
-if (!(hreflangs.containsAll(expectedHreflangs))) {
+// Vérifier que tous les hreflangs attendus sont présents
+if (!hreflangs.containsAll(expectedHreflangs)) {
 	KeywordUtil.markFailedAndStop('Hreflang manquants : ' + (expectedHreflangs - hreflangs))
+} else if (!Collections.disjoint(hreflangs, forbiddenHreflangs)) {
+	// Vérifier qu'aucun hreflang interdit n'est présent
+	KeywordUtil.markFailedAndStop('Hreflang(s) interdit(s) trouvé(s) : ' + hreflangs.intersect(forbiddenHreflangs))
 } else {
-	KeywordUtil.logInfo('Tous les hreflangs attendus sont présents.')
+	KeywordUtil.logInfo('Tous les hreflangs sont corrects : ' + hreflangs)
 }
 
 // Vérifier Canonical
