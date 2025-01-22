@@ -6,14 +6,18 @@
    <elementGuidId>64e45979-2f7c-478a-9133-7785a9c0a9a3</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//input[@id=&quot;password-confirm&quot;])[1]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>input#password-confirm</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

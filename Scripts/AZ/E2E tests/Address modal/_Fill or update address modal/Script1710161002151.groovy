@@ -22,28 +22,17 @@ WebUI.comment('Precondition: Address modal')
 
 WebUI.comment('Input: address {MAP}')
 
-def fillOrUpdateField(TestObject to, String newText) {
-	currentText = WebUI.getAttribute(to, "value")
-	
-	if (currentText == "") {
-		WebUI.setText(to, newText)
-	} else {
-		// select all text, so it will be overwritten
-		WebUI.sendKeys(to, Keys.chord(Keys.SHIFT, Keys.ARROW_UP))
-		
-		// clear text using JavaScript (sometimes not working properly)
-		//WebElement element = WebUI.findWebElement(to, 2)
-		//WebUI.executeJavaScript("arguments[0].value='';", Arrays.asList(element))
-		
-		WebUI.sendKeys(to, newText)
-	}
-}
+WebUI.acceptAlert()
 
+WebUI.setText(findTestObject('AZ/Components/Address modal/input_streetName'), 'Parc de la Tête d\'Or')
+
+// select all text, so it will be overwritten
+// clear text using JavaScript (sometimes not working properly)
+//WebElement element = WebUI.findWebElement(to, 2)
+//WebUI.executeJavaScript("arguments[0].value='';", Arrays.asList(element))
 fillOrUpdateField(findTestObject('Object Repository/AZ/Components/Address modal/input_firstName'), address.firstName)
 
 fillOrUpdateField(findTestObject('Object Repository/AZ/Components/Address modal/input_lastName'), address.lastName)
-
-fillOrUpdateField(findTestObject('Object Repository/AZ/Components/Address modal/input_streetName'), address.streetName)
 
 fillOrUpdateField(findTestObject('Object Repository/AZ/Components/Address modal/input_additionalAddressInfo'), address.additionalAddressInfo)
 
@@ -56,3 +45,16 @@ fillOrUpdateField(findTestObject('Object Repository/AZ/Components/Address modal/
 fillOrUpdateField(findTestObject('Object Repository/AZ/Components/Address modal/input_company'), address.company)
 
 WebUI.click(findTestObject('AZ/Components/Address modal/button_submit'))
+
+def fillOrUpdateField(TestObject to, String newText) {
+    currentText = WebUI.getAttribute(to, 'value')
+
+    if (currentText == '') {
+        WebUI.setText(to, newText)
+    } else {
+        WebUI.sendKeys(to, Keys.chord(Keys.SHIFT, Keys.ARROW_UP))
+
+        WebUI.sendKeys(to, newText)
+    }
+}
+

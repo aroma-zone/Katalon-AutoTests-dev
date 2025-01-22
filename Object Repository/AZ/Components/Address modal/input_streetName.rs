@@ -6,14 +6,18 @@
    <elementGuidId>61fbccfd-ede2-4316-824f-bacabef92680</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input#streetName</value>
+         <key>XPATH</key>
+         <value>//input[@autocomplete=&quot;street-address&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#streetName</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

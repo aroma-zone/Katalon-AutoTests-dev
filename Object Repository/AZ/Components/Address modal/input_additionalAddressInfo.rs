@@ -6,14 +6,18 @@
    <elementGuidId>ac5bd4c4-6420-4f29-9412-16dcbc0b6eb2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input#additionalAddressInfo</value>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;additionalAddressInfo&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#additionalAddressInfo</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

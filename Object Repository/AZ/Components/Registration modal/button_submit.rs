@@ -6,14 +6,18 @@
    <elementGuidId>da2e2eb5-164d-453c-af8c-95f350eb9d0d</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//button[@type=&quot;submit&quot;])[2]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>button[type=&quot;submit&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

@@ -36,7 +36,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.util.KeywordUtil
 
 // Étape 1 : Initialisation
-WebUI.callTestCase(findTestCase('AZ/_Setup IT'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
@@ -51,7 +51,7 @@ WebDriver driver = new org.openqa.selenium.chrome.ChromeDriver(options)
 DriverFactory.changeWebDriver(driver)
 
 // Charger à nouveau la page initiale
-String authenticatedURL = "http://aroma-zone:avant-premiere@stage.aroma-host.net/it"
+String authenticatedURL = "http://aroma-zone:avant-premiere@stage.aroma-host.net/"
 driver.get(authenticatedURL)
 
 // Vérifier que la page est bien rechargée
@@ -64,7 +64,7 @@ if (pageSourceStage == null || pageSourceStage.isEmpty()) {
 }
 
 // Sauvegarder dans un fichier pour analyse
-File file = new File("page_source_it.html")
+File file = new File("page_source.html")
 file.text = pageSourceStage
 
 // Ajouter un log pour afficher les 500 premiers caractères
@@ -79,7 +79,7 @@ if (mainContent == null) {
 
 // Étape 3 : Extraction des liens avec Jsoup
 Document documentStage = Jsoup.parse(pageSourceStage)
-List<String> links = documentStage.select("div[data-v-21a979be][data-v-2e142c31] a[href]").eachAttr("href")
+List<String> links = documentStage.select("div[data-v-4dd48443][data-v-43f16b76] a[href]").eachAttr("href")
 
 KeywordUtil.logInfo("Nombre de liens extraits : ${links.size()}")
 if (links.isEmpty()) {
@@ -91,8 +91,8 @@ boolean testFailed = false
 
 
 // Étape 4 : Vérification des liens
-File file2 = new File("verified_links_IT.txt")
-file2.text = "Vérification des liens IT - ${new Date()}\n"
+File file2 = new File("verified_links.txt")
+file2.text = "Vérification des liens FR - ${new Date()}\n"
 
 links.each { String link ->
     try {

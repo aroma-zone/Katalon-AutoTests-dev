@@ -39,7 +39,7 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('Soins cheveux naturels', false)
+WebUI.verifyTextPresent('Cure regard sublimé', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
@@ -67,7 +67,7 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
 
-WebUI.verifyTextPresent('Mascara soin Noir au Ricin BIO', false)
+WebUI.verifyTextPresent('Sérum cheveux anti-chute Peptides & extrait de pois', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 

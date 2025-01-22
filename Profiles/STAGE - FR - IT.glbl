@@ -61,7 +61,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://stage.aroma-host.net/it'</initValue>
+      <initValue>'https://www.aroma-zone.com/it'</initValue>
       <name>Canonical_HP_IT</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -91,7 +91,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://stage.aroma-host.net/it/product/olio-essenziale-achillea-millefoglie-bio '</initValue>
+      <initValue>'https://www.aroma-zone.com/it/guide/olio-essenziale-achillea-millefoglie-bio'</initValue>
       <name>Canonical_PDP_IT</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

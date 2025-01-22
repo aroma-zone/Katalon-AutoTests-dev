@@ -6,15 +6,15 @@
    <elementGuidId>798a85a2-c9e6-444c-96f7-d03a71cbec5d</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//input[@type=&quot;search&quot;])[1]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#search</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@type=&quot;text&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

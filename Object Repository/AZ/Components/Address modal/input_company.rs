@@ -6,14 +6,18 @@
    <elementGuidId>5915f7d2-122a-4ece-80f3-97a3452231bf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input#company</value>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;company&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#company</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

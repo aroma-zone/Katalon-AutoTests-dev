@@ -55,33 +55,34 @@ WebUI.verifyElementClickable(findTestObject('AZ/Components/Header/country-icon')
 
 WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Menu_TopBar'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_1'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Nutrition'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_1'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Nutrition'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_2'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_beauté'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_2'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_beauté'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_3'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Huiles essentielles'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_3'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Huiles essentielles'), 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_4'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Ingrédients DIY'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_4'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Ingrédients DIY'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_5'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Conseils'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_5'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Conseils'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_6'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Maison'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_6'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Maison'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_7'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'), 0)
 
-WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_7'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

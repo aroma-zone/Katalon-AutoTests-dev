@@ -6,19 +6,18 @@
    <elementGuidId>8b83129e-4c8f-47dc-8082-c0d2472c676d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//button[@type=&quot;submit&quot;])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type=&quot;submit&quot;])[1]</value>
+         <key>CSS</key>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +25,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[(text() = 'Se connecter') or (text() = 'Accedi')]</value>
-      <webElementGuid>c39f4957-5837-439b-8ddc-4c6842b1152f</webElementGuid>
+      <webElementGuid>b53d9f48-fdba-44cc-8730-d1857b98d36a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -34,7 +33,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/section/div[2]/div/div/div/span/form/button/div/div</value>
-      <webElementGuid>d1c409c0-e6e4-4a85-8d83-ef2cdc2e981c</webElementGuid>
+      <webElementGuid>e8df38cb-57fa-4598-88cc-a70a2a38cf5b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -42,6 +41,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Se connecter' or . = 'Se connecter')]</value>
-      <webElementGuid>d42d1ad2-d826-4b8b-bb8a-89e95071e7c4</webElementGuid>
+      <webElementGuid>b710f292-0330-4e45-8d8d-f28649e3d1ad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

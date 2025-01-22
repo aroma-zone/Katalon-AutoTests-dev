@@ -6,14 +6,18 @@
    <elementGuidId>d9f6d3c0-9356-4963-918e-ae65a48d00b2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input#phone</value>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;phone&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#phone</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

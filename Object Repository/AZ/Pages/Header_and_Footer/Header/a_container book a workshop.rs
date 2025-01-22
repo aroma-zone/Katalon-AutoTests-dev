@@ -6,12 +6,11 @@
    <elementGuidId>9f269e3f-f2f9-43dc-8824-46ed46241c0e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;icon-container header__tooltip__icon header__action header__tooltip__icon-v2&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;tooltip desktop-tablet-only&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

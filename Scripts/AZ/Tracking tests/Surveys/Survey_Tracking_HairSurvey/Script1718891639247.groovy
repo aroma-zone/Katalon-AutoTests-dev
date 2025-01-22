@@ -17,12 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_7'), 0)
+WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'), 0)
 
-WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_8'))
+WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Conseils'))
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_hairSurvey'))
 
@@ -149,28 +148,26 @@ WebUI.click(findTestObject('AZ/Pages/Cart/button_close'))
 WebUI.delay(1)
 
 //WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
-
 // Étape 1 : Identifier le logo via son sélecteur
 String logoSelector1 = 'a.sf-header__logo.logo'
 
 // Étape 2 : Script pour déclencher un clic sans redirection
-String script6 = '''
-var logo = document.querySelector(arguments[0]);
-if (logo) {
-    // Empêche le comportement par défaut
-    logo.addEventListener('click', function(event) {
-        event.preventDefault();
-    });
-
-    // Simule le clic
-    logo.click();
-}
-'''
-
+//String script6 = '''
+//var logo = document.querySelector(arguments[0]);
+//if (logo) {
+// Empêche le comportement par défaut
+//    logo.addEventListener('click', function(event) {
+//        event.preventDefault();
+//    });
+// Simule le clic
+//    logo.click();
+//}
+//'''
 // Étape 3 : Exécuter le script pour empêcher la redirection et simuler le clic
-WebUI.executeJavaScript(script6, Arrays.asList(logoSelector1))
+//WebUI.executeJavaScript(script6, Arrays.asList(logoSelector1))
+WebUI.delay(5)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_FindYourRoutine'))
 
 String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'survey_result\' && \n        event.event_name === \'impression_survey_result_recape_end\' && \n        event.event_action === \'survey_result_close_page\' \n    );\n'
 

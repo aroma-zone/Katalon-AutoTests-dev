@@ -19,9 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 import java.util.Date as Date
-import java.text.SimpleDateFormat
-import java.util.Date
-import com.kms.katalon.core.util.KeywordUtil
+import java.text.SimpleDateFormat as SimpleDateFormat
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -29,7 +27,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 now = new Date()
 
 // Créer un objet SimpleDateFormat avec le format souhaité
-SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd.HHmmss")
+SimpleDateFormat sdf = new SimpleDateFormat('yyyyMMdd.HHmmss')
 
 // Utiliser la méthode format de SimpleDateFormat pour formater la date
 String formattedDate = sdf.format(now)
@@ -81,11 +79,11 @@ WebUI.refresh()
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyAddresses/deliveryAddress_addNew_button'))
 
-modalTitle = WebUI.getText(findTestObject('AZ/Components/Address modal/title'))
+modalTitle = WebUI.getText(findTestObject('AZ/Components/Address modal/title - ajout'))
 
 WebUI.verifyMatch(modalTitle, '.*(livraison|consegna)', true)
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Fill or update address modal'), [('address') : deliveryAddress], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Fill address modal NEW'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Delivery address'
 WebUI.takeScreenshot()
@@ -109,11 +107,11 @@ WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyAddresses/tab_billingAddres
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyAddresses/billingAddress_addNew_button'))
 
-modalTitle = WebUI.getText(findTestObject('AZ/Components/Address modal/title'))
+modalTitle = WebUI.getText(findTestObject('AZ/Components/Address modal/title - ajout facturation'))
 
 WebUI.verifyMatch(modalTitle, '.*(facturation|fatturazione)', true)
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Fill or update address modal'), [('address') : billingAddress], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Update address modal NEW'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Billing address'
 WebUI.takeScreenshot()

@@ -6,19 +6,18 @@
    <elementGuidId>de9e1652-c03c-43ee-be7b-fee621113259</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//button[@type=&quot;submit&quot;])[3]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type=&quot;submit&quot;])[2]</value>
+         <key>CSS</key>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,13 +25,13 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[(text() = 'Créer mon compte') or (text() = 'Crea il mio account')]</value>
-      <webElementGuid>b6c676ce-85c3-41f5-abf3-e9a5050544be</webElementGuid>
+      <webElementGuid>96bd1b48-6f87-46aa-967b-2bf521a8c2ee</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//*[(text() = 'Créer mon compte') or (text() = 'Crea il mio account')]</value>
-      <webElementGuid>d7a3ebbf-14bf-4bd2-83b4-b93cbb93fd12</webElementGuid>
+      <webElementGuid>f7e235cc-0248-40b7-b3b6-0e52fb33d4ec</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

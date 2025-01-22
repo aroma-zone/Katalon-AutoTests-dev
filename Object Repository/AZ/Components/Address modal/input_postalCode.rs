@@ -6,14 +6,18 @@
    <elementGuidId>9188bfe2-1d2e-45f6-994d-09b8049e307c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input#postalCode</value>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;postalCode&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#postalCode</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

@@ -6,14 +6,18 @@
    <elementGuidId>4a545572-3b1d-4820-9350-92afba4f13d8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input#lastName</value>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;lastName&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#lastName</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

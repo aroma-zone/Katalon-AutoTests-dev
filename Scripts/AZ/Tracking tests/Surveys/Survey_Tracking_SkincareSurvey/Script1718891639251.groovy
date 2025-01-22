@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_7'), 0)
+WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'), 0)
 
-WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_8'))
+WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Conseils'))
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_skincareSurvey'))
 

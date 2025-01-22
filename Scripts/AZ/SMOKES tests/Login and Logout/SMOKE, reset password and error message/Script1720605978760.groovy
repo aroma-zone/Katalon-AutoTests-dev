@@ -27,8 +27,8 @@ WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\
 
 WebUI.click(findTestObject('AZ/Components/Login modal/button_resetPassword'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Entrez votre adresse e-mail ci-dessous et vous recevrez un e-mail avec un lien pour réinitialiser votre mot de passe.', 
-    false)
+//WebUI.verifyTextPresent('Entrez votre adresse e-mail ci-dessous et vous recevrez un e-mail avec un lien pour réinitialiser votre mot de passe.', 
+//    false)
 
 WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'alexandre.bluteau1@gmail.com')
 

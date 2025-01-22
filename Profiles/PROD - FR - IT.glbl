@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>PROD - FR - IT</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('email') : 'wahob39038@logodez.com', ('password') : 'TestPassword721']</initValue>
+      <name>user1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>for MyAccountPage tests</description>
+      <initValue>[('email') : 'test.auto.2@email.com', ('password') : 'TestPassword721']</initValue>
+      <name>user2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>for Bancontact (billing on BE)</description>
+      <initValue>[('email') : 'test.auto.belgium@email.com', ('password') : 'TestPassword721']</initValue>
+      <name>user3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://auth.europe-west1.gcp.commercetools.com'</initValue>
+      <name>CT_AUTH_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://api.europe-west1.gcp.commercetools.com'</initValue>
+      <name>CT_API_URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'aromazone-staging'</initValue>
+      <name>CT_PROJECT_KEY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Generated from CT_SERVER_CLIENT_ID and CT_SERVER_CLIENT_SECRET</description>
+      <initValue>'QlhMaWJDTjd4TTN4SFh5NVZzQ1gzNnQ4Ok44RUptb0VOZkNtTVk3aVF1azVQcEV2NTU3VGRjdGFp'</initValue>
+      <name>CT_SERVER_CLIENT_AUTH_TOKEN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('code') : '10-PERC-OFF', ('percentage') : 10]</initValue>
+      <name>promoCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('password') : 'TestPassword721']</initValue>
+      <name>user_random1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('password') : 'b2baz2', ('email') : 'b2baz2@yopmail.com']</initValue>
+      <name>userB2B</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/'</initValue>
+      <name>Canonical_HP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/it'</initValue>
+      <name>Canonical_HP_IT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/'</initValue>
+      <name>HomePage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/it'</initValue>
+      <name>HomePage_IT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/products/hydrolats'</initValue>
+      <name>PLP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/it/products/idrolati'</initValue>
+      <name>PLP_IT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.aroma-host.net/info/fiche-technique/diffuseur-ceramique-a-parfumer'</initValue>
+      <name>Canonical_PDP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/it/guide/olio-essenziale-achillea-millefoglie-bio'</initValue>
+      <name>Canonical_PDP_IT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/info/fiche-technique/diffuseur-ceramique-a-parfumer'</initValue>
+      <name>SEO_PDP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/it/product/olio-essenziale-achillea-millefoglie-bio '</initValue>
+      <name>SEO_PDP_IT</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

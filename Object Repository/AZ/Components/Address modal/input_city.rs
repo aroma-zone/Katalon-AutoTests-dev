@@ -6,14 +6,18 @@
    <elementGuidId>3a8912b7-1e0f-46fd-9fbf-693de0ce06d7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input#city</value>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;city&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input#city</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

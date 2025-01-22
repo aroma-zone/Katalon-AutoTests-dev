@@ -23,6 +23,8 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 'using different user account for address update to reduce impact in case of test break'
 user = GlobalVariable.user2
 
+WebUI.delay(3)
+
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/a_myAddresses'))
@@ -43,11 +45,11 @@ initialDefaultAddressName = WebUI.getText(findTestObject('Object Repository/AZ/P
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyAddresses/deliveryAddress_addNew_button'))
 
-modalTitle = WebUI.getText(findTestObject('AZ/Components/Address modal/title'))
+modalTitle = WebUI.getText(findTestObject('AZ/Components/Address modal/title - ajout'))
 
 WebUI.verifyMatch(modalTitle, '.*(livraison|consegna)', true)
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Fill or update address modal'), [('address') : newAddress], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Fill address modal NEW'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Delivery Addresses after adding additional one'
 WebUI.takeScreenshot()
@@ -76,7 +78,7 @@ modalTitle = WebUI.getText(findTestObject('AZ/Components/Address modal/title'))
 
 WebUI.verifyMatch(modalTitle, '(Éditer|Modifica).*', true)
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Fill or update address modal'), [('address') : updatedAddress], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Address modal/_Update address modal NEW'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Delivery Addresses after updating details of default address'
 WebUI.takeScreenshot()
