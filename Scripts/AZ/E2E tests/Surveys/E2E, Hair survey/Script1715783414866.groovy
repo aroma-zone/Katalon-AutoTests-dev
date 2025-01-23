@@ -99,5 +99,11 @@ WebUI.delay(4)
 
 WebUI.verifyTextPresent('Trilex Hair survey', false)
 
+// Étape 1 : Récupérer l'URL actuelle
+String currentUrl = WebUI.getUrl()
+
+// Étape 2 : Vérifier que l'URL correspond
+assert currentUrl == 'https://aroma-zone:avant-premiere@stage.aroma-host.net/surveyresults/routinecheveux' : 'L\'URL du résultat survey actuelle est incorrecte : ' + currentUrl
+
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

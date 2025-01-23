@@ -29,7 +29,17 @@ WebUI.delay(1)
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'), 0)
 
-WebUI.delay(1)
+WebUI.delay(5)
+
+String scriptstart = '\n    if (typeof window.dataLayer === "undefined" || !Array.isArray(window.dataLayer)) {\n        return null;\n    }\n    return window.dataLayer.find(event => \n        event.event === "survey_start" && \n        event.event_name === "survey_start" && \n        event.event_label === "survey_skincare" && \n        event.event_action === "survey"\n    );\n'
+
+Map event0 = WebUI.executeJavaScript(scriptstart, null)
+
+assert event0 != null : 'L\'événement de tracking \'survey_start\' n\'a pas été trouvé dans dataLayer.'
+
+assert event0.get('event_name') == 'survey_start' : 'L\'événement trouvé n\'est pas \'survey_start\'.'
+
+println('L\'événement \'survey_start\' a été trouvé avec succès : ' + event0)
 
 WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/SwitchToIframe'), 0)
 

@@ -19,6 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(4)
+
+WebUI.refresh()
+
 WebUI.callTestCase(findTestCase('AZ/E2E tests/Cart/_Empty cart'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)

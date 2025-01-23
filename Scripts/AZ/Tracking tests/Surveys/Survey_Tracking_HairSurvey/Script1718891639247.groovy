@@ -25,7 +25,17 @@ WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation ban
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_hairSurvey'))
 
-WebUI.delay(1)
+WebUI.delay(5)
+
+String scriptstart = '\n    if (typeof window.dataLayer === "undefined" || !Array.isArray(window.dataLayer)) {\n        return null;\n    }\n    return window.dataLayer.find(event => \n        event.event === "survey_start" && \n        event.event_name === "survey_start" && \n        event.event_label === "survey_routinecheveux" && \n        event.event_action === "survey"\n    );\n'
+
+Map event0 = WebUI.executeJavaScript(scriptstart, null)
+
+assert event0 != null : 'L\'événement de tracking \'survey_start\' n\'a pas été trouvé dans dataLayer.'
+
+assert event0.get('event_name') == 'survey_start' : 'L\'événement trouvé n\'est pas \'survey_start\'.'
+
+println('L\'événement \'survey_start\' a été trouvé avec succès : ' + event0)
 
 WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/HairRoutine/SwitchToIframe'), 0)
 
@@ -35,7 +45,7 @@ WebUI.setText(findTestObject('AZ/Pages/SurveysPages/HairRoutine/Input_firstname'
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/Button_next1'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/Button_Age'))
 
@@ -45,7 +55,7 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonNext2'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/HairChoice_curly hair'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/CurlyHair_tight curls'))
 
@@ -67,13 +77,13 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext4'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonPreferenceTexture_cream'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonAllergy_no'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/CheckBox_FirstApplication'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext5'))
 
@@ -81,15 +91,17 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonHomemadeReci
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonSmell_no'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.setText(findTestObject('AZ/Pages/SurveysPages/HairRoutine/Input_email'), 'alexandre.bluteau@aroma-zone.com')
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext6'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/Checkbox_validate'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext7'))
 
@@ -99,7 +111,11 @@ WebUI.delay(14)
 
 WebUI.verifyTextPresent('Trilex Hair survey', false)
 
-WebUI.delay(3)
+// Étape 1 : Récupérer l'URL actuelle
+String currentUrl = WebUI.getUrl()
+
+// Étape 2 : Vérifier que l'URL correspond
+assert currentUrl == 'https://aroma-zone:avant-premiere@stage.aroma-host.net/surveyresults/routinecheveux' : 'L\'URL du résultat survey actuelle est incorrecte : ' + currentUrl
 
 // Exécuter du JavaScript pour récupérer la couche de données
 String script = '\n    return window.dataLayer.find(event => \n        event.event === \'survey\' && \n        event.event_name === \'impression_survey_recape\' && \n        event.event_action === \'survey_answer\' \n    );\n'
@@ -147,28 +163,21 @@ WebUI.click(findTestObject('AZ/Pages/Cart/button_close'))
 
 WebUI.delay(1)
 
+WebUI.switchToDefaultContent()
+
 //WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 // Étape 1 : Identifier le logo via son sélecteur
 String logoSelector1 = 'a.sf-header__logo.logo'
 
 // Étape 2 : Script pour déclencher un clic sans redirection
-//String script6 = '''
-//var logo = document.querySelector(arguments[0]);
-//if (logo) {
-// Empêche le comportement par défaut
-//    logo.addEventListener('click', function(event) {
-//        event.preventDefault();
-//    });
-// Simule le clic
-//    logo.click();
-//}
-//'''
+String script6 = '\nvar logo = document.querySelector(arguments[0]);\nif (logo) {\n    // Empêche le comportement par défaut\n    logo.addEventListener(\'click\', function(event) {\n        event.preventDefault();\n    });\n    // Simule le clic\n    logo.click();\n}\n'
+
 // Étape 3 : Exécuter le script pour empêcher la redirection et simuler le clic
-//WebUI.executeJavaScript(script6, Arrays.asList(logoSelector1))
+WebUI.executeJavaScript(script6, Arrays.asList(logoSelector1))
+
 WebUI.delay(5)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_FindYourRoutine'))
-
+//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_FindYourRoutine'))
 String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'survey_result\' && \n        event.event_name === \'impression_survey_result_recape_end\' && \n        event.event_action === \'survey_result_close_page\' \n    );\n'
 
 // event.event === 'recipe' && event.event_label === \'recipe\' && \n        event.event_name === \'generic_event\'\n
