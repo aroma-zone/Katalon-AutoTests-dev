@@ -32,7 +32,7 @@ WebUI.scrollToPosition(0, 0)
 // Effectuer une action qui doit déclencher un événement de tracking
 //WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/TrackingButtonCarousel'))
 
-WebUI.delay(4)
+WebUI.delay(8)
 
 // Exécuter du JavaScript pour récupérer la couche de données
 
@@ -40,7 +40,7 @@ String script = """
     return window.dataLayer.find(event => 
         event.event === 'carousel' && 
         event.event_name === 'view_promotion' &&
-		event.ecommerce.title === 'Vos favoris pour affronter le froid' && 
+		event.ecommerce.title === 'Le sérum cheveux anti chute' 
 		
     );
 """
