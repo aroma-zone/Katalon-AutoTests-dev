@@ -6,6 +6,11 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>[('email') : 'workshop@gmail.com', ('password') : 'Testtesttest']</initValue>
+      <name>userworkshop</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>[('email') : 'wahob39038@logodez.com', ('password') : 'TestPassword721']</initValue>
       <name>user1</name>
    </GlobalVariableEntity>

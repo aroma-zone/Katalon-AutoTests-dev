@@ -91,7 +91,7 @@ boolean testFailed = false
 
 
 // Étape 4 : Vérification des liens
-File file2 = new File("verified_links_IT.txt")
+File file2 = new File("C:\\LINKS SEO FR IT\\verified_links_IT.txt")
 file2.text = "Vérification des liens IT - ${new Date()}\n"
 
 links.each { String link ->
