@@ -109,4 +109,14 @@
       <initValue>'https://aroma-zone:avant-premiere@stage.aroma-host.net/it/product/olio-essenziale-achillea-millefoglie-bio '</initValue>
       <name>SEO_PDP_IT</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://aroma-zone:avant-premiere@stage.aroma-host.net/info/fiche-technique/huile-essentielle-tea-tree-arbre-bio-aroma-zone?page=library'</initValue>
+      <name>SEO_EODP_FR</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.aroma-zone.com/info/fiche-technique/huile-essentielle-tea-tree-arbre-bio-aroma-zone?page=library'</initValue>
+      <name>Canonical_EODP_FR</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
