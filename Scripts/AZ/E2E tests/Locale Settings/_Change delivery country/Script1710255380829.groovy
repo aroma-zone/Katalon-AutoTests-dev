@@ -21,7 +21,7 @@ WebUI.comment('Precondition: Opened browser')
 
 WebUI.comment('Input: countryName {String}')
 
-WebUI.navigateToUrl(GlobalVariable.HomePage)
+WebUI.navigateToUrl(GlobalVariable.SEO_HomePage_FR)
 
 if (CustomKeywords.'az.MobileOrDesktop.isMobile'()) {
 

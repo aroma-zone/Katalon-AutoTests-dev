@@ -62,42 +62,42 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://stage.aroma-host.net/'</initValue>
-      <name>Canonical_HP</name>
+      <name>SEO_Canonical_HP_FR</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://www.aroma-zone.com/it'</initValue>
-      <name>Canonical_HP_IT</name>
+      <name>SEOCanonical_HP_IT</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://aroma-zone:avant-premiere@stage.aroma-host.net/'</initValue>
-      <name>HomePage</name>
+      <name>SEO_HomePage_FR</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://aroma-zone:avant-premiere@stage.aroma-host.net/it'</initValue>
-      <name>HomePage_IT</name>
+      <name>SEO_HomePage_IT</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://aroma-zone:avant-premiere@stage.aroma-host.net/products/hydrolats'</initValue>
-      <name>PLP</name>
+      <name>SEO_PLP</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://aroma-zone:avant-premiere@stage.aroma-host.net/it/products/idrolati'</initValue>
-      <name>PLP_IT</name>
+      <name>SEO_PLP_IT</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://stage.aroma-host.net/info/fiche-technique/diffuseur-ceramique-a-parfumer'</initValue>
-      <name>Canonical_PDP</name>
+      <name>SEO_Canonical_PDP</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://www.aroma-zone.com/it/guide/olio-essenziale-achillea-millefoglie-bio'</initValue>
-      <name>Canonical_PDP_IT</name>
+      <name>SEO_Canonical_PDP_IT</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -117,6 +117,16 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://www.aroma-zone.com/info/fiche-technique/huile-essentielle-tea-tree-arbre-bio-aroma-zone?page=library'</initValue>
-      <name>Canonical_EODP_FR</name>
+      <name>SEO_Canonical_EODP_FR</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://aroma-zone:avant-premiere@stage.aroma-host.net/it/guide/olio-essenziale-tea-tree-albero-del-te-bio'</initValue>
+      <name>SEO_EODP_IT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://stage.aroma-host.net/it/guide/olio-essenziale-tea-tree-albero-del-te-bio'</initValue>
+      <name>SEO_Canonical_EODP_IT</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

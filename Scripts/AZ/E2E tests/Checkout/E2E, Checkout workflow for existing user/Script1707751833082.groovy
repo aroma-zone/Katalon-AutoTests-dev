@@ -102,7 +102,7 @@ WebUI.click(CustomKeywords.'az.MobileOrDesktop.getSuitableObject'(findTestObject
 
 url = WebUI.getUrl()
 
-WebUI.verifyMatch(url, GlobalVariable.HomePage, false)
+WebUI.verifyMatch(url, GlobalVariable.SEO_HomePage_FR, false)
 
 WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
 

@@ -21,7 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
 
 // Récupérer l'URL canonical depuis le profil
-String stageURLcanonical = GlobalVariable.Canonical_PDP_IT
+String stageURLcanonical = GlobalVariable.SEO_Canonical_PDP_IT
 
 String stageURL = GlobalVariable.SEO_PDP_IT
 

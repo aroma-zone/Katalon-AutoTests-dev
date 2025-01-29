@@ -25,7 +25,7 @@ import org.openqa.selenium.Keys as Keys
 // Browser is opened on Test Suite setUp()
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl(GlobalVariable.HomePage)
+WebUI.navigateToUrl(GlobalVariable.SEO_HomePage_FR)
 
 WebUI.verifyElementVisible(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 

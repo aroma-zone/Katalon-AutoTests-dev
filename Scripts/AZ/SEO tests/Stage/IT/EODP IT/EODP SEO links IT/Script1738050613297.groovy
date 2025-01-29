@@ -51,7 +51,7 @@ WebDriver driver = new org.openqa.selenium.chrome.ChromeDriver(options)
 DriverFactory.changeWebDriver(driver)
 
 // Charger à nouveau la page initiale
-String authenticatedURL = "https://aroma-zone:avant-premiere@stage.aroma-host.net/info/fiche-technique/diffuseur-ceramique-a-parfumer"
+String authenticatedURL = "http://aroma-zone:avant-premiere@stage.aroma-host.net/it/guide/olio-essenziale-tea-tree-albero-del-te-bio"
 driver.get(authenticatedURL)
 
 // Vérifier que la page est bien rechargée
@@ -91,8 +91,8 @@ boolean testFailed = false
 
 
 // Étape 4 : Vérification des liens
-File file2 = new File("C:\\LINKS SEO FR IT\\verified_links_PDP_FR.txt")
-file2.text = "Vérification des liens FR - ${new Date()}\n"
+File file2 = new File("C:\\LINKS SEO FR IT\\verified_links_EODP_IT.txt")
+file2.text = "Vérification des liens IT - ${new Date()}\n"
 
 links.each { String link ->
     try {

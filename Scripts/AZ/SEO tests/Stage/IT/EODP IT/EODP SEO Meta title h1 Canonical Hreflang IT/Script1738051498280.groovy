@@ -21,9 +21,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
 
 // Récupérer l'URL canonical depuis le profil
-String stageURLcanonical = GlobalVariable.SEO_Canonical_PDP
+String stageURLcanonical = GlobalVariable.SEO_Canonical_EODP_IT
 
-String stageURL = GlobalVariable.SEO_PDP
+String stageURL = GlobalVariable.SEO_EODP_IT
 
 // Désactiver JavaScript
 WebUI.openBrowser('')
@@ -113,8 +113,7 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ['Diffuseur en céramique à suspendre', 'Présentation', 'Propriétés', 'Propriétés', 'Caractéristiques', 'En savoir +',
-	 'Quelques huiles essentielles pour parfumer vos galets :','Avis']
+List<String> ssrModules = ["Olio essenziale di Tea tree (Albero del tè BIO)", "Caratteristiche", "Indicazioni per l\\'uso", "Proprietà e utilizzo", "Precauzioni", "Maggiori informazioni", "Recensioni", "Ricette associate", "Consigli associati", "Bibliografia"]
 
 
 // Liste pour stocker les modules manquants

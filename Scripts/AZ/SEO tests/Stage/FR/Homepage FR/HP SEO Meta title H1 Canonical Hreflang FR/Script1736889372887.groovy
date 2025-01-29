@@ -21,9 +21,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
 
 // Récupérer l'URL canonical depuis le profil
-String stageURLcanonical = GlobalVariable.Canonical_HP
+String stageURLcanonical = GlobalVariable.SEO_Canonical_HP_FR
 
-String stageURL = GlobalVariable.HomePage
+String stageURL = GlobalVariable.SEO_HomePage_FR
 
 // Désactiver JavaScript
 WebUI.openBrowser('')

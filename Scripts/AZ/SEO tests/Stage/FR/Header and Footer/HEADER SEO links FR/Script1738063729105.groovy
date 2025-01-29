@@ -51,7 +51,7 @@ WebDriver driver = new org.openqa.selenium.chrome.ChromeDriver(options)
 DriverFactory.changeWebDriver(driver)
 
 // Charger à nouveau la page initiale
-String authenticatedURL = "https://aroma-zone:avant-premiere@stage.aroma-host.net/info/fiche-technique/diffuseur-ceramique-a-parfumer"
+String authenticatedURL = "http://aroma-zone:avant-premiere@stage.aroma-host.net/"
 driver.get(authenticatedURL)
 
 // Vérifier que la page est bien rechargée
@@ -71,19 +71,19 @@ file.text = pageSourceStage
 KeywordUtil.logInfo("Contenu HTML récupéré : ${pageSourceStage.substring(0, Math.min(500, pageSourceStage.length()))}...")
 
 Document document = Jsoup.parse(pageSourceStage)
-Element mainContent = document.selectFirst("body > div:not(header):not(footer):not(nav)")
+Element header = document.selectFirst("div#menu.menu.menu--sticky[data-v-43f16b76]")
 
-if (mainContent == null) {
-	KeywordUtil.markFailedAndStop("Impossible de récupérer le contenu principal. Vérifiez vos sélecteurs CSS.")
+if (header == null) {
+	KeywordUtil.markFailedAndStop("Impossible de récupérer le header. Vérifiez vos sélecteurs CSS.")
 }
 
 // Étape 3 : Extraction des liens avec Jsoup
-Document documentStage = Jsoup.parse(pageSourceStage)
-List<String> links = documentStage.select("div[data-v-0166df25][data-v-43f16b76] a[href]").eachAttr("href")
+//Document documentStage = Jsoup.parse(pageSourceStage)
+List<String> headerlinks = header.select("a[href]").eachAttr("href")
 
-KeywordUtil.logInfo("Nombre de liens extraits : ${links.size()}")
-if (links.isEmpty()) {
-    KeywordUtil.markFailedAndStop("Aucun lien n'a été extrait. Vérifiez vos sélecteurs CSS.")
+KeywordUtil.logInfo("Nombre de liens extraits : ${headerlinks.size()}")
+if (headerlinks.isEmpty()) {
+    KeywordUtil.markFailedAndStop("Aucun lien n'a été extrait dans le header. Vérifiez vos sélecteurs CSS.")
 }
 
 // Initialiser un indicateur pour détecter les échecs
@@ -91,10 +91,10 @@ boolean testFailed = false
 
 
 // Étape 4 : Vérification des liens
-File file2 = new File("C:\\LINKS SEO FR IT\\verified_links_PDP_FR.txt")
-file2.text = "Vérification des liens FR - ${new Date()}\n"
+File file2 = new File("C:\\LINKS SEO FR IT\\verified_links_header_fr.txt")
+file2.text = "Vérification des liens du header FR - ${new Date()}\n"
 
-links.each { String link ->
+headerlinks.each { String link ->
     try {
         String completeURL = link.startsWith("http") ? link : "https://stage.aroma-host.net" + link
         KeywordUtil.logInfo("Traitement du lien : $completeURL")
@@ -126,9 +126,9 @@ links.each { String link ->
 
 // Si un échec a été détecté, échouer le test
 if (testFailed) {
-    KeywordUtil.markFailedAndStop("Le test a échoué car un ou plusieurs liens ont retourné un code non-200.")
+    KeywordUtil.markFailedAndStop("Le test a échoué car un ou plusieurs liens dans le header ont retourné un code non-200.")
 } else {
-    KeywordUtil.logInfo("Tous les liens ont été vérifiés avec succès.")
+    KeywordUtil.logInfo("Tous les liens du header ont été vérifiés avec succès.")
 }
 
 // Étape 5 : Fin du script

@@ -33,6 +33,27 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>d4d413fb-ecf6-43ad-a751-f63257e12ac7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/PDP FR/PDP SEO links FR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>35e95b75-b3de-4fe6-8819-e01c8e012083</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/EODP FR/EODP SEO links FR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3ac54dcf-a0c8-4e24-ba0d-d1f16a565e23</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/EODP FR/EODP SEO Meta title h1 Canonical Hreflang FR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>a30b7ed2-fc0f-4002-b75d-b935c8c57cb7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -54,17 +75,52 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>fd2647f6-ce24-433f-9180-f9bd5095f201</guid>
+      <guid>ba95d0a9-0c3c-4464-a796-ff2469fefe3a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/EODP FR/EODP SEO links FR</testCaseId>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/IT/PDP IT/PDP SEO links IT</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6e463aff-c2c3-4757-b4e4-4947d2d26ac3</guid>
+      <guid>3d223a34-9d2a-45fa-93c5-9213510f981c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/EODP FR/EODP SEO Meta title h1 Canonical Hreflang FR</testCaseId>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/IT/EODP IT/EODP SEO links IT</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4ee72d3b-5e16-49ac-b7b3-ac8e950c69cb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/IT/EODP IT/EODP SEO Meta title h1 Canonical Hreflang IT</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f4d3a1a5-e46d-4fe0-9719-91691da450c8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/Header and Footer/HEADER SEO links FR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>413dc1f9-1b49-4a9c-9c5a-7b166a24d03f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/Header and Footer/FOOTER SEO links FR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>26dab32f-a3e1-4589-816a-78879bcdb9e9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/IT/Header and Footer/HEADER SEO links IT</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6d998fef-aae1-45b2-9e33-b4bcaaf23784</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/IT/Header and Footer/FOOTER SEO links IT</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

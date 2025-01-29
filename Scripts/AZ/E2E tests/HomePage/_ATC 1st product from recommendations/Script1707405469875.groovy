@@ -21,7 +21,7 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 // Precondition: Opened Browser
 //WebUI.openBrowser('')
-//WebUI.navigateToUrl(GlobalVariable.HomePage)
+//WebUI.navigateToUrl(GlobalVariable.SEO_HomePage_FR)
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //user = GlobalVariable.user1

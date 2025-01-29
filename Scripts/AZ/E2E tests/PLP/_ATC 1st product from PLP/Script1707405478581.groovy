@@ -19,7 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Precondition: Opened Browser
-WebUI.navigateToUrl(GlobalVariable.PLP)
+WebUI.navigateToUrl(GlobalVariable.SEO_PLP)
 
 cartBadgeInitialNumber = WebUI.callTestCase(findTestCase('AZ/E2E tests/Cart/_Get cart icon badge number'), [:], FailureHandling.STOP_ON_FAILURE)
 
