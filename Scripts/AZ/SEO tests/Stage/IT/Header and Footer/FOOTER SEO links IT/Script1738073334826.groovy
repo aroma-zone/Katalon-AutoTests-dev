@@ -71,7 +71,7 @@ file.text = pageSourceStage
 KeywordUtil.logInfo("Contenu HTML récupéré : ${pageSourceStage.substring(0, Math.min(500, pageSourceStage.length()))}...")
 
 Document document = Jsoup.parse(pageSourceStage)
-Element footer = document.selectFirst("div[data-v-0166df25][data-v-43f16b76]")
+Element footer = document.selectFirst("#__layout > div > div:nth-child(6)")
 
 if (footer == null) {
 	KeywordUtil.markFailedAndStop("Impossible de récupérer le footer. Vérifiez vos sélecteurs CSS.")

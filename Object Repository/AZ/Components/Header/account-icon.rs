@@ -7,7 +7,8 @@
    <imagePath>Screenshots/account-icon.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//button[@class=&quot;base-button base-button--pure header__action&quot;]</value>
       </entry>
       <entry>
          <key>IMAGE</key>
@@ -17,8 +18,7 @@
          <key>BASIC</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class=&quot;sf-button--pure header__action sf-button&quot;]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

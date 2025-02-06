@@ -7,13 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[contains(@class, &quot;checkmark&quot;)])[2]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>(//div[@class=&quot;radio&quot;])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -71,7 +71,7 @@ file.text = pageSourceStage
 KeywordUtil.logInfo("Contenu HTML récupéré : ${pageSourceStage.substring(0, Math.min(500, pageSourceStage.length()))}...")
 
 Document document = Jsoup.parse(pageSourceStage)
-Element header = document.selectFirst("div#menu.menu.menu--sticky[data-v-43f16b76]")
+Element header = document.selectFirst("div#menu.menu")
 
 if (header == null) {
 	KeywordUtil.markFailedAndStop("Impossible de récupérer le header. Vérifiez vos sélecteurs CSS.")

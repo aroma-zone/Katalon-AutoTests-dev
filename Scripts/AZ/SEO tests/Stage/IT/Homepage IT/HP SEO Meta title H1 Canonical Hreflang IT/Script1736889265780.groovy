@@ -39,7 +39,7 @@ WebUI.delay(2)
 
 'Close Cookies popup'
 if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), 5, FailureHandling.OPTIONAL)) {
-    WebUI.click(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('AZ/Components/Cookies popup IT/button_accept_v2'), FailureHandling.STOP_ON_FAILURE)
 }
 
 'Scroll to bottom so Newsletter popup is shown'
@@ -78,17 +78,17 @@ List<String> hreflangs = documentStage.select('link[rel=alternate]').eachAttr('h
 
 // Hreflangs qui doivent être présents
 List<String> expectedHreflangs = ['fr', 'x-default', 'it']
+
 // Hreflangs qui ne doivent pas être présents
-List<String> forbiddenHreflangs = ['de', 'en', 'es',]
+List<String> forbiddenHreflangs = ['de', 'en', 'es']
 
 // Vérifier que tous les hreflangs attendus sont présents
-if (!hreflangs.containsAll(expectedHreflangs)) {
-	KeywordUtil.markFailedAndStop('Hreflang manquants : ' + (expectedHreflangs - hreflangs))
-} else if (!Collections.disjoint(hreflangs, forbiddenHreflangs)) {
-	// Vérifier qu'aucun hreflang interdit n'est présent
-	KeywordUtil.markFailedAndStop('Hreflang(s) interdit(s) trouvé(s) : ' + hreflangs.intersect(forbiddenHreflangs))
+if (!(hreflangs.containsAll(expectedHreflangs))) {
+    KeywordUtil.markFailedAndStop('Hreflang manquants : ' + (expectedHreflangs - hreflangs)) // Vérifier qu'aucun hreflang interdit n'est présent
+} else if (!(Collections.disjoint(hreflangs, forbiddenHreflangs))) {
+    KeywordUtil.markFailedAndStop('Hreflang(s) interdit(s) trouvé(s) : ' + hreflangs.intersect(forbiddenHreflangs))
 } else {
-	KeywordUtil.logInfo('Tous les hreflangs sont corrects : ' + hreflangs)
+    KeywordUtil.logInfo('Tous les hreflangs sont corrects : ' + hreflangs)
 }
 
 // Vérifier Canonical
@@ -113,18 +113,17 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ['recensioni', 'Scopri', 'Le nostre selezioni', 'Ricette Fai-da-te', 'I consigli dei nostri esperti',
-    'Trova la tua routine']
+List<String> ssrModules = ['recensioni', 'Scopri', 'Le nostre selezioni', 'Ricette Fai-da-te', 'I consigli dei nostri esperti'
+    , 'Trova la tua routine']
 
 // Liste pour stocker les modules manquants
 List<String> missingModules = []
 
 // Parcourir et vérifier chaque module
 ssrModules.each({ def moduleName ->
-	
-		// Échapper les apostrophes pour Jsoup
-		String escapedModuleName = moduleName.replace("'", "\\'")
-	
+        // Échapper les apostrophes pour Jsoup
+        String escapedModuleName = moduleName.replace('\'', '\\\'')
+
         boolean isModuleVisible = !(documentStage.select(":containsOwn($moduleName)").isEmpty())
 
         if (!(isModuleVisible)) {

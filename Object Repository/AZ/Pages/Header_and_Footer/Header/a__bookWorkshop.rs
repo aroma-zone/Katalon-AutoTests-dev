@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class=&quot;color-secondary header__button sf-button&quot;]</value>
+         <value>//button[@class=&quot;base-button header__button color-secondary&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

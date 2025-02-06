@@ -6,12 +6,11 @@
    <elementGuidId>eb836c42-ae25-4448-a7df-e03217489d87</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class=&quot;sf-button--full-width color-primary sf-button&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@class=&quot;base-button base-button--full-width color-primary&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

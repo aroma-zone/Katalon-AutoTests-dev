@@ -6,12 +6,11 @@
    <elementGuidId>124dca06-532a-4ec2-a0b0-e16deeeb5d5f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//iframe[@title=&quot;ExitSurveyFR_VF&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//iframe[@title=&quot;FR_exit_survey&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

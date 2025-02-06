@@ -6,15 +6,18 @@
    <elementGuidId>d5e49c4c-cd7e-48db-83ef-8695a67f1ee0</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//label[@for=&quot;form.newsletter&quot;]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>label[class='sf-checkbox__container']</value>
+         <value>//label[@for=&quot;form.newsletter&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

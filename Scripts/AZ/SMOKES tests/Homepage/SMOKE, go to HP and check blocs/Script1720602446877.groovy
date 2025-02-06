@@ -31,7 +31,7 @@ WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/S
 
 WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Nos sélections', false)
+WebUI.verifyTextPresent('Notre sélection de cadeaux Saint-Valentin', false)
 
 //WebUI.verifyElementPresent(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), 0)
 //WebUI.verifyElementClickable(findTestObject('AZ/Pages/HomePage/ButtonTabsFilter_stock'), FailureHandling.STOP_ON_FAILURE)

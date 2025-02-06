@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='color-secondary sf-button' and contains(text(), 'Personnaliser ma base')]</value>
+         <value>//button[@class='base-button color-secondary' and contains(text(), 'Personnaliser ma base')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

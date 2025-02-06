@@ -25,9 +25,9 @@ WebUI.delay(1)
 
 WebUI.scrollToPosition(400, 400)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonPour elle'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), 0)
+WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonPour elle'), 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add2'))

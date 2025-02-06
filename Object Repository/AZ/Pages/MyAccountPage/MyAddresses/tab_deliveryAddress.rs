@@ -6,14 +6,18 @@
    <elementGuidId>27553927-1b23-4f10-8d3c-dcc75b31758a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.sf-tabs__tab:nth-child(1) > button</value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;az-tabs__item az-tabs__item--active&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.sf-tabs__tab:nth-child(1) > button</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

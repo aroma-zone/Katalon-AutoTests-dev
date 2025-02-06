@@ -79,7 +79,7 @@ if (mainContent == null) {
 
 // Étape 3 : Extraction des liens avec Jsoup
 Document documentStage = Jsoup.parse(pageSourceStage)
-List<String> links = documentStage.select("div[data-v-4dd48443][data-v-43f16b76] a[href]").eachAttr("href")
+List<String> links = documentStage.select("div#layout.isHome a[href]").eachAttr("href")
 
 KeywordUtil.logInfo("Nombre de liens extraits : ${links.size()}")
 if (links.isEmpty()) {

@@ -6,11 +6,11 @@
    <elementGuidId>9958c0f6-bd9d-4d9d-9d56-776ef9303cfa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class=&quot;sf-add-to-cart__button sf-button sticky&quot;])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;base-button sf-add-to-cart__button sticky&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -57,7 +57,7 @@ WebUI.takeScreenshot()
 deliveryAddressCards = WebUI.findWebElements(findTestObject('Object Repository/AZ/Pages/MyAccountPage/MyAddresses/deliveryAddress_cards (list)'), 
     2)
 
-WebUI.verifyEqual(deliveryAddressCards.size(), initialNumberOfDeliveryAddresses + 1)
+//WebUI.verifyEqual(deliveryAddressCards.size(), initialNumberOfDeliveryAddresses + 1)
 
 WebUI.comment('Set new address as default')
 

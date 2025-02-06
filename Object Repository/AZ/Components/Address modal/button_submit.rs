@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class=&quot;sf-button color-primary half-length&quot;]</value>
+         <value>//button[@class=&quot;base-button half-length&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

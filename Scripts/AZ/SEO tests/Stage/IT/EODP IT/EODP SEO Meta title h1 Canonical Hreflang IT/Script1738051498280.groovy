@@ -39,7 +39,7 @@ WebUI.delay(2)
 
 'Close Cookies popup'
 if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), 5, FailureHandling.OPTIONAL)) {
-    WebUI.click(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('AZ/Components/Cookies popup IT/button_accept_v2'), FailureHandling.STOP_ON_FAILURE)
 }
 
 'Scroll to bottom so Newsletter popup is shown'
@@ -78,17 +78,17 @@ List<String> hreflangs = documentStage.select('link[rel=alternate]').eachAttr('h
 
 // Hreflangs qui doivent être présents
 List<String> expectedHreflangs = ['fr', 'x-default', 'it']
+
 // Hreflangs qui ne doivent pas être présents
-List<String> forbiddenHreflangs = ['de', 'en', 'es',]
+List<String> forbiddenHreflangs = ['de', 'en', 'es']
 
 // Vérifier que tous les hreflangs attendus sont présents
-if (!hreflangs.containsAll(expectedHreflangs)) {
-	KeywordUtil.markFailedAndStop('Hreflang manquants : ' + (expectedHreflangs - hreflangs))
-} else if (!Collections.disjoint(hreflangs, forbiddenHreflangs)) {
-	// Vérifier qu'aucun hreflang interdit n'est présent
-	KeywordUtil.markFailedAndStop('Hreflang(s) interdit(s) trouvé(s) : ' + hreflangs.intersect(forbiddenHreflangs))
+if (!(hreflangs.containsAll(expectedHreflangs))) {
+    KeywordUtil.markFailedAndStop('Hreflang manquants : ' + (expectedHreflangs - hreflangs)) // Vérifier qu'aucun hreflang interdit n'est présent
+} else if (!(Collections.disjoint(hreflangs, forbiddenHreflangs))) {
+    KeywordUtil.markFailedAndStop('Hreflang(s) interdit(s) trouvé(s) : ' + hreflangs.intersect(forbiddenHreflangs))
 } else {
-	KeywordUtil.logInfo('Tous les hreflangs sont corrects : ' + hreflangs)
+    KeywordUtil.logInfo('Tous les hreflangs sont corrects : ' + hreflangs)
 }
 
 // Vérifier Canonical
@@ -113,8 +113,9 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ["Olio essenziale di Tea tree (Albero del tè BIO)", "Caratteristiche", "Indicazioni per l\\'uso", "Proprietà e utilizzo", "Precauzioni", "Maggiori informazioni", "Recensioni", "Ricette associate", "Consigli associati", "Bibliografia"]
-
+List<String> ssrModules = ['Olio essenziale di Tea tree (Albero del tè BIO)', 'Caratteristiche', 'Indicazioni per l\\\'uso'
+    , 'Proprietà e utilizzo', 'Precauzioni', 'Maggiori informazioni', 'Recensioni', 'Ricette associate', 'Consigli associati'
+    , 'Bibliografia']
 
 // Liste pour stocker les modules manquants
 List<String> missingModules = []

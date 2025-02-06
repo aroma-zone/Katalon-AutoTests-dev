@@ -6,12 +6,11 @@
    <elementGuidId>3841e5ec-5b36-4851-b726-e6e1a585e06d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[@for=&quot;radio-password&quot; and normalize-space()='Modifier le mot de passe']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@type='button' and normalize-space()='Modifier le mot de passe']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>

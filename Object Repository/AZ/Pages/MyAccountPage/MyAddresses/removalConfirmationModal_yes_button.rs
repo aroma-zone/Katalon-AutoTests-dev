@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class=&quot;modal__button sf-button&quot;]</value>
+         <value>//button[@class=&quot;base-button modal__button&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

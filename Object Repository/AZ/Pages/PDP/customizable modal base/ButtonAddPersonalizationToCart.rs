@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class=&quot;customizer__footer__cta sf-button&quot;])[1]</value>
+         <value>(//button[@class=&quot;base-button customizer__footer__cta&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

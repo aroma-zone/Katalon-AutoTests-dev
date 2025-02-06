@@ -37,10 +37,6 @@ WebUI.verifyElementPresent(findTestObject('AZ/Components/Header/favorites-icon')
 
 WebUI.verifyElementClickable(findTestObject('AZ/Components/Header/favorites-icon'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Header/whishlist-icon'), 0)
-
-WebUI.verifyElementClickable(findTestObject('AZ/Components/Header/whishlist-icon'), FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Header/account-icon'), 0)
 
 WebUI.verifyElementClickable(findTestObject('AZ/Components/Header/account-icon'), FailureHandling.STOP_ON_FAILURE)

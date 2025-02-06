@@ -6,11 +6,11 @@
    <elementGuidId>260c0059-90d1-4c93-8f57-22f4c35c981e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//header//button[@type='button'])[4]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@class=&quot;base-button base-button--pure header__action desktop-only&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

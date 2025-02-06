@@ -7,19 +7,19 @@
    <imagePath>Screenshots/cart-icon.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.cart-icon</value>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;base-button base-button--pure sf-header__action cart-icon base-button--pure header__action header__action--basket&quot;])</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class=&quot;sf-button--pure sf-header__action cart-icon sf-button--pure header__action header__action--basket sf-button&quot;])</value>
+         <key>IMAGE</key>
+         <value>Screenshots/cart-icon.png</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value>Screenshots/cart-icon.png</value>
+         <key>CSS</key>
+         <value>button.cart-icon</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

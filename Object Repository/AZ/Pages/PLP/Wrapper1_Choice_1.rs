@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//label[@class=&quot;sf-checkbox__container&quot;])[1]</value>
+         <value>(//label[@for=&quot;Anti-âge&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

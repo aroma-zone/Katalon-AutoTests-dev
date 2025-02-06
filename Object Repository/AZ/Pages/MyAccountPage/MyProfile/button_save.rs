@@ -6,16 +6,14 @@
    <elementGuidId>1c065f30-9f94-4ca2-a728-c251e7655339</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;base-button form__button submit-button&quot;])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class='form__button submit-button sf-button'])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

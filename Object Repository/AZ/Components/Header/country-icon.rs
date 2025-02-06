@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class=&quot;desktop-tablet-only store-locale-flag-icon__lang store-locale-flag-icon__lang--selected sf-button&quot;])[1]</value>
+         <value>(//button[@class=&quot;base-button desktop-only store-locale-flag-icon__lang store-locale-flag-icon__lang--selected&quot;])[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
          <value>(//button[@class=&quot;container__lang container__lang--selected sf-button&quot;])[1]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

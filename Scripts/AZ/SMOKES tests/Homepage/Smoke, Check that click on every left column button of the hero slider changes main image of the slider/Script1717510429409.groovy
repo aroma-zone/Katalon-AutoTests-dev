@@ -39,7 +39,7 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide1'))
 
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('Cure regard sublimé', false)
+WebUI.verifyTextPresent('Soins cheveux naturels', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
@@ -57,13 +57,13 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Icone_close'), Fa
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
 
-WebUI.verifyElementPresent(findTestObject('AZ/Pages/PDP/ButtonAddToCart'), 0)
+WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 
-WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide2'))
+WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
 

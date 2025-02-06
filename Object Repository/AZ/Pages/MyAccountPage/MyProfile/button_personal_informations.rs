@@ -6,12 +6,11 @@
    <elementGuidId>25de828e-b305-4bbc-955d-345f312e2d8f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[@for=&quot;radio-data&quot; and normalize-space()='Informations personnelles']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@type='button' and normalize-space()='Informations personnelles']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>

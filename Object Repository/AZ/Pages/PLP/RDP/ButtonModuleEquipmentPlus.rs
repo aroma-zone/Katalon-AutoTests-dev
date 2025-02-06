@@ -6,11 +6,11 @@
    <elementGuidId>88c83d7d-da73-4368-8c65-3f9a716cde91</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class=&quot;sf-button--pure sf-quantity-selector__button sf-button&quot;])[6]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@class=&quot;base-button base-button--pure sf-quantity-selector__button&quot;])[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
