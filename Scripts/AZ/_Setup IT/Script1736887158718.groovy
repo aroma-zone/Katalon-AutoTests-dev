@@ -36,7 +36,7 @@ TestObject buttonSalva = findTestObject('AZ/Components/country selection popup I
 
 if (WebUI.verifyElementPresent(buttonSalva, 5, FailureHandling.OPTIONAL)) {
 	WebElement element = WebHelper.findWebElement(buttonSalva, 5)
-	JavascriptExecutor executor = (JavascriptExecutor) WebUI.getWebDriver()
+	JavascriptExecutor executor = (JavascriptExecutor) DriverFactory.getWebDriver()
 	executor.executeScript("arguments[0].click();", element)
 }
 

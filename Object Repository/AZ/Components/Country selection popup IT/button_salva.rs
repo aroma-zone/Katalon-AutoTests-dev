@@ -6,14 +6,18 @@
    <elementGuidId>8917e570-51fb-4083-b212-bb1397031389</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[contains(@class, 'confirm-button') and contains(text(), 'Salva')])</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>(//button[contains(@class, 'confirm-button')])[3]</value>
+         <value>(//button[contains(@class, 'confirm-button') and contains(text(), 'Salva')])</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

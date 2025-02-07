@@ -19,6 +19,10 @@ import org.openqa.selenium.Keys as Keys
 //import static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.jsoup.Jsoup as Jsoup
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebHelper
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.JavascriptExecutor
 
 // Récupérer l'URL canonical depuis le profil
 String stageURLcanonical = GlobalVariable.SEOCanonical_HP_IT
@@ -35,7 +39,15 @@ WebUI.executeJavaScript('navigator.webdriver=false;', null // Simule la désacti
 
 WebUI.navigateToUrl(stageURL)
 
-WebUI.delay(2)
+WebUI.delay(5)
+
+TestObject buttonSalva = findTestObject('AZ/Components/country selection popup IT/button_salva')
+
+if (WebUI.verifyElementPresent(buttonSalva, 5, FailureHandling.OPTIONAL)) {
+	WebElement element = WebHelper.findWebElement(buttonSalva, 5)
+	JavascriptExecutor executor = (JavascriptExecutor) DriverFactory.getWebDriver()
+	executor.executeScript("arguments[0].click();", element)
+}
 
 'Close Cookies popup'
 if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Cookies popup/button_accept_v2'), 5, FailureHandling.OPTIONAL)) {

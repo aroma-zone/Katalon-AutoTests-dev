@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'))
+WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Conseils'))
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_AdviceListing_AllAdvice'))
 

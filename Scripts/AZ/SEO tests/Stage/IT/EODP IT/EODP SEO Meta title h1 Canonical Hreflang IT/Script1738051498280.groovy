@@ -114,8 +114,7 @@ if (h1Stage.isEmpty()) {
 
 // Vérification du contenu des modules en SSR
 List<String> ssrModules = ['Olio essenziale di Tea tree (Albero del tè BIO)', 'Caratteristiche', 'Indicazioni per l\\\'uso'
-    , 'Proprietà e utilizzo', 'Precauzioni', 'Maggiori informazioni', 'Recensioni', 'Ricette associate', 'Consigli associati'
-    , 'Bibliografia']
+    , 'Proprietà e utilizzo', 'Precauzioni', 'Maggiori informazioni', 'Recensioni', 'Ricette associate', 'Bibliografia']
 
 // Liste pour stocker les modules manquants
 List<String> missingModules = []

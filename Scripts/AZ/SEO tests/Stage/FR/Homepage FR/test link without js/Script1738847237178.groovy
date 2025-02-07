@@ -35,17 +35,20 @@ import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.util.KeywordUtil
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 
 // Étape 1 : Initialisation
-WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeBrowser()
-
-// Configurer les options du navigateur pour désactiver JavaScript
+System.setProperty("webdriver.chrome.driver", "/Studio/Katalon_Studio_Windows_64-9.7.1/configuration/resources/update/9.7.4/extract/resources/drivers/chromedriver_win32/chromedriver.exe")
+Map<String, Object> p = new HashMap<String, Object>()
+p.put("profile.managed_default_content_settings.javascript", 2)
 ChromeOptions options = new ChromeOptions()
-options.addArguments('--disable-javascript')
-options.addArguments("--start-maximized") // Optionnel : maximise la fenêtre
-options.addArguments("--disable-blink-features=AutomationControlled") // Optionnel : pour éviter certains blocages
+options.setExperimentalOption('prefs', p)
+WebDriver chromeDriver = new ChromeDriver(options)
+DriverFactory.changeWebDriver(chromeDriver)
 
 // Lancer le navigateur avec les options configurées
 WebDriver driver = new org.openqa.selenium.chrome.ChromeDriver(options)
@@ -54,9 +57,6 @@ DriverFactory.changeWebDriver(driver)
 // Charger à nouveau la page initiale
 String authenticatedURL = "http://aroma-zone:avant-premiere@stage.aroma-host.net/"
 driver.get(authenticatedURL)
-
-// Vérifier que la page est bien rechargée
-KeywordUtil.logInfo("Page rechargée avec JavaScript désactivé : ${driver.getCurrentUrl()}")
 
 // Étape 2 : Récupération du contenu de la page
 String pageSourceStage = driver.getPageSource()
@@ -72,7 +72,7 @@ file.text = pageSourceStage
 KeywordUtil.logInfo("Contenu HTML récupéré : ${pageSourceStage.substring(0, Math.min(500, pageSourceStage.length()))}...")
 
 Document document = Jsoup.parse(pageSourceStage)
-Element mainContent = document.selectFirst("body > div:not(header):not(footer):not(nav)")
+Element mainContent = document.selectFirst("div.content, div.container")
 
 if (mainContent == null) {
 	KeywordUtil.markFailedAndStop("Impossible de récupérer le contenu principal. Vérifiez vos sélecteurs CSS.")
@@ -80,7 +80,7 @@ if (mainContent == null) {
 
 // Étape 3 : Extraction des liens avec Jsoup
 Document documentStage = Jsoup.parse(pageSourceStage)
-List<String> links = documentStage.select("div[data-v-4dd48443][data-v-43f16b76] a[href]").eachAttr("href")
+List<String> links = mainContent.select("a[href]:not(header a):not(div.footer__header-wrapper a):not(nav a):not(.menu a)").eachAttr("href")
 
 KeywordUtil.logInfo("Nombre de liens extraits : ${links.size()}")
 if (links.isEmpty()) {
@@ -92,7 +92,7 @@ boolean testFailed = false
 
 
 // Étape 4 : Vérification des liens
-File file2 = new File("C:\\LINKS SEO FR IT\\verified_links.txt")
+File file2 = new File("C:\\LINKS SEO FR IT\\TEST_JS.txt")
 file2.text = "Vérification des liens FR - ${new Date()}\n"
 
 links.each { String link ->
@@ -131,6 +131,8 @@ if (testFailed) {
 } else {
 	KeywordUtil.logInfo("Tous les liens ont été vérifiés avec succès.")
 }
+
+KeywordUtil.logInfo("HTML du contenu principal : " + mainContent.outerHtml().contains("/info/fiche-technique/serum-concentre-spilanthes-acide-hyaluronique"))
 
 // Étape 5 : Fin du script
 KeywordUtil.logInfo("Vérification des liens terminée. Résultats dans 'verified_links.txt'")

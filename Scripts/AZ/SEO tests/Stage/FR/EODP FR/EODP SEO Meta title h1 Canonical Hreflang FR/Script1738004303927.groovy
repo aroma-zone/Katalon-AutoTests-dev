@@ -113,7 +113,7 @@ if (h1Stage.isEmpty()) {
 }
 
 // Vérification du contenu des modules en SSR
-List<String> ssrModules = ['Huile essentielle de Tea tree (Arbre à Thé BIO)', 'Mode d’utilisation', 'Caractéristiques', 'Précautions', 'En savoir +', 'Avis','Recettes associées','Conseils associés','Bibliographie']
+List<String> ssrModules = ['Huile essentielle de Tea tree (Arbre à Thé BIO)', 'Mode d’utilisation', 'Caractéristiques', 'Précautions', 'En savoir +', 'Avis','Recettes associées','Bibliographie']
 
 
 // Liste pour stocker les modules manquants

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class=&quot;base-button base-button--full-width color-primary confirm-button&quot;]</value>
+         <value>(//button[contains(@class, 'ButtonGroup__BtnStyle-sc-1v453hz-0 biKKMc') and contains(text(), 'OK pour moi')])</value>
       </entry>
       <entry>
          <key>CSS</key>
