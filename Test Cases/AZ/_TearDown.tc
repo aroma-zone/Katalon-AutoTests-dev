@@ -4,5 +4,6 @@
    <name>_TearDown</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0680be4d-f258-41c8-93cb-a1ff920afea2</testCaseGuid>
 </TestCaseEntity>

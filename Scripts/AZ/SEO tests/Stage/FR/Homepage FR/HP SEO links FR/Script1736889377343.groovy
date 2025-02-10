@@ -71,7 +71,7 @@ file.text = pageSourceStage
 KeywordUtil.logInfo("Contenu HTML récupéré : ${pageSourceStage.substring(0, Math.min(500, pageSourceStage.length()))}...")
 
 Document document = Jsoup.parse(pageSourceStage)
-Element mainContent = document.selectFirst("body > div:not(header):not(footer):not(nav)")
+Element mainContent = document.selectFirst("div.content, div.container")
 
 if (mainContent == null) {
 	KeywordUtil.markFailedAndStop("Impossible de récupérer le contenu principal. Vérifiez vos sélecteurs CSS.")
@@ -79,7 +79,7 @@ if (mainContent == null) {
 
 // Étape 3 : Extraction des liens avec Jsoup
 Document documentStage = Jsoup.parse(pageSourceStage)
-List<String> links = documentStage.select("div#layout.isHome a[href]").eachAttr("href")
+List<String> links = mainContent.select("a[href]:not(header a):not(div.footer__header-wrapper a):not(nav a):not(.menu a)").eachAttr("href")
 
 KeywordUtil.logInfo("Nombre de liens extraits : ${links.size()}")
 if (links.isEmpty()) {

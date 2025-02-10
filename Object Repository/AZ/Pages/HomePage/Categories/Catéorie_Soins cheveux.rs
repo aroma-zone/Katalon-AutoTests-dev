@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//a[@href=&quot;/products/soins-cheveux&quot;])[3]</value>
+         <value>(//a[@href=&quot;/products/soins-cheveux&quot;])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
