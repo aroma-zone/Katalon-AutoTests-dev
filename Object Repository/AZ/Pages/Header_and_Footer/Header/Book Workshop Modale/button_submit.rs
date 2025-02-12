@@ -6,11 +6,11 @@
    <elementGuidId>1081d73b-3b44-49b5-a8da-8f6f0e10a11c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class='card_submitButton__3MRsi']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@class=&quot;card_submitButton__2Tgec&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

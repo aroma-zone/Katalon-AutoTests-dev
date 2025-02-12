@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Arrow_carroussel_selection_left</name>
+   <name>ButtonPour Lui</name>
    <tag></tag>
-   <elementGuidId>ea79a3b2-695b-4c31-99fc-948466892c36</elementGuidId>
+   <elementGuidId>73f277e9-515c-423d-b33b-d21c9c9a30d6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@class=&quot;native-carousel__controls next desktop-only&quot;])[1]</value>
+         <value>//button[normalize-space(text())='Pour lui']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

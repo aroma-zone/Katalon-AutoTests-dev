@@ -67,7 +67,7 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
 
-WebUI.verifyTextPresent('Sérum cheveux anti-chute Peptides & extrait de pois', false)
+WebUI.verifyTextPresent('Huile visage précieuse BIO', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 

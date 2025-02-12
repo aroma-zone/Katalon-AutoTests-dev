@@ -6,11 +6,11 @@
    <elementGuidId>6d77ee67-a719-4848-b1d7-0fc7384fd22d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class='dialog_cancel__d2N3_']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@class='dialog_cancel__BrjuA']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

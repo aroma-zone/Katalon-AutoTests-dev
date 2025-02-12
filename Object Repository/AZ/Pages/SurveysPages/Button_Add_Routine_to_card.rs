@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class=&quot;product__add-to-cart__button color-primary sf-button&quot;]</value>
+         <value>//button[@class=&quot;base-button product__add-to-cart__button color-primary&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

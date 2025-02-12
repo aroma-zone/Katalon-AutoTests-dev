@@ -31,7 +31,7 @@ if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Cookies popup/butto
 'Scroll to bottom so Newsletter popup is shown'
 WebUI.executeJavaScript('window.scrollTo(0, document.body.scrollHeight);', [])
 
-WebUI.delay(18)
+WebUI.delay(16)
 
 'Close newsletter popup'
 if (WebUI.verifyElementPresent(findTestObject('AZ/Components/Newsletter popup/button_close'), 5, FailureHandling.OPTIONAL)) {

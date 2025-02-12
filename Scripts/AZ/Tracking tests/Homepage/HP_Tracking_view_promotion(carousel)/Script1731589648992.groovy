@@ -40,7 +40,7 @@ String script = """
     return window.dataLayer.find(event => 
         event.event === 'carousel' && 
         event.event_name === 'view_promotion' &&
-		event.ecommerce.title === 'Le sérum cheveux anti chute' 
+		event.ecommerce.title === 'Nos baumes à lèvres vegan BIO' 
 		
     );
 """

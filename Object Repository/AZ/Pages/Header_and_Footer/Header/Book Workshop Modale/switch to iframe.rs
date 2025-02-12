@@ -6,11 +6,11 @@
    <elementGuidId>70a3850c-8f42-4631-b1ea-1efda7d07fd8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//iframe[@class='iframe_iframe__HDkDR']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//iframe[@title=&quot;Online Booking&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

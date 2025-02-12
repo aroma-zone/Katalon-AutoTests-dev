@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Arrow_carroussel_selection_left</name>
+   <name>a_SerumSurvey</name>
    <tag></tag>
-   <elementGuidId>ea79a3b2-695b-4c31-99fc-948466892c36</elementGuidId>
+   <elementGuidId>18dc45cf-bb1b-4baf-adfd-bc8051a9a35a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@class=&quot;native-carousel__controls next desktop-only&quot;])[1]</value>
+         <value>(//a[@href=&quot;/survey/serum&quot;])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@data-v-749b153c and @data-v-af5293a0])[30]</value>
+         <value>(//div[@data-v-749b153c and @data-v-3f3a980e])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -71,13 +71,15 @@ if (noWorkshopMessageVisible) {
 
     WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_emailReminder_no'))
 
+    WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_yesAdult'))
+
     WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Button_notPregnant'))
 
     WebUI.delay(1)
 
     WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/button_submit'))
 
-    WebUI.delay(2)
+    WebUI.delay(3)
 
     WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/Book Workshop Modale/Checkbox_terms_conditions'))
 

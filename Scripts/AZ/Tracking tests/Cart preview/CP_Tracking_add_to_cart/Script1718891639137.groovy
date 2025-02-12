@@ -30,7 +30,7 @@ WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonPour elle'), Failur
 WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonPour elle'), 0)
 
 // Effectuer une action qui doit déclencher un événement de tracking
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add2'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add1'))
 
 WebUI.delay(2)
 
@@ -46,17 +46,21 @@ assert event.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "a
 
 println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
 
-WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), 0)
+WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonPour elle'), 0)
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_right'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
 
 WebUI.delay(2)
 
 WebUI.scrollToPosition(300, 300)
 
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add3'))
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonPour Lui'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonProductCard_add6'))
 
 WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonUpsellModule_Add'))
 
@@ -73,15 +77,11 @@ assert event2.event_name == 'add_to_cart' : 'L\'événement trouvé n\'est pas "
 
 println('L\'événement de tracking \'add_to_cart\' avec \'add_to_cart\' a été trouvé avec succès dans la couche de données.')
 
-WebUI.scrollToElement(findTestObject('AZ/TrackingsPages/Homepage/ButtonFavoris'), 0)
+WebUI.scrollToPosition(300, 300)
+
+WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/ButtonPour elle'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
-
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('AZ/TrackingsPages/Homepage/Arrow_carroussel_selection_left'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'), FailureHandling.STOP_ON_FAILURE)
 

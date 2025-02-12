@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Registration/_User Random Registration'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'), 0)
 
 WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Conseils'))
@@ -29,21 +31,38 @@ WebUI.delay(1)
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'), 0)
 
-WebUI.delay(5)
-
-String scriptstart = '\n    if (typeof window.dataLayer === "undefined" || !Array.isArray(window.dataLayer)) {\n        return null;\n    }\n    return window.dataLayer.find(event => \n        event.event === "survey_start" && \n        event.event_name === "survey_start" && \n        event.event_label === "survey_skincare" && \n        event.event_action === "survey"\n    );\n'
-
-Map event0 = WebUI.executeJavaScript(scriptstart, null)
-
-assert event0 != null : 'L\'événement de tracking \'survey_start\' n\'a pas été trouvé dans dataLayer.'
-
-assert event0.get('event_name') == 'survey_start' : 'L\'événement trouvé n\'est pas \'survey_start\'.'
-
-println('L\'événement \'survey_start\' a été trouvé avec succès : ' + event0)
+WebUI.delay(2)
 
 WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/SwitchToIframe'), 0)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonStart'))
+
+WebUI.delay(5)
+
+WebUI.switchToDefaultContent()
+WebUI.delay(1)
+
+String scriptstart = '''
+    return window.dataLayer && [...window.dataLayer].reverse().find(event => 
+        event.event === "survey_start" && 
+        event.event_name === "survey_start" && 
+        event.event_label === "survey_skincare" && 
+        event.event_action === "survey"
+    );
+'''
+
+Map event0 = WebUI.executeJavaScript(scriptstart, null)
+
+// Vérifie que l'événement a bien été trouvé
+assert event0 != null : "❌ L'événement de tracking 'survey_start' n'a pas été trouvé dans dataLayer."
+
+assert event0.get('event_name') == "survey_start" : "⚠️ L'événement trouvé n'est pas 'survey_start'."
+
+println("✅ L'événement 'survey_start' a été trouvé avec succès : " + event0)
+
+WebUI.delay(1)
+
+WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/SwitchToIframe'), 0)
 
 WebUI.delay(1)
 
@@ -181,14 +200,12 @@ assert event3.event_name == 'skincare_add_to_cart' : 'L\'événement trouvé n\'
 
 println('L\'événement de tracking \'skincare_diag\' avec \'skincare_add_to_cart\' a été trouvé avec succès dans la couche de données.')
 
-WebUI.click(findTestObject('AZ/Pages/Cart/button_close'))
+WebUI.click(findTestObject('AZ/Components/Cart overlay/button_Checkout'))
 
-WebUI.delay(1)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
-
-WebUI.delay(6)
-
+//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
+//WebUI.delay(6)
 String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'skincare_diag\' && \n        event.event_action === \'skincare_recape_close_page\' && \n        event.event_name === \'impression_skincare_recape_end\'\n    );\n'
 
 //event.event === \'skincare_diag\' && \n && \n        event.event_action === \'skincare_recape_close_page\' \n

@@ -23,13 +23,13 @@ WebUI.callTestCase(findTestCase('AZ/E2E tests/Registration/_User Random Registra
 
 WebUI.scrollToElement(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'), 0)
 
-WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Conseils'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_FindYourRoutine'))
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_hairSurvey'))
+WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_SerumSurvey'))
 
 WebUI.delay(2)
 
-WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/HairRoutine/SwitchToIframe'), 0)
+WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/Serum Survey/SwitchToIframe'), 0)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonStart'))
 
@@ -39,7 +39,7 @@ WebUI.switchToDefaultContent()
 
 WebUI.delay(1)
 
-String scriptstart = '\n    if (typeof window.dataLayer === "undefined" || !Array.isArray(window.dataLayer)) {\n        return null;\n    }\n    return window.dataLayer.find(event => \n        event.event === "survey_start" && \n        event.event_name === "survey_start" && \n        event.event_label === "survey_routinecheveux" && \n        event.event_action === "survey"\n    );\n'
+String scriptstart = '\n    if (typeof window.dataLayer === "undefined" || !Array.isArray(window.dataLayer)) {\n        return null;\n    }\n    return window.dataLayer.find(event => \n        event.event === "survey_start" && \n        event.event_name === "survey_start" && \n        event.event_label === "survey_serum" && \n        event.event_action === "survey"\n    );\n'
 
 Map event0 = WebUI.executeJavaScript(scriptstart, null)
 
@@ -49,11 +49,11 @@ assert event0.get('event_name') == 'survey_start' : 'L\'événement trouvé n\'e
 
 println('L\'événement \'survey_start\' a été trouvé avec succès : ' + event0)
 
-WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/HairRoutine/SwitchToIframe'), 0)
+WebUI.switchToFrame(findTestObject('AZ/Pages/SurveysPages/Serum Survey/SwitchToIframe'), 0)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonStart'))
 
-WebUI.setText(findTestObject('AZ/Pages/SurveysPages/HairRoutine/Input_firstname'), 'Trilex Hair survey')
+WebUI.setText(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Input_firstname'), 'Trilex Serum survey')
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/Button_next1'))
 
@@ -63,7 +63,7 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/Button_Age'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonWhoAreYou_man'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonNext2'))
+WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/HairChoice_curly hair'))
 
@@ -73,61 +73,67 @@ WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/CurlyHair_tight cu
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/HairLength_medium'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/HairWashingFrequency_3atWeek'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/HairAfterShampooing_greasy'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonMake-up_no'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonConcern_1'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonSunlightExpose_frequently'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonConcern_2'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonDoYouSmoke_regulary'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonConcern_3'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext2'))
+
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonConcern_1'))
+
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonConcern_2'))
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext3'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext4'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonPreferenceTexture_cream'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonAllergy_no'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonAllergy_no'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNovice_SayAll'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/CheckBox_FirstApplication'))
+WebUI.delay(2)
+
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext4'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext5'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonHomemadeRecipes_no'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonSmell_no'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext6'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('AZ/Pages/SurveysPages/HairRoutine/Input_email'), 'alexandre.bluteau@aroma-zone.com')
+WebUI.setText(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Input_Email'), 'alexandre.bluteau@aroma-zone.com')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext6'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/SkinCare Survey/ButtonNext7'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/Checkbox_validate'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/Checkbox_validate'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonNext7'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonNext9'))
 
-WebUI.click(findTestObject('AZ/Pages/SurveysPages/HairRoutine/ButtonResult'))
+WebUI.click(findTestObject('AZ/Pages/SurveysPages/Serum Survey/ButtonResult'))
 
 WebUI.delay(14)
 
-WebUI.verifyTextPresent('Trilex Hair survey', false)
+WebUI.verifyTextPresent('Votre routine sérum', false)
 
 // Étape 1 : Récupérer l'URL actuelle
 String currentUrl = WebUI.getUrl()
 
 // Étape 2 : Vérifier que l'URL correspond
-assert currentUrl == 'https://aroma-zone:avant-premiere@stage.aroma-host.net/surveyresults/routinecheveux'
+assert currentUrl == 'https://aroma-zone:avant-premiere@stage.aroma-host.net/surveyresults/serum'
 
 // Exécuter du JavaScript pour récupérer la couche de données
 String script = '\n    return window.dataLayer.find(event => \n        event.event === \'survey\' && \n        event.event_name === \'impression_survey_recape\' && \n        event.event_action === \'survey_answer\' \n    );\n'

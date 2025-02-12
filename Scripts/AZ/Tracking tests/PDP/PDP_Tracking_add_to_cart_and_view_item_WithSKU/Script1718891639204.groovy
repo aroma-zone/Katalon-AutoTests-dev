@@ -44,23 +44,23 @@ WebUI.click(findTestObject('AZ/Components/Search bar/card_resultCuticules'))
 WebUI.delay(2)
 
 // Vérifiez l'événement dans la couche de données
-String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'view_item\' && \n        event.event_name === \'view_item\' && \n        event.event_category === \'ecommerce\' && \n        event.event_action === \'open\' && \n        event.ecommerce.items[0].item_sku === \'04028\'\n    );\n'
+String script4 = '\n    return window.dataLayer.find(event => \n        event.event === \'view_item\' && \n        event.event_name === \'view_item\' && \n        event.event_category === \'ecommerce\' && \n        event.event_action === \'open\' && \n        event.ecommerce.items[0].item_sku === \'04992\'\n    );\n'
 
 Map event4 = ((WebUI.executeJavaScript(script4, null)) as Map)
 
 // Vérifier que l'événement de tracking est présent dans la couche de données
-assert event4 != null : 'L\'événement de tracking \'view_item\' avec \'view_item\' et event.ecommerce.items.0.item_sku === \'02986\' n\'a pas été trouvé dans la couche de données.'
+assert event4 != null : 'L\'événement de tracking \'view_item\' avec \'view_item\' et event.ecommerce.items.0.item_sku === \'04992\' n\'a pas été trouvé dans la couche de données.'
 
 assert event4.event_name == 'view_item' : 'L\'événement trouvé n\'est pas \'view_item\'.'
 
-println('L\'événement de tracking \'view_item\' avec \'view_item\' et event.ecommerce.items.0.item_sku === \'02986\' a été trouvé avec succès dans la couche de données.')
+println('L\'événement de tracking \'view_item\' avec \'view_item\' et event.ecommerce.items.0.item_sku === \'04992\' a été trouvé avec succès dans la couche de données.')
 
 WebUI.click(findTestObject('AZ/Pages/PDP/ButtonAddToCart'))
 
 WebUI.delay(2)
 
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = '\n    return window.dataLayer.find(event => \n        event.event === \'add_to_cart\' && \n        event.event_name === \'add_to_cart\' && \n        event.ecommerce.items[0].item_sku === \'04028\' && \n        event.event_action === \'add\'\n    );\n'
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'add_to_cart\' && \n        event.event_name === \'add_to_cart\' && \n        event.ecommerce.items[0].item_sku === \'04992\' && \n        event.event_action === \'add\'\n    );\n'
 
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)
 

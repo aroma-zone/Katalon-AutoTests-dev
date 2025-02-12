@@ -10,12 +10,11 @@
          <value>(//button[@class=&quot;needsclick klaviyo-close-form go4255485812 kl-private-reset-css-Xuajs1&quot;])[2]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.klaviyo-close-form</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

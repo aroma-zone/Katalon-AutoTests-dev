@@ -6,11 +6,11 @@
    <elementGuidId>57d4f840-ab06-47ab-be02-27f392e59b9c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='list_item__3TRd7']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//li[@id=&quot;store-list-7825&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

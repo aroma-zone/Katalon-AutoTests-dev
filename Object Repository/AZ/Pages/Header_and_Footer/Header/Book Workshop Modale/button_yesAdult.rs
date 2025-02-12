@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Arrow_carroussel_selection_left</name>
+   <name>button_yesAdult</name>
    <tag></tag>
-   <elementGuidId>ea79a3b2-695b-4c31-99fc-948466892c36</elementGuidId>
+   <elementGuidId>ccdd4a50-74f1-4231-91a9-fae83a87137e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>#sq_100i_0</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@class=&quot;native-carousel__controls next desktop-only&quot;])[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
