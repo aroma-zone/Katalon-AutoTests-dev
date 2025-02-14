@@ -244,6 +244,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>70222719-3e53-4647-a12c-61a6e673a7af</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/Tracking tests/Surveys/Survey_Tracking_SerumSurvey</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>8c750c9c-e2fd-48f5-b638-cd585a07c78b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>

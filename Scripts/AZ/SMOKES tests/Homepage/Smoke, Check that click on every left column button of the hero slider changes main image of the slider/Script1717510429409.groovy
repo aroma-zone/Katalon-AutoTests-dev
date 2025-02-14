@@ -67,7 +67,7 @@ WebUI.click(findTestObject('AZ/Pages/HomePage/HeroSlider/Slides/Slide3'))
 
 WebUI.click(findTestObject('AZ/Pages/HomePage/ButtonFirstPruductCard'))
 
-WebUI.verifyTextPresent('Huile visage précieuse BIO', false)
+WebUI.verifyTextPresent('Booster de Collagène Vegan - 150 G - Complément alimentaire', false)
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLogoAZ'))
 

@@ -123,4 +123,11 @@
       <testCaseId>Test Cases/AZ/SEO tests/Stage/IT/Header and Footer/FOOTER SEO links IT</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>fc8f6877-b004-471f-b7ca-29442567b41d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/Homepage FR/HP SEO link compare with and without js</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

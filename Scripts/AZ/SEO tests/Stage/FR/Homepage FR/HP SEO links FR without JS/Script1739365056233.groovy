@@ -58,6 +58,8 @@ DriverFactory.changeWebDriver(driver)
 String authenticatedURL = "http://aroma-zone:avant-premiere@stage.aroma-host.net/"
 driver.get(authenticatedURL)
 
+WebUI.maximizeWindow()
+
 // Étape 2 : Récupération du contenu de la page
 String pageSourceStage = driver.getPageSource()
 if (pageSourceStage == null || pageSourceStage.isEmpty()) {
@@ -92,8 +94,8 @@ boolean testFailed = false
 
 
 // Étape 4 : Vérification des liens
-File file2 = new File("C:\\LINKS SEO FR IT\\TEST_JS.txt")
-file2.text = "Vérification des liens FR - ${new Date()}\n"
+File file2 = new File("C:\\LINKS SEO FR IT\\verified_links_HP_FR-without_JS.txt")
+file2.text = "Vérification des liens FR SANS JS- ${new Date()}\n"
 
 links.each { String link ->
 	try {

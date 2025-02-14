@@ -81,4 +81,11 @@
       <testCaseId>Test Cases/AZ/SEO tests/Stage/IT/PDP IT/PDP SEO links IT</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d0ebaff2-5f3e-49ed-a268-f54658d7dd00</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AZ/SEO tests/Stage/FR/Homepage FR/HP SEO link compare with and without js</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
