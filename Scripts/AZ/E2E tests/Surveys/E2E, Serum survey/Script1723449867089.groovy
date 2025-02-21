@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.delay(1)
 
-WebUI.navigateToUrl('https://stage.aroma-host.net/survey/serum')
+WebUI.navigateToUrl('https://aroma-zone:avant-premiere@stage.aroma-host.net/survey/serum')
 
 WebUI.delay(2)
 
@@ -119,7 +119,7 @@ WebUI.verifyTextPresent('Votre routine sérum', false)
 String currentUrl = WebUI.getUrl()
 
 // Étape 2 : Vérifier que l'URL correspond
-assert currentUrl == 'https://stage.aroma-host.net/surveyresults/serum' : 'L\'URL du résultat survey actuelle est incorrecte : ' + currentUrl
+assert currentUrl == 'https://aroma-zone:avant-premiere@stage.aroma-host.net/surveyresults/serum'
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

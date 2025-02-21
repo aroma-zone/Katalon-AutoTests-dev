@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(3)
+
 WebUI.mouseOver(findTestObject('AZ/Pages/Header_and_Footer/Header/Navigation banner_Recettes'))
 
 WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_RecipeListingPage'))
@@ -31,7 +33,7 @@ WebUI.delay(1)
 
 user = GlobalVariable.user1
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login_Short'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User new login short'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('AZ/Pages/RLP/RecipeModalWishlist_addNotebook'))
 

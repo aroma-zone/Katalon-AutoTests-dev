@@ -25,7 +25,7 @@ user = GlobalVariable.user2
 
 WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User new login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/a_myAddresses'))
 
@@ -58,7 +58,6 @@ deliveryAddressCards = WebUI.findWebElements(findTestObject('Object Repository/A
     2)
 
 //WebUI.verifyEqual(deliveryAddressCards.size(), initialNumberOfDeliveryAddresses + 1)
-
 WebUI.comment('Set new address as default')
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyAddresses/deliveryAddress_last_setAsDefault_button'))

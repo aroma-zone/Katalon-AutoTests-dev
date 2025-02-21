@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@class=&quot;native-carousel__controls next desktop-only&quot;])[1]</value>
+         <value>(//span[@class=&quot;native-carousel__controls next desktop-only&quot;])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

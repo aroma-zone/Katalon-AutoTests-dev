@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 'using different user account for address update to reduce impact in case of test break'
 user = GlobalVariable.user2
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User new login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('AZ/Pages/MyAccountPage/MyProfile/input_first_name'), FailureHandling.STOP_ON_FAILURE)
 

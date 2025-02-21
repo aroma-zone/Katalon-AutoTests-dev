@@ -6,11 +6,11 @@
    <elementGuidId>30062946-1a94-4856-81bc-a5a3f030b46f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//button[@class=&quot;base-button recipe-card__wishlist-button&quot;])[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

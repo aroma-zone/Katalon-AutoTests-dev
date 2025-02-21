@@ -6,11 +6,11 @@
    <elementGuidId>8c292c15-ff90-4028-96d4-5256a737e011</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//div[@class=&quot;az-product-card products__product-card products__grid-card column&quot;])[3]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class=&quot;sf-product-card products__product-card products__grid-card&quot;])[3]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

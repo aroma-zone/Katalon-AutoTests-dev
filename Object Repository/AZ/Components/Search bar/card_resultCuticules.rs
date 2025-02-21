@@ -9,12 +9,12 @@
          <key>BASIC</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>//*[@id=&quot;products&quot;]/div/div</value>
+         <key>XPATH</key>
+         <value>(//div[@data-testid=&quot;product-card&quot;])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;sf-product-card&quot;]</value>
+         <key>CSS</key>
+         <value>//*[@id=&quot;products&quot;]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

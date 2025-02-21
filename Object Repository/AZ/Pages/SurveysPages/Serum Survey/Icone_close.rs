@@ -6,12 +6,11 @@
    <elementGuidId>a36a6f42-ae84-47dd-b84f-42d6075d0f83</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;az-icon surveyGeneric__close--icon&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;icon-container surveyGeneric__close--icon&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -21,35 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('AZ/Components/Login modal/button_register'))
-
-String nomUtilisateur = 'User-Proximity'
-
-String domaine = 'quality.com'
-
-String partieAleatoire = RandomStringUtils.randomNumeric(4)
-
-String email = (((nomUtilisateur + '+') + partieAleatoire) + '@') + domaine
-
-WebUI.sendKeys(findTestObject('AZ/Components/Registration modal/input_email'), email)
-
-WebUI.setEncryptedText(findTestObject('AZ/Components/Registration modal/input_password'), 'DaViKV2JRFMQvcOmiggfSw==')
-
-WebUI.setEncryptedText(findTestObject('AZ/Components/Registration modal/input_passwordConfirm'), 'DaViKV2JRFMQvcOmiggfSw==')
-
-WebUI.setText(findTestObject('Object Repository/AZ/Components/Registration modal/input_firstName'), firstName)
-
-WebUI.setText(findTestObject('Object Repository/AZ/Components/Registration modal/input_lastName'), lastName)
-
-WebUI.click(findTestObject('Object Repository/AZ/Components/Registration modal/checkbox_genderMadam'))
-
-WebUI.click(findTestObject('Object Repository/AZ/Components/Registration modal/checkbox_TCs'))
-
-WebUI.click(findTestObject('AZ/Components/Registration modal/button_submit'))
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Registration/_User Random new Registration'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('AZ/Pages/MyAccountPage/div_myAccount'), 5)
 

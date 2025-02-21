@@ -16,10 +16,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLinkNews'))
+WebUI.delay(2)
+
+// Récupérer l'élément WebElement depuis le TestObject
+WebElement element = WebUiCommonHelper.findWebElement(findTestObject("AZ/Pages/Header_and_Footer/Header/a_headerLinkNews"), 10)
+
+// Exécuter le clic via JavaScript
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(element))
+
+//WebUI.click(findTestObject('AZ/Pages/Header_and_Footer/Header/a_headerLinkNews'))
 
 WebUI.delay(1)
 

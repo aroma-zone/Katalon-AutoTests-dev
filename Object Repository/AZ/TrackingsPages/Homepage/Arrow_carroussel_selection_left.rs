@@ -6,11 +6,11 @@
    <elementGuidId>ea79a3b2-695b-4c31-99fc-948466892c36</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//span[@class=&quot;native-carousel__controls prev desktop-only&quot;])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@class=&quot;native-carousel__controls next desktop-only&quot;])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

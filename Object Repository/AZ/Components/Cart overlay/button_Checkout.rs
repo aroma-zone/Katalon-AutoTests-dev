@@ -6,19 +6,18 @@
    <elementGuidId>4aa16ba3-05d4-4a64-b550-f7c998e98120</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button[class*='checkout-button']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>CSS</key>
+         <value>button[class=&quot;base-button my-cart__cta&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -26,7 +25,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[39]</value>
-      <webElementGuid>a4ad39d9-c79f-40cc-80e2-20411eac84bf</webElementGuid>
+      <webElementGuid>c5fc45d7-81f4-4efe-aff0-4397ce6e1477</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -34,7 +33,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='layout']/div[2]/div/aside/div[4]/div/button</value>
-      <webElementGuid>3f597304-4402-4367-887b-d995b4ccd79d</webElementGuid>
+      <webElementGuid>8252add2-b65b-411f-a248-6cedd9e4fc68</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -42,7 +41,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//aside/div[4]/div/button</value>
-      <webElementGuid>ff299ea8-3376-4585-9be6-aba207584cad</webElementGuid>
+      <webElementGuid>5e43f8a7-9bcc-4a58-9af9-4389de5ddbbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -58,6 +57,6 @@
             • 24,00 €
               0,00 €
             ')]</value>
-      <webElementGuid>402cb688-78ed-438f-bebd-44476b44577d</webElementGuid>
+      <webElementGuid>14fe43be-5aef-4d42-836b-da44bb6d7a35</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

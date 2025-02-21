@@ -21,9 +21,9 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 user = GlobalVariable.user1
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User new login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://stage.aroma-host.net/info/fiche-technique/serum-concentre-collagene-vegan-1-5')
+WebUI.navigateToUrl('https://aroma-zone:avant-premiere@stage.aroma-host.net/info/fiche-technique/serum-concentre-collagene-vegan-1-5')
 
 WebUI.delay(1)
 

@@ -21,37 +21,37 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
 
-WebUI.verifyTextPresent('Nouveau client ?', false)
+WebUI.click(findTestObject('AZ/Components/New login pages/login/Button_continue_with_email'))
 
-WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\'ensemble de nos services.', false)
+WebUI.verifyTextPresent('Vous n’avez pas de compte ?', false)
 
-WebUI.click(findTestObject('AZ/Components/Login modal/input_email'))
+WebUI.click(findTestObject('AZ/Components/New login pages/signin/input_email'))
 
-WebUI.click(findTestObject('AZ/Components/Login modal/input_password'))
+WebUI.click(findTestObject('AZ/Components/New login pages/signin/input_password'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_email_1'), 0)
 
-WebUI.click(findTestObject('AZ/Components/Login modal/input_email'))
+WebUI.click(findTestObject('AZ/Components/New login pages/signin/input_email'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_password_1'), 0)
 
-WebUI.setText(findTestObject('AZ/Components/Login modal/input_email'), 'bademail')
+WebUI.setText(findTestObject('AZ/Components/New login pages/signin/input_email'), 'bademail')
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_email_2'), 0)
 
-WebUI.setText(findTestObject('Object Repository/AZ/Components/Login modal/input_password'), '123')
+WebUI.setText(findTestObject('AZ/Components/New login pages/signin/input_password'), '123')
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_password_2'), 0)
 
-WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.LEFT_CONTROL, 'a'))
+WebUI.sendKeys(findTestObject('AZ/Components/New login pages/signin/input_email'), Keys.chord(Keys.LEFT_CONTROL, 'a'))
 
-WebUI.sendKeys(findTestObject('AZ/Components/Login modal/input_email'), Keys.chord(Keys.DELETE))
+WebUI.sendKeys(findTestObject('AZ/Components/New login pages/signin/input_email'), Keys.chord(Keys.DELETE))
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_login'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/New login pages/signin/button_login'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_resetPassword'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/New login pages/signin/button_forgot password'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/button_register'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/New login pages/signin/button_create account'), 0)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

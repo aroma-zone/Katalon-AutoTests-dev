@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class=&quot;base-button sf-product-card__add-button base-button--pure color-secondary&quot;])[1]</value>
+         <value>(//button[@aria-label=&quot;Ajouter au panier&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

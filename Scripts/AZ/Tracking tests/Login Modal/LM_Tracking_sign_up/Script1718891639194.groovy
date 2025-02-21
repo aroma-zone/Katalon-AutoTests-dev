@@ -19,23 +19,17 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.RequestObject as RequestObject
 import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 import org.apache.commons.lang3.RandomStringUtils as RandomStringUtils
-import org.apache.commons.lang.RandomStringUtils
+import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Registration/_User Random Registration'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Registration/_User Random new Registration'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = """
-    return window.dataLayer.find(event => 
-        event.event === 'form' && 
-        event.event_name === 'sign_up' && 
-        event.event_action === 'submit' 
-    );
-"""
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'form\' && \n        event.event_name === \'sign_up\' && \n        event.event_action === \'submit\' \n    );\n'
 
 // event.event === 'recipe' && event.event_label === \'recipe\' && \n        event.event_name === \'generic_event\'\n
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)

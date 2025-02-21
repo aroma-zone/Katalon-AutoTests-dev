@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class=&quot;sf-input__error-message&quot;])[6]</value>
+         <value>(//div[@class=&quot;sf-input__error-message&quot;])[4]</value>
       </entry>
       <entry>
          <key>BASIC</key>

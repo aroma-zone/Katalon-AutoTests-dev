@@ -4,5 +4,6 @@
    <name>LM_Tracking_login</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>93364eb6-4e80-41c2-8373-c46567c7f3a7</testCaseGuid>
 </TestCaseEntity>

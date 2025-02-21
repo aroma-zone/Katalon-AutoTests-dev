@@ -24,20 +24,14 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 'using different user account for address update to reduce impact in case of test break'
 user = GlobalVariable.user2
 
-WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User login'), [('user') : user], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('AZ/E2E tests/Login/_User new login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
 WebUI.waitForPageLoad(0)
 
 // Exécuter du JavaScript pour récupérer la couche de données
-String script = """
-    return window.dataLayer.find(event => 
-        event.event === 'login' && 
-        event.event_name === 'login' && 
-        event.event_action === 'submit' 
-    );
-"""
+String script = '\n    return window.dataLayer.find(event => \n        event.event === \'login\' && \n        event.event_name === \'login\' && \n        event.event_action === \'submit\' \n    );\n'
 
 // event.event === 'recipe' && event.event_label === \'recipe\' && \n        event.event_name === \'generic_event\'\n
 Map event = ((WebUI.executeJavaScript(script, null)) as Map)

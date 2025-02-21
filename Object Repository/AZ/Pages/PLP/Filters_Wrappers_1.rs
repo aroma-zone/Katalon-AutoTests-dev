@@ -6,11 +6,11 @@
    <elementGuidId>f1409e97-7a83-41e8-9b43-5d60d8da69e0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//summary[@class=&quot;header&quot;])[9]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//details[@class=&quot;accordion-item&quot;])[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

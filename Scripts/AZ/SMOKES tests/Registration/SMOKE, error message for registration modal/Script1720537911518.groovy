@@ -21,39 +21,39 @@ WebUI.callTestCase(findTestCase('AZ/_Setup'), [:], FailureHandling.STOP_ON_FAILU
 
 WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
 
-WebUI.verifyTextPresent('Nouveau client ?', false)
+WebUI.click(findTestObject('AZ/Components/New login pages/login/Button_continue_with_email'))
 
-WebUI.verifyTextPresent('La création d\'un compte vous permet d\'accéder à l\'ensemble de nos services.', false)
+WebUI.verifyTextPresent('Vous n’avez pas de compte ?', false)
 
-WebUI.click(findTestObject('AZ/Components/Login modal/button_register'))
+WebUI.click(findTestObject('AZ/Components/New login pages/signin/button_create account'))
 
-WebUI.verifyTextPresent('Création de compte', false)
-
-WebUI.verifyTextPresent('Données de connexion', false)
-
-WebUI.verifyTextPresent('Au moins 6 caractères', false)
-
-WebUI.verifyTextPresent('Aucun espace', false)
+WebUI.verifyTextPresent('Créer un compte', false)
 
 WebUI.verifyTextPresent('Vos informations', false)
+
+WebUI.verifyTextPresent('Date d’anniversaire', false)
+
+WebUI.verifyTextPresent('Adresse mail', false)
+
+WebUI.verifyTextPresent('Mot de passe', false)
+
+WebUI.verifyTextPresent('Prénom', false)
+
+WebUI.verifyTextPresent('Nom', false)
 
 WebUI.verifyTextPresent('Je souhaite être informé des nouvelles recettes, nouveaux produits et offres promotionnelles', 
     false)
 
-WebUI.verifyTextPresent('J\'ai lu la Charte des données personnelles Aroma-Zone et donne mon accord pour que les données que je soumets soient utilisées pour la gestion de mon compte et de mes commandes.', 
+WebUI.verifyTextPresent('Je déclare avoir pris connaissance de la charte des données personnelles Aroma-Zone qui m’informe des modalités d’utilisation de mes données personnelles par Aroma-Zone dans le cadre de l’utilisation de l’ensemble des fonctionnalités du site internet (gestion du compte, gestion des commandes...)', 
     false)
 
 WebUI.click(findTestObject('AZ/Components/Registration modal/input_email'))
 
-WebUI.click(findTestObject('AZ/Components/Registration modal/input_password'))
+WebUI.click(findTestObject('AZ/Components/New login pages/signup/input_password'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_email_1'), 0)
 
-WebUI.click(findTestObject('AZ/Components/Registration modal/input_passwordConfirm'))
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_password_1'), 0)
-
-WebUI.click(findTestObject('AZ/Components/Registration modal/input_email'))
+WebUI.click(findTestObject('AZ/Components/New login pages/signup/input_email'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_password_1.1'), 0)
 
@@ -61,17 +61,13 @@ WebUI.setText(findTestObject('AZ/Components/Registration modal/input_email'), 'b
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Login modal/error_message_email_2'), 0)
 
-WebUI.setText(findTestObject('AZ/Components/Registration modal/input_password'), '123')
+WebUI.setText(findTestObject('AZ/Components/New login pages/signup/input_password'), '123')
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_password_2'), 0)
 
-WebUI.setText(findTestObject('AZ/Components/Registration modal/input_passwordConfirm'), '12')
+WebUI.click(findTestObject('AZ/Components/New login pages/signup/input_firstName'))
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_password_2.2'), 0)
-
-WebUI.click(findTestObject('AZ/Components/Registration modal/input_firstName'))
-
-WebUI.click(findTestObject('AZ/Components/Registration modal/input_lastName'))
+WebUI.click(findTestObject('AZ/Components/New login pages/signup/input_lastName'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_firstname_1'), 0)
 
@@ -79,17 +75,13 @@ WebUI.click(findTestObject('AZ/Components/Registration modal/input_firstName'))
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_lastname_1'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/button_submit'), 0)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/New login pages/signup/button_submit'), 0)
 
 WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/checkbox_Newsletters'), 0)
 
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/checkbox_TCs'), 0)
+WebUI.setText(findTestObject('AZ/Components/New login pages/signup/input_email'), 'gmail.com')
 
-WebUI.setText(findTestObject('AZ/Components/Registration modal/input_email'), 'gmail.com')
-
-WebUI.click(findTestObject('AZ/Components/Registration modal/button_submit'))
-
-WebUI.verifyElementPresent(findTestObject('AZ/Components/Registration modal/error_message_checkboxTCs_1'), 0)
+WebUI.click(findTestObject('AZ/Components/New login pages/signup/button_submit'))
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -43,23 +43,27 @@ WebUI.comment('Create new account')
 
 WebUI.click(findTestObject('AZ/Components/Header/account-icon'))
 
-WebUI.click(findTestObject('AZ/Components/Login modal/button_register'))
+WebUI.click(findTestObject('AZ/Components/New login pages/login/Button_continue_with_email'))
 
-WebUI.setText(findTestObject('AZ/Components/Registration modal/input_email'), email)
+WebUI.click(findTestObject('AZ/Components/New login pages/signin/button_create account'))
 
-WebUI.setText(findTestObject('AZ/Components/Registration modal/input_password'), password)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/New login pages/signup/button_return'), 0)
 
-WebUI.setText(findTestObject('AZ/Components/Registration modal/input_passwordConfirm'), password)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/New login pages/signup/logo_AZ'), 0)
 
-WebUI.setText(findTestObject('Object Repository/AZ/Components/Registration modal/input_firstName'), firstName)
+WebUI.verifyElementPresent(findTestObject('AZ/Components/New login pages/signup/link_personal_data_charter'), 0)
 
-WebUI.setText(findTestObject('Object Repository/AZ/Components/Registration modal/input_lastName'), lastName)
+WebUI.setText(findTestObject('AZ/Components/New login pages/signup/input_email'), email)
 
-WebUI.click(findTestObject('Object Repository/AZ/Components/Registration modal/checkbox_genderMadam'))
+WebUI.setText(findTestObject('AZ/Components/New login pages/signup/input_password'), password)
 
-WebUI.click(findTestObject('Object Repository/AZ/Components/Registration modal/checkbox_TCs'))
+WebUI.setText(findTestObject('AZ/Components/New login pages/signup/input_firstName'), firstName)
 
-WebUI.click(findTestObject('AZ/Components/Registration modal/button_submit'))
+WebUI.setText(findTestObject('AZ/Components/New login pages/signup/input_lastName'), lastName)
+
+WebUI.click(findTestObject('AZ/Components/New login pages/signup/checkbox_genderMadam'))
+
+WebUI.click(findTestObject('AZ/Components/New login pages/signup/button_submit'))
 
 WebUI.waitForElementPresent(findTestObject('AZ/Pages/MyAccountPage/div_myAccount'), 5)
 
@@ -120,13 +124,11 @@ List<WebElement> billingAddressCards = WebUI.findWebElements(findTestObject('Obj
     2)
 
 //WebUI.verifyEqual(billingAddressCards.size(), 1)
-
 List<WebElement> defaultBillingAddressButtons = WebUI.findWebElements(findTestObject('Object Repository/AZ/Pages/MyAccountPage/MyAddresses/billingAddress_default_buttons'), 
     2)
 
-'Primary Address must have only one button (Update)'
 //WebUI.verifyEqual(defaultBillingAddressButtons.size(), 1)
-
+'Primary Address must have only one button (Update)'
 WebUI.verifyMatch(defaultBillingAddressButtons[0].text, '(Modifier|Modifica)', true)
 
 WebUI.callTestCase(findTestCase('AZ/_TearDown'), [:], FailureHandling.STOP_ON_FAILURE)

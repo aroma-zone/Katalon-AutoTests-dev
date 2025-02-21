@@ -6,11 +6,11 @@
    <elementGuidId>ba3bacee-35dc-4132-8631-35653222b6b6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//label[@for=&quot;Anti-âge&quot;])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//label[@for=&quot;Anti-âge&quot;])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

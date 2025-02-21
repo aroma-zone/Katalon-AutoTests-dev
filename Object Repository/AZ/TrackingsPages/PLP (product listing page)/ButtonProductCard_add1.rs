@@ -6,11 +6,11 @@
    <elementGuidId>90920900-a297-4ab9-bff0-30b523a1d840</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button[@aria-label=&quot;Ajouter au panier&quot;])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@class=&quot;base-button sf-product-card__add-button base-button--pure color-secondary&quot;])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

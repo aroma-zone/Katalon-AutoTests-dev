@@ -4,6 +4,7 @@
    <name>LM_Tracking_sign_up</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f24d29f8-fe8b-4a2d-a33b-721fa9c91b17</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

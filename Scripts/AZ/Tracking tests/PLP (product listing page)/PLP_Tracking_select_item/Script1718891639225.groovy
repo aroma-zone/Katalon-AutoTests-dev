@@ -37,13 +37,22 @@ WebUI.waitForPageLoad(10)
 WebUI.delay(3)
 
 // Supprimer l'attribut href ou onclick du bouton pour empêcher la redirection
-String removeLinkScript = '\n    var button = document.evaluate("(//span[@class=\'sf-product-card__title\'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n    if (button) {\n        button.removeAttribute(\'href\'); // Si c\'est un lien\n        \n    }\n'
+String removeLinkScript = '''
+    var button = document.evaluate("(//a[@class='stretched-link'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    if (button) {
+        button.removeAttribute('href'); // Si c'est un lien
+    }
+'''
 
-//button.removeAttribute('onclick'); // Si l'action est dans onclick
 WebUI.executeJavaScript(removeLinkScript, null)
 
 // Cliquez sur le bouton via JavaScript
-String clickButtonScript = '\n    var button = document.evaluate("(//span[@class=\'sf-product-card__title\'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n    if (button) {\n        button.click();\n    }\n'
+String clickButtonScript = '''
+    var button = document.evaluate("(//a[@class='stretched-link'])[1]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    if (button) {
+        button.click();
+    }
+'''
 
 WebUI.executeJavaScript(clickButtonScript, null)
 
